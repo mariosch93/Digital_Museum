@@ -39,8 +39,27 @@
             this.buttonShows = new System.Windows.Forms.Button();
             this.buttonConcert = new System.Windows.Forms.Button();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
+            this.buttonLogin = new System.Windows.Forms.Button();
+            this.pictureBoxExit = new System.Windows.Forms.PictureBox();
+            this.pictureBoxUnipi = new System.Windows.Forms.PictureBox();
+            this.usernameLabel = new System.Windows.Forms.Label();
+            this.labelName = new System.Windows.Forms.Label();
+            this.labelPassword = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelLogin = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.buttonNewLogin = new System.Windows.Forms.Button();
+            this.labelerror = new System.Windows.Forms.Label();
+            this.buttonCancelLogin = new System.Windows.Forms.Button();
             this.Sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnipi)).BeginInit();
+            this.panelLogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Sidebar
@@ -103,6 +122,7 @@
             this.buttonHome.TabIndex = 4;
             this.buttonHome.Text = "       Αρχική";
             this.buttonHome.UseVisualStyleBackColor = false;
+            this.buttonHome.Click += new System.EventHandler(this.buttonHome_Click);
             // 
             // buttonArtists
             // 
@@ -174,11 +194,182 @@
             this.sidebarTimer.Interval = 25;
             this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
             // 
+            // buttonLogin
+            // 
+            this.buttonLogin.FlatAppearance.BorderSize = 0;
+            this.buttonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogin.Location = new System.Drawing.Point(333, 152);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(94, 40);
+            this.buttonLogin.TabIndex = 1;
+            this.buttonLogin.Text = "Login ";
+            this.buttonLogin.UseVisualStyleBackColor = true;
+            this.buttonLogin.MouseEnter += new System.EventHandler(this.buttonLogin_MouseEnter);
+            this.buttonLogin.MouseLeave += new System.EventHandler(this.buttonLogin_MouseLeave);
+            // 
+            // pictureBoxExit
+            // 
+            this.pictureBoxExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxExit.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxExit.Image")));
+            this.pictureBoxExit.Location = new System.Drawing.Point(1345, 616);
+            this.pictureBoxExit.Name = "pictureBoxExit";
+            this.pictureBoxExit.Size = new System.Drawing.Size(67, 53);
+            this.pictureBoxExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxExit.TabIndex = 2;
+            this.pictureBoxExit.TabStop = false;
+            this.pictureBoxExit.Click += new System.EventHandler(this.pictureBoxExit_Click);
+            // 
+            // pictureBoxUnipi
+            // 
+            this.pictureBoxUnipi.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxUnipi.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxUnipi.Image")));
+            this.pictureBoxUnipi.Location = new System.Drawing.Point(1345, 12);
+            this.pictureBoxUnipi.Name = "pictureBoxUnipi";
+            this.pictureBoxUnipi.Size = new System.Drawing.Size(67, 59);
+            this.pictureBoxUnipi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxUnipi.TabIndex = 3;
+            this.pictureBoxUnipi.TabStop = false;
+            // 
+            // usernameLabel
+            // 
+            this.usernameLabel.AutoSize = true;
+            this.usernameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLabel.Location = new System.Drawing.Point(1176, 78);
+            this.usernameLabel.Name = "usernameLabel";
+            this.usernameLabel.Size = new System.Drawing.Size(72, 18);
+            this.usernameLabel.TabIndex = 4;
+            this.usernameLabel.Text = "Welcome";
+            this.usernameLabel.Visible = false;
+            // 
+            // labelName
+            // 
+            this.labelName.AutoSize = true;
+            this.labelName.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName.Location = new System.Drawing.Point(164, 62);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(83, 20);
+            this.labelName.TabIndex = 5;
+            this.labelName.Text = "Username : ";
+            // 
+            // labelPassword
+            // 
+            this.labelPassword.AutoSize = true;
+            this.labelPassword.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPassword.Location = new System.Drawing.Point(164, 104);
+            this.labelPassword.Name = "labelPassword";
+            this.labelPassword.Size = new System.Drawing.Size(81, 20);
+            this.labelPassword.TabIndex = 6;
+            this.labelPassword.Text = "Password : ";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(253, 64);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(174, 20);
+            this.textBox1.TabIndex = 7;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(251, 106);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(174, 20);
+            this.textBox2.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(202, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(190, 25);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Σύνδεση Υπαλλήλων";
+            // 
+            // panelLogin
+            // 
+            this.panelLogin.Controls.Add(this.buttonCancelLogin);
+            this.panelLogin.Controls.Add(this.labelerror);
+            this.panelLogin.Controls.Add(this.pictureBox1);
+            this.panelLogin.Controls.Add(this.label1);
+            this.panelLogin.Controls.Add(this.buttonLogin);
+            this.panelLogin.Controls.Add(this.textBox2);
+            this.panelLogin.Controls.Add(this.labelName);
+            this.panelLogin.Controls.Add(this.textBox1);
+            this.panelLogin.Controls.Add(this.labelPassword);
+            this.panelLogin.Location = new System.Drawing.Point(972, 120);
+            this.panelLogin.Name = "panelLogin";
+            this.panelLogin.Size = new System.Drawing.Size(440, 250);
+            this.panelLogin.TabIndex = 10;
+            this.panelLogin.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(14, 45);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(144, 127);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // buttonNewLogin
+            // 
+            this.buttonNewLogin.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNewLogin.Location = new System.Drawing.Point(1234, 19);
+            this.buttonNewLogin.Name = "buttonNewLogin";
+            this.buttonNewLogin.Size = new System.Drawing.Size(94, 40);
+            this.buttonNewLogin.TabIndex = 12;
+            this.buttonNewLogin.Text = "Σύνδεση";
+            this.buttonNewLogin.UseVisualStyleBackColor = true;
+            this.buttonNewLogin.Click += new System.EventHandler(this.buttonNewLogin_Click);
+            this.buttonNewLogin.MouseEnter += new System.EventHandler(this.buttonNewLogin_MouseEnter);
+            this.buttonNewLogin.MouseLeave += new System.EventHandler(this.buttonNewLogin_MouseLeave);
+            // 
+            // labelerror
+            // 
+            this.labelerror.AutoSize = true;
+            this.labelerror.BackColor = System.Drawing.SystemColors.Control;
+            this.labelerror.ForeColor = System.Drawing.Color.Red;
+            this.labelerror.Location = new System.Drawing.Point(20, 211);
+            this.labelerror.Name = "labelerror";
+            this.labelerror.Size = new System.Drawing.Size(0, 13);
+            this.labelerror.TabIndex = 11;
+            // 
+            // buttonCancelLogin
+            // 
+            this.buttonCancelLogin.FlatAppearance.BorderSize = 0;
+            this.buttonCancelLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancelLogin.Location = new System.Drawing.Point(168, 152);
+            this.buttonCancelLogin.Name = "buttonCancelLogin";
+            this.buttonCancelLogin.Size = new System.Drawing.Size(94, 40);
+            this.buttonCancelLogin.TabIndex = 12;
+            this.buttonCancelLogin.Text = "Cancel";
+            this.buttonCancelLogin.UseMnemonic = false;
+            this.buttonCancelLogin.UseVisualStyleBackColor = true;
+            this.buttonCancelLogin.Click += new System.EventHandler(this.buttonCancelLogin_Click);
+            this.buttonCancelLogin.MouseEnter += new System.EventHandler(this.buttonCancelLogin_MouseEnter);
+            this.buttonCancelLogin.MouseLeave += new System.EventHandler(this.buttonCancelLogin_MouseLeave);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1424, 681);
+            this.Controls.Add(this.buttonNewLogin);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.panelLogin);
+            this.Controls.Add(this.usernameLabel);
+            this.Controls.Add(this.pictureBoxUnipi);
+            this.Controls.Add(this.pictureBoxExit);
             this.Controls.Add(this.Sidebar);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -186,7 +377,13 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Sidebar.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnipi)).EndInit();
+            this.panelLogin.ResumeLayout(false);
+            this.panelLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -201,6 +398,21 @@
         private System.Windows.Forms.Button buttonShows;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonMenu;
+        private System.Windows.Forms.Button buttonLogin;
+        private System.Windows.Forms.PictureBox pictureBoxExit;
+        private System.Windows.Forms.PictureBox pictureBoxUnipi;
+        private System.Windows.Forms.Label usernameLabel;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Label labelPassword;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelLogin;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonNewLogin;
+        private System.Windows.Forms.Label labelerror;
+        private System.Windows.Forms.Button buttonCancelLogin;
     }
 }
 
