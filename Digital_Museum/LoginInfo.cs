@@ -10,5 +10,6 @@ namespace Digital_Museum
     {
         public bool IsLoggedIn { get; set; }
         public string UserName { get; set; }
+        public int UserId { get; set; }
     }
 }

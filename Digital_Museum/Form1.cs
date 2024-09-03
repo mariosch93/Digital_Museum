@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,11 +15,13 @@ namespace Digital_Museum
     {
         bool sidebarExpand;
         LoginInfo loginInfo;
-
+        string connectionString = "Data source=digital_museum.db;Version=3;";
+        SQLiteConnection connection;
 
         public Form1()
         {
             InitializeComponent();
+            connection = new SQLiteConnection(connectionString);
         }
 
         public Form1(LoginInfo loginInfo)
@@ -114,6 +117,39 @@ namespace Digital_Museum
         private void buttonCancelLogin_MouseLeave(object sender, EventArgs e)
         {
             buttonCancelLogin.BackColor = Color.White;
+        }
+
+        private void buttonLogin_Click(object sender, EventArgs e)
+        {
+            var user = username.Text;
+            var pass = password.Text;
+
+            connection.Open();
+            SQLiteCommand command = new SQLiteCommand("SELECT id FROM users WHERE username = @username AND password = @password", connection);
+            command.Parameters.AddWithValue("username", user);
+            command.Parameters.AddWithValue("password", pass);
+            var reader = command.ExecuteReader();
+
+            if (reader.Read()){
+                var loginInfo = new LoginInfo()
+                {
+                    UserName = user,
+                    IsLoggedIn = true,
+                    UserId = reader.GetInt32(0),
+                };
+                command.Dispose();
+                reader.Close();
+                connection.Close();
+
+                var form1 = new Form1(loginInfo);
+                form1.ShowDialog();
+            }
+            else {
+                labelerror.Text = "Ανεπιτυχής σύνδεση, Ελέγξτε τα στοιχεία σας";
+                command.Dispose();
+                reader.Close();
+                connection.Close();
+            }   
         }
     }
 }
