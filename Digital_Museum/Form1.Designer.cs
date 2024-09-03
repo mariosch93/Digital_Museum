@@ -189,6 +189,7 @@
             this.buttonConcert.TabIndex = 7;
             this.buttonConcert.Text = "            Αίθουσα                Συναυλιών";
             this.buttonConcert.UseVisualStyleBackColor = false;
+            this.buttonConcert.Click += new System.EventHandler(this.buttonConcert_Click);
             // 
             // sidebarTimer
             // 

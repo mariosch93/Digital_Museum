@@ -157,5 +157,11 @@ namespace Digital_Museum
             FormArtists formArtists = new FormArtists();
             formArtists.ShowDialog();
         }
+
+        private void buttonConcert_Click(object sender, EventArgs e)
+        {
+            FormConcert formConcert = new FormConcert();
+            formConcert.ShowDialog();
+        }
     }
 }
