@@ -31,14 +31,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Sidebar = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonMenu = new System.Windows.Forms.Button();
             this.buttonHome = new System.Windows.Forms.Button();
-            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.buttonArtists = new System.Windows.Forms.Button();
-            this.buttonConcert = new System.Windows.Forms.Button();
             this.buttonEvents = new System.Windows.Forms.Button();
             this.buttonShows = new System.Windows.Forms.Button();
-            this.buttonMenu = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonConcert = new System.Windows.Forms.Button();
+            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.Sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +60,34 @@
             this.Sidebar.Size = new System.Drawing.Size(142, 681);
             this.Sidebar.TabIndex = 0;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.buttonMenu);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(142, 154);
+            this.panel1.TabIndex = 2;
+            // 
+            // buttonMenu
+            // 
+            this.buttonMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.buttonMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMenu.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenu.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonMenu.Image = ((System.Drawing.Image)(resources.GetObject("buttonMenu.Image")));
+            this.buttonMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonMenu.Location = new System.Drawing.Point(0, 19);
+            this.buttonMenu.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonMenu.Name = "buttonMenu";
+            this.buttonMenu.Size = new System.Drawing.Size(142, 110);
+            this.buttonMenu.TabIndex = 5;
+            this.buttonMenu.Text = "            Μενού    ";
+            this.buttonMenu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonMenu.UseVisualStyleBackColor = false;
+            this.buttonMenu.Click += new System.EventHandler(this.buttonMenu_Click);
+            // 
             // buttonHome
             // 
             this.buttonHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
@@ -76,12 +104,6 @@
             this.buttonHome.Text = "       Αρχική";
             this.buttonHome.UseVisualStyleBackColor = false;
             // 
-            // sidebarTimer
-            // 
-            this.sidebarTimer.Enabled = true;
-            this.sidebarTimer.Interval = 25;
-            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
-            // 
             // buttonArtists
             // 
             this.buttonArtists.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
@@ -97,22 +119,6 @@
             this.buttonArtists.TabIndex = 5;
             this.buttonArtists.Text = "            Αίθουσες                 Καλλιτεχνών";
             this.buttonArtists.UseVisualStyleBackColor = false;
-            // 
-            // buttonConcert
-            // 
-            this.buttonConcert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.buttonConcert.FlatAppearance.BorderSize = 0;
-            this.buttonConcert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonConcert.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonConcert.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.buttonConcert.Image = ((System.Drawing.Image)(resources.GetObject("buttonConcert.Image")));
-            this.buttonConcert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonConcert.Location = new System.Drawing.Point(3, 449);
-            this.buttonConcert.Name = "buttonConcert";
-            this.buttonConcert.Size = new System.Drawing.Size(142, 67);
-            this.buttonConcert.TabIndex = 7;
-            this.buttonConcert.Text = "            Αίθουσα                Συναυλιών";
-            this.buttonConcert.UseVisualStyleBackColor = false;
             // 
             // buttonEvents
             // 
@@ -146,33 +152,27 @@
             this.buttonShows.Text = "             Χώροι                Προβολής";
             this.buttonShows.UseVisualStyleBackColor = false;
             // 
-            // buttonMenu
+            // buttonConcert
             // 
-            this.buttonMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.buttonMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMenu.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMenu.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.buttonMenu.Image = ((System.Drawing.Image)(resources.GetObject("buttonMenu.Image")));
-            this.buttonMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonMenu.Location = new System.Drawing.Point(0, 19);
-            this.buttonMenu.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonMenu.Name = "buttonMenu";
-            this.buttonMenu.Size = new System.Drawing.Size(142, 110);
-            this.buttonMenu.TabIndex = 5;
-            this.buttonMenu.Text = "            Μενού    ";
-            this.buttonMenu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonMenu.UseVisualStyleBackColor = false;
-            this.buttonMenu.Click += new System.EventHandler(this.buttonMenu_Click);
+            this.buttonConcert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.buttonConcert.FlatAppearance.BorderSize = 0;
+            this.buttonConcert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonConcert.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonConcert.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonConcert.Image = ((System.Drawing.Image)(resources.GetObject("buttonConcert.Image")));
+            this.buttonConcert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonConcert.Location = new System.Drawing.Point(3, 449);
+            this.buttonConcert.Name = "buttonConcert";
+            this.buttonConcert.Size = new System.Drawing.Size(142, 67);
+            this.buttonConcert.TabIndex = 7;
+            this.buttonConcert.Text = "            Αίθουσα                Συναυλιών";
+            this.buttonConcert.UseVisualStyleBackColor = false;
             // 
-            // panel1
+            // sidebarTimer
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.buttonMenu);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(142, 154);
-            this.panel1.TabIndex = 2;
+            this.sidebarTimer.Enabled = true;
+            this.sidebarTimer.Interval = 25;
+            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
             // 
             // Form1
             // 
@@ -181,6 +181,7 @@
             this.ClientSize = new System.Drawing.Size(1424, 681);
             this.Controls.Add(this.Sidebar);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Sidebar.ResumeLayout(false);
