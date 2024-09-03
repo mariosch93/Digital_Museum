@@ -96,7 +96,7 @@
             this.buttonMenu.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonMenu.Image = ((System.Drawing.Image)(resources.GetObject("buttonMenu.Image")));
             this.buttonMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonMenu.Location = new System.Drawing.Point(0, 19);
+            this.buttonMenu.Location = new System.Drawing.Point(0, 12);
             this.buttonMenu.Margin = new System.Windows.Forms.Padding(0);
             this.buttonMenu.Name = "buttonMenu";
             this.buttonMenu.Size = new System.Drawing.Size(142, 110);
