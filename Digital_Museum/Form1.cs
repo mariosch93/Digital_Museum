@@ -151,5 +151,11 @@ namespace Digital_Museum
                 connection.Close();
             }   
         }
+
+        private void buttonArtists_Click(object sender, EventArgs e)
+        {
+            FormArtists formArtists = new FormArtists();
+            formArtists.ShowDialog();
+        }
     }
 }

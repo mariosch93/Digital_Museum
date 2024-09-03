@@ -53,6 +53,7 @@
             this.labelerror = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonNewLogin = new System.Windows.Forms.Button();
+            this.labelLegend = new System.Windows.Forms.Label();
             this.Sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
@@ -139,6 +140,7 @@
             this.buttonArtists.TabIndex = 5;
             this.buttonArtists.Text = "            Αίθουσες                 Καλλιτεχνών";
             this.buttonArtists.UseVisualStyleBackColor = false;
+            this.buttonArtists.Click += new System.EventHandler(this.buttonArtists_Click);
             // 
             // buttonEvents
             // 
@@ -352,11 +354,24 @@
             this.buttonNewLogin.MouseEnter += new System.EventHandler(this.buttonNewLogin_MouseEnter);
             this.buttonNewLogin.MouseLeave += new System.EventHandler(this.buttonNewLogin_MouseLeave);
             // 
+            // labelLegend
+            // 
+            this.labelLegend.AutoSize = true;
+            this.labelLegend.BackColor = System.Drawing.Color.Transparent;
+            this.labelLegend.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLegend.Location = new System.Drawing.Point(442, 19);
+            this.labelLegend.Name = "labelLegend";
+            this.labelLegend.Size = new System.Drawing.Size(636, 50);
+            this.labelLegend.TabIndex = 13;
+            this.labelLegend.Text = "Απολαύστε την εμπειρία περιήγησης σε ένα υπερσύγχρονο \r\n              ψηφιακό μου" +
+    "σείο Μουσικής & Καλλιτεχνών";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1424, 681);
+            this.Controls.Add(this.labelLegend);
             this.Controls.Add(this.buttonNewLogin);
             this.Controls.Add(this.panelLogin);
             this.Controls.Add(this.usernameLabel);
@@ -404,6 +419,7 @@
         private System.Windows.Forms.Button buttonNewLogin;
         private System.Windows.Forms.Label labelerror;
         private System.Windows.Forms.Button buttonCancelLogin;
+        private System.Windows.Forms.Label labelLegend;
     }
 }
 
