@@ -49,7 +49,7 @@
             this.labelLegend.AutoSize = true;
             this.labelLegend.BackColor = System.Drawing.Color.Transparent;
             this.labelLegend.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLegend.Location = new System.Drawing.Point(519, 12);
+            this.labelLegend.Location = new System.Drawing.Point(521, 12);
             this.labelLegend.Name = "labelLegend";
             this.labelLegend.Size = new System.Drawing.Size(442, 25);
             this.labelLegend.TabIndex = 14;
@@ -91,21 +91,22 @@
             // buttonKazatzidis
             // 
             this.buttonKazatzidis.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonKazatzidis.BackgroundImage")));
+            this.buttonKazatzidis.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonKazatzidis.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonKazatzidis.Image = ((System.Drawing.Image)(resources.GetObject("buttonKazatzidis.Image")));
             this.buttonKazatzidis.Location = new System.Drawing.Point(187, 51);
             this.buttonKazatzidis.Name = "buttonKazatzidis";
             this.buttonKazatzidis.Size = new System.Drawing.Size(567, 312);
-            this.buttonKazatzidis.TabIndex = 18;
+            this.buttonKazatzidis.TabIndex = 21;
             this.buttonKazatzidis.UseVisualStyleBackColor = true;
             this.buttonKazatzidis.MouseHover += new System.EventHandler(this.buttonKazatzidis_MouseHover);
             // 
             // buttonTheodorakis
             // 
             this.buttonTheodorakis.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonTheodorakis.BackgroundImage")));
+            this.buttonTheodorakis.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonTheodorakis.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTheodorakis.Image = ((System.Drawing.Image)(resources.GetObject("buttonTheodorakis.Image")));
-            this.buttonTheodorakis.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonTheodorakis.Location = new System.Drawing.Point(187, 369);
             this.buttonTheodorakis.Name = "buttonTheodorakis";
             this.buttonTheodorakis.Size = new System.Drawing.Size(567, 312);
@@ -116,6 +117,7 @@
             // buttonMpithikotsis
             // 
             this.buttonMpithikotsis.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonMpithikotsis.BackgroundImage")));
+            this.buttonMpithikotsis.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonMpithikotsis.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMpithikotsis.Image = ((System.Drawing.Image)(resources.GetObject("buttonMpithikotsis.Image")));
             this.buttonMpithikotsis.Location = new System.Drawing.Point(772, 51);
@@ -132,7 +134,7 @@
             this.richTextBoxInfo.Name = "richTextBoxInfo";
             this.richTextBoxInfo.ReadOnly = true;
             this.richTextBoxInfo.Size = new System.Drawing.Size(567, 311);
-            this.richTextBoxInfo.TabIndex = 21;
+            this.richTextBoxInfo.TabIndex = 18;
             this.richTextBoxInfo.Text = resources.GetString("richTextBoxInfo.Text");
             this.richTextBoxInfo.MouseLeave += new System.EventHandler(this.richTextBoxInfo_MouseLeave);
             this.richTextBoxInfo.MouseHover += new System.EventHandler(this.richTextBoxInfo_MouseHover);
