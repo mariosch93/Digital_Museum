@@ -362,6 +362,7 @@
             this.buttonSeatL7 = new System.Windows.Forms.Button();
             this.buttonSeatL8 = new System.Windows.Forms.Button();
             this.richTextBoxTotal = new System.Windows.Forms.RichTextBox();
+            this.buttonBuyTickets = new System.Windows.Forms.Button();
             this.panel242.SuspendLayout();
             this.panel214.SuspendLayout();
             this.panel186.SuspendLayout();
@@ -3110,7 +3111,7 @@
             this.textBoxSeatInfo.Location = new System.Drawing.Point(0, 57);
             this.textBoxSeatInfo.Multiline = true;
             this.textBoxSeatInfo.Name = "textBoxSeatInfo";
-            this.textBoxSeatInfo.Size = new System.Drawing.Size(205, 27);
+            this.textBoxSeatInfo.Size = new System.Drawing.Size(205, 29);
             this.textBoxSeatInfo.TabIndex = 416;
             // 
             // label1
@@ -3118,7 +3119,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(-5, 15);
+            this.label1.Location = new System.Drawing.Point(-2, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(207, 25);
             this.label1.TabIndex = 417;
@@ -3168,6 +3169,7 @@
             this.buttonSeatL6.Size = new System.Drawing.Size(20, 17);
             this.buttonSeatL6.TabIndex = 424;
             this.buttonSeatL6.UseVisualStyleBackColor = true;
+            this.buttonSeatL6.Click += new System.EventHandler(this.buttonSeatL6_Click);
             this.buttonSeatL6.MouseEnter += new System.EventHandler(this.buttonSeatL6_MouseEnter);
             this.buttonSeatL6.MouseLeave += new System.EventHandler(this.buttonSeatL6_MouseLeave);
             // 
@@ -3179,6 +3181,7 @@
             this.buttonSeatL7.Size = new System.Drawing.Size(20, 17);
             this.buttonSeatL7.TabIndex = 425;
             this.buttonSeatL7.UseVisualStyleBackColor = true;
+            this.buttonSeatL7.Click += new System.EventHandler(this.buttonSeatL7_Click);
             this.buttonSeatL7.MouseEnter += new System.EventHandler(this.buttonSeatL7_MouseEnter);
             this.buttonSeatL7.MouseLeave += new System.EventHandler(this.buttonSeatL7_MouseLeave);
             // 
@@ -3190,22 +3193,39 @@
             this.buttonSeatL8.Size = new System.Drawing.Size(20, 17);
             this.buttonSeatL8.TabIndex = 426;
             this.buttonSeatL8.UseVisualStyleBackColor = true;
+            this.buttonSeatL8.Click += new System.EventHandler(this.buttonSeatL8_Click);
             this.buttonSeatL8.MouseEnter += new System.EventHandler(this.buttonSeatL8_MouseEnter);
             this.buttonSeatL8.MouseLeave += new System.EventHandler(this.buttonSeatL8_MouseLeave);
             // 
             // richTextBoxTotal
             // 
-            this.richTextBoxTotal.Location = new System.Drawing.Point(890, 408);
+            this.richTextBoxTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTextBoxTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBoxTotal.Location = new System.Drawing.Point(887, 403);
             this.richTextBoxTotal.Name = "richTextBoxTotal";
-            this.richTextBoxTotal.Size = new System.Drawing.Size(202, 163);
+            this.richTextBoxTotal.Size = new System.Drawing.Size(205, 124);
             this.richTextBoxTotal.TabIndex = 427;
             this.richTextBoxTotal.Text = "";
+            // 
+            // buttonBuyTickets
+            // 
+            this.buttonBuyTickets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBuyTickets.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBuyTickets.Location = new System.Drawing.Point(887, 525);
+            this.buttonBuyTickets.Name = "buttonBuyTickets";
+            this.buttonBuyTickets.Size = new System.Drawing.Size(205, 46);
+            this.buttonBuyTickets.TabIndex = 428;
+            this.buttonBuyTickets.Text = "Αγορά Εισητηρίων\r\n";
+            this.buttonBuyTickets.UseVisualStyleBackColor = true;
+            this.buttonBuyTickets.MouseEnter += new System.EventHandler(this.buttonBuyTickets_MouseEnter);
+            this.buttonBuyTickets.MouseLeave += new System.EventHandler(this.buttonBuyTickets_MouseLeave);
             // 
             // FormConcert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1424, 681);
+            this.Controls.Add(this.buttonBuyTickets);
             this.Controls.Add(this.richTextBoxTotal);
             this.Controls.Add(this.buttonSeatL8);
             this.Controls.Add(this.buttonSeatL7);
@@ -3795,5 +3815,6 @@
         private System.Windows.Forms.Button buttonSeatL7;
         private System.Windows.Forms.Button buttonSeatL8;
         private System.Windows.Forms.RichTextBox richTextBoxTotal;
+        private System.Windows.Forms.Button buttonBuyTickets;
     }
 }
