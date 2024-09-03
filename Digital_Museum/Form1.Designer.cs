@@ -50,7 +50,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panelLogin = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.buttonNewLogin = new System.Windows.Forms.Button();
             this.labelerror = new System.Windows.Forms.Label();
             this.buttonCancelLogin = new System.Windows.Forms.Button();
@@ -312,15 +311,6 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // buttonNewLogin
             // 
             this.buttonNewLogin.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -365,7 +355,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1424, 681);
             this.Controls.Add(this.buttonNewLogin);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.panelLogin);
             this.Controls.Add(this.usernameLabel);
             this.Controls.Add(this.pictureBoxUnipi);
@@ -409,7 +398,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelLogin;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonNewLogin;
         private System.Windows.Forms.Label labelerror;
         private System.Windows.Forms.Button buttonCancelLogin;
