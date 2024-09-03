@@ -97,6 +97,7 @@
             this.buttonMenu.Image = ((System.Drawing.Image)(resources.GetObject("buttonMenu.Image")));
             this.buttonMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonMenu.Location = new System.Drawing.Point(0, 23);
+            this.buttonMenu.Location = new System.Drawing.Point(0, 12);
             this.buttonMenu.Margin = new System.Windows.Forms.Padding(0);
             this.buttonMenu.Name = "buttonMenu";
             this.buttonMenu.Size = new System.Drawing.Size(189, 135);
@@ -372,7 +373,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1882, 838);
+            this.ClientSize = new System.Drawing.Size(1424, 681);
             this.Controls.Add(this.buttonNewLogin);
             this.Controls.Add(this.panelLogin);
             this.Controls.Add(this.usernameLabel);
