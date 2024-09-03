@@ -12,19 +12,44 @@ namespace Digital_Museum
 {
     public partial class Form1 : Form
     {
+        bool sidebarExpand;
+
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void sidebarTimer_Tick(object sender, EventArgs e)
         {
-            this.Close();
+            if (sidebarExpand)
+            {
+                Sidebar.Width -= 10;
+                if (Sidebar.Width == Sidebar.MinimumSize.Width)
+                {
+                    sidebarExpand = false;
+                    sidebarTimer.Stop();
+                }
+            }
+            else
+            {
+                Sidebar.Width += 10;
+                if (Sidebar.Width == Sidebar.MaximumSize.Width)
+                {
+                    sidebarExpand = true;
+                    sidebarTimer.Stop();
+                }
+            }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonMenu_Click(object sender, EventArgs e)
         {
-            this.Close();
+            sidebarTimer.Start();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
     }
 }
