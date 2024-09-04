@@ -47,6 +47,7 @@
             this.buttonPayment = new System.Windows.Forms.Button();
             this.textBoxErrors = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.progressBarPayment = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnipi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -236,10 +237,10 @@
             // textBoxErrors
             // 
             this.textBoxErrors.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxErrors.Location = new System.Drawing.Point(21, 431);
+            this.textBoxErrors.Location = new System.Drawing.Point(21, 422);
             this.textBoxErrors.Multiline = true;
             this.textBoxErrors.Name = "textBoxErrors";
-            this.textBoxErrors.Size = new System.Drawing.Size(460, 88);
+            this.textBoxErrors.Size = new System.Drawing.Size(460, 97);
             this.textBoxErrors.TabIndex = 422;
             this.textBoxErrors.Visible = false;
             // 
@@ -256,11 +257,21 @@
             this.button1.Text = "Ακύρωση\r\nπληρωμής";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // progressBarPayment
+            // 
+            this.progressBarPayment.Location = new System.Drawing.Point(21, 455);
+            this.progressBarPayment.MarqueeAnimationSpeed = 5;
+            this.progressBarPayment.Name = "progressBarPayment";
+            this.progressBarPayment.Size = new System.Drawing.Size(460, 31);
+            this.progressBarPayment.TabIndex = 424;
+            this.progressBarPayment.Visible = false;
+            // 
             // FormPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(855, 520);
+            this.Controls.Add(this.progressBarPayment);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBoxErrors);
             this.Controls.Add(this.buttonPayment);
@@ -311,5 +322,6 @@
         private System.Windows.Forms.Button buttonPayment;
         private System.Windows.Forms.TextBox textBoxErrors;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ProgressBar progressBarPayment;
     }
 }

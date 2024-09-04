@@ -26,6 +26,7 @@ namespace Digital_Museum
         String errorCard;
         String errorCVV;
         String errorCType;
+        //Regex email; Να το φτιάξουμε!!!!
 
         public FormPayment(int totalCost)
         {
@@ -56,7 +57,6 @@ namespace Digital_Museum
                 cardAccepted = false;
                 textBoxNumCard.BackColor = Color.White;
             }
-
         }
 
         private void textBoxName_TextChanged(object sender, EventArgs e)
@@ -123,12 +123,18 @@ namespace Digital_Museum
             {
                 textBoxErrors.Visible = false;
                 buttonPayment.FlatAppearance.BorderColor = Color.Green;
+                progressBarPayment.Visible = true;
+                /*  progressBarPayment.Value = 100;
+                    MessageBox.Show("Επιτυχής πληρωμή, Θα λάβετε τα στοιχεία παραγγελίας στο email σας"); 
+                    this.Close();
+                    //Θέλουμε να εμφανίζεται στο τέλος του progressbar
+                */
+
             }
         }
 
         private void buttonPayment_Click(object sender, EventArgs e)
-        {
-            
+        {  
             allaccepted();
         }
     }
