@@ -18,15 +18,18 @@ namespace Digital_Museum
         Regex regexCard = new Regex("^[0-9]{16}");
         Regex regexName = new Regex("^[α-ω Α-Ω Ά-ώ a-z A-Z]+$");
         Regex regexCVV = new Regex("^[0-9]{4}");
+        Regex regexEmail = new Regex("[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}$");
         String compare;
         bool cardAccepted = false;
         bool nameAccepted = false;
         bool cardCVV_Accepted = false;
+        bool emailAccepted = false;
         String errorName;
         String errorCard;
         String errorCVV;
         String errorCType;
-        //Regex email; Να το φτιάξουμε!!!!
+        String errorEmail;
+        
 
         public FormPayment(int totalCost)
         {
@@ -94,10 +97,25 @@ namespace Digital_Museum
             }
         }
 
+        private void textBoxEmail_TextChanged(object sender, EventArgs e)
+        {
+            String compare = textBoxEmail.Text;
+            if (regexEmail.IsMatch(compare))
+            {
+                emailAccepted = true;
+                textBoxEmail.BackColor = Color.LightGreen;
+            }
+            else
+            {
+                emailAccepted = false;
+                textBoxEmail.BackColor = Color.White;
+            }
+        }
+
         void allaccepted()
         {
             
-            if (nameAccepted == false || cardAccepted == false || cardCVV_Accepted == false || comboBoxTypePay.SelectedIndex == -1)
+            if (nameAccepted == false || cardAccepted == false || cardCVV_Accepted == false || comboBoxTypePay.SelectedIndex == -1 || emailAccepted == false)
             {
                 textBoxErrors.Visible = true;
                 //textBoxErrors.Text = " "; //Δεν σβηνει το κείμενο στο κλικ !!!!!!!! 
@@ -113,11 +131,19 @@ namespace Digital_Museum
                 {
                     errorCVV = "•Ο CVV είναι τα τελευταία 4 ψηφία πίσω απο τη κάρτα σας";
                 }
+                if (emailAccepted == false) 
+                {
+                    errorEmail = "•Το email πρέπει να είναι της μορφής example@mail.com";
+                }
                 if (comboBoxTypePay.SelectedIndex == -1)
                 {
                     errorCType = "•Υποχρεωτική επιλογή τύπου κάρτας";
                 }
-                textBoxErrors.AppendText($"{errorName}{Environment.NewLine}{errorCard}{Environment.NewLine}{errorCVV}{Environment.NewLine}{errorCType}");
+                if (textBoxErrors != null)
+                {
+                    textBoxErrors.Clear();
+                }
+                textBoxErrors.Text=($"{errorName}{Environment.NewLine}{errorCard}{Environment.NewLine}{errorCVV}{Environment.NewLine}{errorCType}{Environment.NewLine}{errorEmail}");
             }
             else
             {
@@ -134,8 +160,11 @@ namespace Digital_Museum
         }
 
         private void buttonPayment_Click(object sender, EventArgs e)
-        {  
+        {
+            
             allaccepted();
         }
+
+
     }
 }
