@@ -21,7 +21,7 @@ namespace Digital_Museum
 
         private void FormPayment_Load(object sender, EventArgs e)
         {
-            textBoxCost.Text = $"{totalCost}";
+
         }
     }
 }
