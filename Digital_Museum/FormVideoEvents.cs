@@ -16,5 +16,10 @@ namespace Digital_Museum
         {
             InitializeComponent();
         }
+
+        private void pictureBoxExit_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }

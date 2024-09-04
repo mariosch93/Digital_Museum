@@ -48,10 +48,9 @@
             // 
             this.pictureBoxUnipi.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxUnipi.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxUnipi.Image")));
-            this.pictureBoxUnipi.Location = new System.Drawing.Point(1793, 15);
-            this.pictureBoxUnipi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxUnipi.Location = new System.Drawing.Point(1345, 12);
             this.pictureBoxUnipi.Name = "pictureBoxUnipi";
-            this.pictureBoxUnipi.Size = new System.Drawing.Size(89, 73);
+            this.pictureBoxUnipi.Size = new System.Drawing.Size(67, 59);
             this.pictureBoxUnipi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxUnipi.TabIndex = 413;
             this.pictureBoxUnipi.TabStop = false;
@@ -60,13 +59,13 @@
             // 
             this.pictureBoxExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxExit.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxExit.Image")));
-            this.pictureBoxExit.Location = new System.Drawing.Point(1793, 758);
-            this.pictureBoxExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxExit.Location = new System.Drawing.Point(1345, 616);
             this.pictureBoxExit.Name = "pictureBoxExit";
-            this.pictureBoxExit.Size = new System.Drawing.Size(89, 65);
+            this.pictureBoxExit.Size = new System.Drawing.Size(67, 53);
             this.pictureBoxExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxExit.TabIndex = 414;
             this.pictureBoxExit.TabStop = false;
+            this.pictureBoxExit.Click += new System.EventHandler(this.pictureBoxExit_Click);
             // 
             // panel1
             // 
@@ -75,25 +74,27 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(189, 838);
+            this.panel1.Size = new System.Drawing.Size(142, 681);
             this.panel1.TabIndex = 415;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label1.Location = new System.Drawing.Point(274, 39);
+            this.label1.Location = new System.Drawing.Point(206, 32);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(982, 32);
+            this.label1.Size = new System.Drawing.Size(782, 26);
             this.label1.TabIndex = 416;
             this.label1.Text = "Καλως ήρθατε στην αίθουσα προβολής βιντεοσκοπημένων εκδηλώσεων!";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(280, 186);
+            this.pictureBox1.Location = new System.Drawing.Point(210, 151);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(847, 467);
+            this.pictureBox1.Size = new System.Drawing.Size(635, 379);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 417;
             this.pictureBox1.TabStop = false;
@@ -102,9 +103,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label2.Location = new System.Drawing.Point(274, 128);
+            this.label2.Location = new System.Drawing.Point(206, 104);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(668, 25);
+            this.label2.Size = new System.Drawing.Size(520, 20);
             this.label2.TabIndex = 420;
             this.label2.Text = "Επισκεφτείτε το εστιατόριο-καφέ κάνωντας κλίκ στο κουμπί παραγγελία";
             // 
@@ -112,9 +114,10 @@
             // 
             this.buttonOrder.BackColor = System.Drawing.Color.RosyBrown;
             this.buttonOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.buttonOrder.Location = new System.Drawing.Point(962, 118);
+            this.buttonOrder.Location = new System.Drawing.Point(722, 96);
+            this.buttonOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonOrder.Name = "buttonOrder";
-            this.buttonOrder.Size = new System.Drawing.Size(165, 35);
+            this.buttonOrder.Size = new System.Drawing.Size(124, 28);
             this.buttonOrder.TabIndex = 421;
             this.buttonOrder.Text = "ΠΑΡΑΓΓΕΛΙΑ";
             this.buttonOrder.UseVisualStyleBackColor = false;
@@ -126,18 +129,20 @@
             "Δημήτρης Μητροπάνος \"Τα Λαδάδικα\"",
             "Δημήτρης Μητροπάνος \"Αρχάγγελος\"",
             "Στέλιος Καζαντζίδης \"Υπάρχω\""});
-            this.comboBox1.Location = new System.Drawing.Point(1232, 223);
+            this.comboBox1.Location = new System.Drawing.Point(924, 181);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.Size = new System.Drawing.Size(92, 21);
             this.comboBox1.TabIndex = 422;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label3.Location = new System.Drawing.Point(1197, 186);
+            this.label3.Location = new System.Drawing.Point(898, 151);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(194, 25);
+            this.label3.Size = new System.Drawing.Size(154, 20);
             this.label3.TabIndex = 423;
             this.label3.Text = "Επιλογή τραγουδιού";
             // 
@@ -145,18 +150,19 @@
             // 
             this.buttonPlay.BackColor = System.Drawing.Color.RosyBrown;
             this.buttonPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.buttonPlay.Location = new System.Drawing.Point(1232, 269);
+            this.buttonPlay.Location = new System.Drawing.Point(924, 219);
+            this.buttonPlay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonPlay.Name = "buttonPlay";
-            this.buttonPlay.Size = new System.Drawing.Size(137, 35);
+            this.buttonPlay.Size = new System.Drawing.Size(103, 28);
             this.buttonPlay.TabIndex = 424;
             this.buttonPlay.Text = "PLAY";
             this.buttonPlay.UseVisualStyleBackColor = false;
             // 
             // FormVideoEvents
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1899, 838);
+            this.ClientSize = new System.Drawing.Size(1424, 681);
             this.Controls.Add(this.buttonPlay);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox1);
@@ -167,7 +173,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBoxExit);
             this.Controls.Add(this.pictureBoxUnipi);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormVideoEvents";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormVideoEvents";
