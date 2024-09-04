@@ -2606,9 +2606,9 @@
             // labelConcertInfo
             // 
             this.labelConcertInfo.AutoSize = true;
-            this.labelConcertInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(125)))), ((int)(((byte)(130)))));
+            this.labelConcertInfo.BackColor = System.Drawing.Color.Silver;
             this.labelConcertInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelConcertInfo.Location = new System.Drawing.Point(184, 9);
+            this.labelConcertInfo.Location = new System.Drawing.Point(186, 21);
             this.labelConcertInfo.Name = "labelConcertInfo";
             this.labelConcertInfo.Size = new System.Drawing.Size(1103, 50);
             this.labelConcertInfo.TabIndex = 416;

@@ -98,6 +98,12 @@
     <Compile Include="FormPayment.Designer.cs">
       <DependentUpon>FormPayment.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormVideoEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVideoEvents.Designer.cs">
+      <DependentUpon>FormVideoEvents.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -115,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPayment.resx">
       <DependentUpon>FormPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVideoEvents.resx">
+      <DependentUpon>FormVideoEvents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
