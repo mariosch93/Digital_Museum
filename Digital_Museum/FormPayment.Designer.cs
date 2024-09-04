@@ -262,10 +262,9 @@
             // progressBarPayment
             // 
             this.progressBarPayment.Location = new System.Drawing.Point(25, 436);
-            this.progressBarPayment.MarqueeAnimationSpeed = 5;
             this.progressBarPayment.Name = "progressBarPayment";
             this.progressBarPayment.Size = new System.Drawing.Size(467, 31);
-            this.progressBarPayment.Step = 5;
+            this.progressBarPayment.Step = 1;
             this.progressBarPayment.TabIndex = 424;
             this.progressBarPayment.Visible = false;
             // 

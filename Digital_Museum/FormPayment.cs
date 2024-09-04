@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using static System.Linq.Enumerable;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -139,18 +140,27 @@ namespace Digital_Museum
                 {
                     errorCType = "•Υποχρεωτική επιλογή τύπου κάρτας";
                 }
-                if (textBoxErrors != null)
-                {
-                    textBoxErrors.Clear();
-                }
-                textBoxErrors.Text=($"{errorName}{Environment.NewLine}{errorCard}{Environment.NewLine}{errorCVV}{Environment.NewLine}{errorCType}{Environment.NewLine}{errorEmail}");
+                textBoxErrors.Text= $"{errorName}{Environment.NewLine}{errorCard}{Environment.NewLine}{errorCVV}{Environment.NewLine}{errorCType}{Environment.NewLine}{errorEmail}";
             }
             else
             {
                 textBoxErrors.Visible = false;
                 buttonPayment.FlatAppearance.BorderColor = Color.Green;
                 progressBarPayment.Visible = true;
-                /*  progressBarPayment.Value = 100;
+                progressBarPayment.Value = 100;
+                /*
+                foreach (int i in Range(1, 100))
+                {
+                    progressBarPayment.Value += i;
+                    if (progressBarPayment.Value == 99)
+                    {
+                        progressBarPayment.Visible = false;
+                        MessageBox.Show("Επιτυχής πληρωμή, Θα λάβετε τα στοιχεία παραγγελίας στο email σας");
+                        break;
+                    }
+                }
+
+                    progressBarPayment.Value = 100;
                     MessageBox.Show("Επιτυχής πληρωμή, Θα λάβετε τα στοιχεία παραγγελίας στο email σας"); 
                     this.Close();
                     //Θέλουμε να εμφανίζεται στο τέλος του progressbar
