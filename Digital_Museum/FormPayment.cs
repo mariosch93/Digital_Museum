@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Digital_Museum
+{
+    public partial class FormPayment : Form
+    {
+        int totalCost;
+        public FormPayment(int totalCost)
+        {
+            InitializeComponent();
+            this.totalCost = totalCost;
+        }
+
+        private void FormPayment_Load(object sender, EventArgs e)
+        {
+            textBoxCost.Text = $"{totalCost}";
+        }
+    }
+}

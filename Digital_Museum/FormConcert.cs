@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Digital_Museum
 {
@@ -172,6 +173,18 @@ namespace Digital_Museum
         private void buttonBuyTickets_MouseLeave(object sender, EventArgs e)
         {
             buttonBuyTickets.BackColor = Color.White;
+        }
+
+        private void FormConcert_Load(object sender, EventArgs e)
+        {
+            richTextBoxTotal.Text = "Εδώ θα σας εμφανιστεί η τιμή των εισητηρίων σας";
+            textBoxSeatInfo.Text = "Κόστος Θέσεων";
+        }
+
+        private void buttonBuyTickets_Click(object sender, EventArgs e)
+        {
+            FormPayment formPayment = new FormPayment(totalCost);
+            formPayment.ShowDialog();
         }
     }
 }
