@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPayment));
             this.textBoxCost = new System.Windows.Forms.TextBox();
             this.labelPay = new System.Windows.Forms.Label();
@@ -50,6 +51,7 @@
             this.progressBarPayment = new System.Windows.Forms.ProgressBar();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.labelEmail = new System.Windows.Forms.Label();
+            this.timerProgressbar = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnipi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -289,6 +291,11 @@
             this.labelEmail.TabIndex = 425;
             this.labelEmail.Text = "Συμπλήρωση email:";
             // 
+            // timerProgressbar
+            // 
+            this.timerProgressbar.Interval = 50;
+            this.timerProgressbar.Tick += new System.EventHandler(this.timerProgressbar_Tick);
+            // 
             // FormPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -350,5 +357,6 @@
         private System.Windows.Forms.ProgressBar progressBarPayment;
         private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.Label labelEmail;
+        private System.Windows.Forms.Timer timerProgressbar;
     }
 }

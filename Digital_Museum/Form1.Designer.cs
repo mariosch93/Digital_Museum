@@ -157,6 +157,7 @@
             this.buttonEvents.TabIndex = 7;
             this.buttonEvents.Text = "            Αίθουσες                  Εκδηλώσεων";
             this.buttonEvents.UseVisualStyleBackColor = false;
+            this.buttonEvents.Click += new System.EventHandler(this.buttonEvents_Click);
             // 
             // buttonShows
             // 

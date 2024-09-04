@@ -115,11 +115,17 @@ namespace Digital_Museum
 
         void allaccepted()
         {
-            
+            textBoxErrors.Clear();
+            errorName = string.Empty;
+            errorCard = string.Empty;
+            errorCVV = string.Empty;
+            errorCType = string.Empty;
+            errorEmail = string.Empty;
+
             if (nameAccepted == false || cardAccepted == false || cardCVV_Accepted == false || comboBoxTypePay.SelectedIndex == -1 || emailAccepted == false)
             {
                 textBoxErrors.Visible = true;
-                //textBoxErrors.Text = " "; //Δεν σβηνει το κείμενο στο κλικ !!!!!!!! 
+                
                 if (nameAccepted == false)
                 {
                     errorName = "•Το όνομα σας μπορεί να περιέχει μόνο γράμματα";
@@ -148,30 +154,29 @@ namespace Digital_Museum
                 buttonPayment.FlatAppearance.BorderColor = Color.Green;
                 progressBarPayment.Visible = true;
                 progressBarPayment.Value = 100;
-                /*
-                foreach (int i in Range(1, 100))
-                {
-                    progressBarPayment.Value += i;
-                    if (progressBarPayment.Value == 99)
-                    {
-                        progressBarPayment.Visible = false;
-                        MessageBox.Show("Επιτυχής πληρωμή, Θα λάβετε τα στοιχεία παραγγελίας στο email σας");
-                        break;
-                    }
-                }
+            
+                timerProgressbar = new Timer();
+                timerProgressbar.Tick += new EventHandler(timerProgressbar_Tick);
+                timerProgressbar.Start();
+            }
+        }
 
-                    progressBarPayment.Value = 100;
-                    MessageBox.Show("Επιτυχής πληρωμή, Θα λάβετε τα στοιχεία παραγγελίας στο email σας"); 
-                    this.Close();
-                    //Θέλουμε να εμφανίζεται στο τέλος του progressbar
-                */
-
+        private void timerProgressbar_Tick(object sender, EventArgs e)
+        {
+            if (progressBarPayment.Value < 100)
+            {
+                progressBarPayment.Value += 1;
+            }
+            else
+            {
+                timerProgressbar.Stop();
+                MessageBox.Show("Επιτυχής πληρωμή, Θα λάβετε τα στοιχεία παραγγελίας στο email σας, Σας ευχαριστούμε για τη προτίμηση!❤️❤️❤️");
+                this.Close();
             }
         }
 
         private void buttonPayment_Click(object sender, EventArgs e)
         {
-            
             allaccepted();
         }
 

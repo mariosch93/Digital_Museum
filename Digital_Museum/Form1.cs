@@ -163,5 +163,11 @@ namespace Digital_Museum
             FormConcert formConcert = new FormConcert();
             formConcert.ShowDialog();
         }
+
+        private void buttonEvents_Click(object sender, EventArgs e)
+        {
+            FormVideoEvents formVideoEvents = new FormVideoEvents();
+            formVideoEvents.ShowDialog();
+        }
     }
 }
