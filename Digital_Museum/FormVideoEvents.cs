@@ -13,7 +13,10 @@ namespace Digital_Museum
 {
     public partial class FormVideoEvents : Form
     {
+        LoginInfo loginInfo;
+        bool buttonClicked = false;
         private int currentIndex = 0;
+
         String[] linkSRC = new string[]
         { "https://www.youtube.com/embed/fIPfPJWg3gA?si=lcLRm7VGTvIHGNTV",
           "https://www.youtube.com/embed/EmnjB5gayMU?si=pMaEe8zkCBQCCM6h",
@@ -79,6 +82,25 @@ namespace Digital_Museum
                 currentIndex = 0;
             }
             LoadVideo(currentIndex);
+        }
+
+        private void buttonOrder_Click(object sender, EventArgs e)
+        {
+            if (buttonClicked == false) {
+                FormOnlineOrder onlineOrder = new FormOnlineOrder();
+                onlineOrder.TopLevel = false;
+                panelOnlineOrder.Visible = true;
+                panelOnlineOrder.Controls.Add(onlineOrder);
+                onlineOrder.BringToFront();
+                onlineOrder.Show();
+                buttonClicked = true;
+            }
+            else
+            {
+                panelOnlineOrder.Visible=false;
+                buttonClicked = false;
+            }
+            
         }
     }
 }

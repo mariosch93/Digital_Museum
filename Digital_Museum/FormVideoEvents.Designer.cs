@@ -39,7 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.buttonPlay = new System.Windows.Forms.Button();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelOnlineOrder = new System.Windows.Forms.Panel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
@@ -106,15 +106,16 @@
             // 
             // buttonOrder
             // 
-            this.buttonOrder.BackColor = System.Drawing.Color.RosyBrown;
-            this.buttonOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.buttonOrder.Location = new System.Drawing.Point(694, 636);
+            this.buttonOrder.BackColor = System.Drawing.Color.Transparent;
+            this.buttonOrder.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.buttonOrder.Location = new System.Drawing.Point(677, 636);
             this.buttonOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonOrder.Name = "buttonOrder";
-            this.buttonOrder.Size = new System.Drawing.Size(124, 28);
+            this.buttonOrder.Size = new System.Drawing.Size(137, 28);
             this.buttonOrder.TabIndex = 421;
-            this.buttonOrder.Text = "ΠΑΡΑΓΓΕΛΙΑ";
+            this.buttonOrder.Text = "Παράγγειλε τώρα";
             this.buttonOrder.UseVisualStyleBackColor = false;
+            this.buttonOrder.Click += new System.EventHandler(this.buttonOrder_Click);
             // 
             // comboBox1
             // 
@@ -142,7 +143,7 @@
             // 
             // buttonPlay
             // 
-            this.buttonPlay.BackColor = System.Drawing.Color.RosyBrown;
+            this.buttonPlay.BackColor = System.Drawing.Color.Transparent;
             this.buttonPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.buttonPlay.Location = new System.Drawing.Point(1048, 522);
             this.buttonPlay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -160,13 +161,14 @@
             this.webBrowser1.Size = new System.Drawing.Size(687, 249);
             this.webBrowser1.TabIndex = 426;
             // 
-            // panel2
+            // panelOnlineOrder
             // 
-            this.panel2.BackColor = System.Drawing.Color.Red;
-            this.panel2.Location = new System.Drawing.Point(1122, 86);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(290, 524);
-            this.panel2.TabIndex = 427;
+            this.panelOnlineOrder.BackColor = System.Drawing.Color.Transparent;
+            this.panelOnlineOrder.Location = new System.Drawing.Point(1122, 77);
+            this.panelOnlineOrder.Name = "panelOnlineOrder";
+            this.panelOnlineOrder.Size = new System.Drawing.Size(290, 524);
+            this.panelOnlineOrder.TabIndex = 427;
+            this.panelOnlineOrder.Visible = false;
             // 
             // checkBox1
             // 
@@ -224,10 +226,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1424, 681);
+            this.ControlBox = false;
             this.Controls.Add(this.buttonPrevious);
             this.Controls.Add(this.buttonNext);
             this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panelOnlineOrder);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.checkBox1);
@@ -262,7 +265,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button buttonPlay;
         private System.Windows.Forms.WebBrowser webBrowser1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelOnlineOrder;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
