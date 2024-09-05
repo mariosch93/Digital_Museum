@@ -102,5 +102,10 @@ namespace Digital_Museum
             }
             
         }
+
+        private void FormVideoEvents_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
