@@ -12,6 +12,11 @@ namespace Digital_Museum
 {
     public partial class FormOnlineOrder : Form
     {
+        int totalCost;
+        int[] foods = { 0, 1, 2, 3, 4 };
+        int[] drinks = { 0, 1, 2, 3, 4 };
+
+
         public FormOnlineOrder()
         {
             InitializeComponent();
