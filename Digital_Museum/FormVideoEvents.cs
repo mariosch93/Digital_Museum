@@ -13,7 +13,6 @@ namespace Digital_Museum
 {
     public partial class FormVideoEvents : Form
     {
-        LoginInfo loginInfo;
         bool buttonClicked = false;
         private int currentIndex = 0;
 
