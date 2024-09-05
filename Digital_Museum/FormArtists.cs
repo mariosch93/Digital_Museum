@@ -47,6 +47,12 @@ namespace Digital_Museum
         {
             richTextBoxInfo.BackColor = Color.White;
         }
+
+        private void buttonKazatzidis_Click(object sender, EventArgs e)
+        {
+            FormKazatzidis formKazatzidis = new FormKazatzidis();
+            formKazatzidis.ShowDialog();
+        }
     }
     
 }
