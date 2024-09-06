@@ -38,7 +38,6 @@
             this.panelOnlineOrder = new System.Windows.Forms.Panel();
             this.buttonNext = new System.Windows.Forms.Button();
             this.buttonPrevious = new System.Windows.Forms.Button();
-            this.MessageGianni = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnipi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
             this.SuspendLayout();
@@ -141,16 +140,6 @@
             this.buttonPrevious.UseVisualStyleBackColor = true;
             this.buttonPrevious.Click += new System.EventHandler(this.buttonPrevious_Click);
             // 
-            // MessageGianni
-            // 
-            this.MessageGianni.AutoSize = true;
-            this.MessageGianni.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MessageGianni.Location = new System.Drawing.Point(276, 468);
-            this.MessageGianni.Name = "MessageGianni";
-            this.MessageGianni.Size = new System.Drawing.Size(686, 150);
-            this.MessageGianni.TabIndex = 433;
-            this.MessageGianni.Text = resources.GetString("MessageGianni.Text");
-            // 
             // FormVideoEvents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -158,7 +147,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1424, 681);
             this.ControlBox = false;
-            this.Controls.Add(this.MessageGianni);
             this.Controls.Add(this.buttonPrevious);
             this.Controls.Add(this.buttonNext);
             this.Controls.Add(this.panelOnlineOrder);
@@ -190,6 +178,5 @@
         private System.Windows.Forms.Panel panelOnlineOrder;
         private System.Windows.Forms.Button buttonNext;
         private System.Windows.Forms.Button buttonPrevious;
-        private System.Windows.Forms.Label MessageGianni;
     }
 }
