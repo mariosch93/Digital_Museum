@@ -148,6 +148,7 @@
             this.richTextBox2.Location = new System.Drawing.Point(1075, 130);
             this.richTextBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.ReadOnly = true;
             this.richTextBox2.Size = new System.Drawing.Size(578, 348);
             this.richTextBox2.TabIndex = 25;
             this.richTextBox2.Text = "1.  Υπάρχω\n2.  Ζιγκουάλα\n3.  Κάτω απο το πουκάμισό μου\n4.  Η ζωή μου όλη\n5.  Το Σ" +
