@@ -54,6 +54,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonNewLogin = new System.Windows.Forms.Button();
             this.labelLegend = new System.Windows.Forms.Label();
+            this.buttonCalendar = new System.Windows.Forms.Button();
+            this.monthCalendarWork = new System.Windows.Forms.MonthCalendar();
+            this.richTextBoxCalendar = new System.Windows.Forms.RichTextBox();
             this.Sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
@@ -71,6 +74,7 @@
             this.Sidebar.Controls.Add(this.buttonEvents);
             this.Sidebar.Controls.Add(this.buttonShows);
             this.Sidebar.Controls.Add(this.buttonConcert);
+            this.Sidebar.Controls.Add(this.buttonCalendar);
             this.Sidebar.Location = new System.Drawing.Point(0, 0);
             this.Sidebar.Margin = new System.Windows.Forms.Padding(0);
             this.Sidebar.MaximumSize = new System.Drawing.Size(142, 681);
@@ -370,12 +374,52 @@
             this.labelLegend.Text = "Απολαύστε την εμπειρία περιήγησης σε ένα υπερσύγχρονο \r\n              ψηφιακό μου" +
     "σείο Μουσικής & Καλλιτεχνών";
             // 
+            // buttonCalendar
+            // 
+            this.buttonCalendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.buttonCalendar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonCalendar.FlatAppearance.BorderSize = 0;
+            this.buttonCalendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCalendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCalendar.ForeColor = System.Drawing.Color.White;
+            this.buttonCalendar.Image = ((System.Drawing.Image)(resources.GetObject("buttonCalendar.Image")));
+            this.buttonCalendar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCalendar.Location = new System.Drawing.Point(3, 522);
+            this.buttonCalendar.Name = "buttonCalendar";
+            this.buttonCalendar.Size = new System.Drawing.Size(178, 55);
+            this.buttonCalendar.TabIndex = 14;
+            this.buttonCalendar.Text = "Ημερολόγιο\r\nΕργασίας\r\n";
+            this.buttonCalendar.UseVisualStyleBackColor = false;
+            this.buttonCalendar.Visible = false;
+            this.buttonCalendar.Click += new System.EventHandler(this.buttonCalendar_Click);
+            // 
+            // monthCalendarWork
+            // 
+            this.monthCalendarWork.CalendarDimensions = new System.Drawing.Size(2, 2);
+            this.monthCalendarWork.Location = new System.Drawing.Point(151, 358);
+            this.monthCalendarWork.Name = "monthCalendarWork";
+            this.monthCalendarWork.TabIndex = 14;
+            this.monthCalendarWork.Visible = false;
+            this.monthCalendarWork.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendarWork_DateChanged);
+            // 
+            // richTextBoxCalendar
+            // 
+            this.richTextBoxCalendar.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBoxCalendar.Location = new System.Drawing.Point(151, 303);
+            this.richTextBoxCalendar.Name = "richTextBoxCalendar";
+            this.richTextBoxCalendar.Size = new System.Drawing.Size(458, 48);
+            this.richTextBoxCalendar.TabIndex = 15;
+            this.richTextBoxCalendar.Text = "";
+            this.richTextBoxCalendar.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1424, 681);
             this.ControlBox = false;
+            this.Controls.Add(this.richTextBoxCalendar);
+            this.Controls.Add(this.monthCalendarWork);
             this.Controls.Add(this.labelLegend);
             this.Controls.Add(this.buttonNewLogin);
             this.Controls.Add(this.panelLogin);
@@ -425,6 +469,9 @@
         private System.Windows.Forms.Label labelerror;
         private System.Windows.Forms.Button buttonCancelLogin;
         private System.Windows.Forms.Label labelLegend;
+        private System.Windows.Forms.Button buttonCalendar;
+        private System.Windows.Forms.MonthCalendar monthCalendarWork;
+        private System.Windows.Forms.RichTextBox richTextBoxCalendar;
     }
 }
 

@@ -14,6 +14,7 @@ namespace Digital_Museum
     public partial class Form1 : Form
     {
         bool sidebarExpand;
+        bool calendarClicked = false;
         LoginInfo loginInfo;
         string connectionString = "Data source=digital_museum.db;Version=3;";
         SQLiteConnection connection;
@@ -24,6 +25,30 @@ namespace Digital_Museum
             connection = new SQLiteConnection(connectionString);
         }
 
+        Dictionary<DateTime, string> CalendarDates = new Dictionary<DateTime, string>()
+        {
+            { new DateTime(2024, 11, 1), "Ωράριο Εργασίας: 9:00 - 17:00 "},
+            { new DateTime(2024, 11, 4), "Ωράριο Εργασίας: 9:00 - 17:00 "},
+            { new DateTime(2024, 11, 5), "Ωράριο Εργασίας: 9:00 - 17:00 "},
+            { new DateTime(2024, 11, 6), "Ωράριο Εργασίας: 15:00 - 23:00 "},
+            { new DateTime(2024, 11, 7), "Ωράριο Εργασίας: 15:00 - 23:00 "},
+            { new DateTime(2024, 11, 8), "Ωράριο Εργασίας: 15:00 - 23:00 "},
+            { new DateTime(2024, 11, 11), "Ωράριο Εργασίας: 9:00 - 17:00 "},
+            { new DateTime(2024, 11, 12), "Ωράριο Εργασίας: 9:00 - 17:00 "},
+            { new DateTime(2024, 11, 13), "Ωράριο Εργασίας: 15:00 - 23:00 "},
+            { new DateTime(2024, 11, 14), "Ωράριο Εργασίας: 15:00 - 23:00 "},
+            { new DateTime(2024, 11, 15), "Ωράριο Εργασίας: 15:00 - 23:00 "},
+            { new DateTime(2024, 11, 18), "Ωράριο Εργασίας: 9:00 - 17:00 "},
+            { new DateTime(2024, 11, 19), "Ωράριο Εργασίας: 15:00 - 23:00 "},
+            { new DateTime(2024, 11, 20), "Ωράριο Εργασίας: 9:00 - 17:00 "},
+            { new DateTime(2024, 11, 21), "Ωράριο Εργασίας: 9:00 - 17:00 "},
+            { new DateTime(2024, 11, 22), "Ωράριο Εργασίας: 15:00 - 23:00 "},
+            { new DateTime(2024, 11, 25), "Ωράριο Εργασίας: 15:00 - 23:00 "},
+            { new DateTime(2024, 11, 26), "Ωράριο Εργασίας: 9:00 - 17:00 "},
+            { new DateTime(2024, 11, 27), "Ωράριο Εργασίας: 9:00 - 17:00 "},
+            { new DateTime(2024, 12, 25), "25 Δεκεμβρίου, Χριστούγεννα" },
+        };
+
         public Form1(LoginInfo loginInfo)
         {
             InitializeComponent();
@@ -32,6 +57,8 @@ namespace Digital_Museum
             {
                 usernameLabel.Visible = true;
                 usernameLabel.Text = "Καλωσήρθες " + loginInfo.UserName;
+                buttonCalendar.Visible = true;
+                monthCalendarWork.BoldedDates = CalendarDates.Keys.ToArray();
             }
         }
 
@@ -173,6 +200,34 @@ namespace Digital_Museum
         {
             FormPrivateSpace formPrivateSpace = new FormPrivateSpace(loginInfo);
             formPrivateSpace.ShowDialog();
+        }
+
+        private void buttonCalendar_Click(object sender, EventArgs e)
+        {
+            if (calendarClicked == false)
+            {
+                monthCalendarWork.Visible = true;
+                richTextBoxCalendar.Visible = true;
+                calendarClicked = true;
+            }
+            else
+            {
+                monthCalendarWork.Visible = false;
+                richTextBoxCalendar.Visible = false;
+                calendarClicked = false;
+            }
+        }
+
+        private void monthCalendarWork_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            if (CalendarDates.TryGetValue(e.Start, out var description))
+            {
+                richTextBoxCalendar.Text = description;
+            }
+            else
+            {
+                richTextBoxCalendar.Text = "";
+            }
         }
     }
 }
