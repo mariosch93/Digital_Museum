@@ -396,7 +396,8 @@
             // monthCalendarWork
             // 
             this.monthCalendarWork.CalendarDimensions = new System.Drawing.Size(2, 2);
-            this.monthCalendarWork.Location = new System.Drawing.Point(151, 358);
+            this.monthCalendarWork.Location = new System.Drawing.Point(151, 363);
+            this.monthCalendarWork.Margin = new System.Windows.Forms.Padding(1);
             this.monthCalendarWork.Name = "monthCalendarWork";
             this.monthCalendarWork.TabIndex = 14;
             this.monthCalendarWork.Visible = false;
@@ -405,7 +406,8 @@
             // richTextBoxCalendar
             // 
             this.richTextBoxCalendar.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxCalendar.Location = new System.Drawing.Point(151, 303);
+            this.richTextBoxCalendar.Location = new System.Drawing.Point(151, 314);
+            this.richTextBoxCalendar.Margin = new System.Windows.Forms.Padding(0);
             this.richTextBoxCalendar.Name = "richTextBoxCalendar";
             this.richTextBoxCalendar.Size = new System.Drawing.Size(458, 48);
             this.richTextBoxCalendar.TabIndex = 15;
