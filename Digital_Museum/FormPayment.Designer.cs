@@ -61,6 +61,7 @@
             // 
             this.textBoxCost.Location = new System.Drawing.Point(217, 310);
             this.textBoxCost.Name = "textBoxCost";
+            this.textBoxCost.ReadOnly = true;
             this.textBoxCost.Size = new System.Drawing.Size(144, 20);
             this.textBoxCost.TabIndex = 0;
             // 
