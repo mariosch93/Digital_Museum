@@ -40,6 +40,7 @@
             this.buttonPlayRandom = new System.Windows.Forms.Button();
             this.buttonStop = new System.Windows.Forms.Button();
             this.comboBoxPlaylist = new System.Windows.Forms.ComboBox();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -177,12 +178,20 @@
             this.comboBoxPlaylist.Visible = false;
             this.comboBoxPlaylist.SelectedIndexChanged += new System.EventHandler(this.comboBoxPlaylist_SelectedIndexChanged);
             // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Location = new System.Drawing.Point(21, 41);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(17, 80);
+            this.vScrollBar1.TabIndex = 13;
+            // 
             // FormConsole
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(654, 372);
             this.ControlBox = false;
+            this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.comboBoxPlaylist);
             this.Controls.Add(this.buttonStop);
             this.Controls.Add(this.buttonPlayRandom);
@@ -215,5 +224,6 @@
         private System.Windows.Forms.Button buttonPlayRandom;
         private System.Windows.Forms.Button buttonStop;
         private System.Windows.Forms.ComboBox comboBoxPlaylist;
+        private System.Windows.Forms.VScrollBar vScrollBar1;
     }
 }

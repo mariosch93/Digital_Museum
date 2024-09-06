@@ -80,10 +80,5 @@ namespace Digital_Museum
             LoadMusic(randomNum);
         }
 
-        private void trackBarVolume_Scroll(object sender, EventArgs e)
-        {
-            int volume = trackBarVolume.Value;
-         
-        }
     }
 }
