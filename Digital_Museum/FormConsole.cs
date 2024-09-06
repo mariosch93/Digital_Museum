@@ -20,6 +20,7 @@ namespace Digital_Museum
         bool playlistClicked = false;
         private int currentIndex = 0;
         SoundPlayer player = new SoundPlayer();
+        SoundPlayer playerKaraoke = new SoundPlayer("./musicKaraoke/karaoke.wav");
         Random random = new Random();
         String[] music = new string[]
         {
@@ -72,6 +73,7 @@ namespace Digital_Museum
         private void buttonStop_Click(object sender, EventArgs e)
         {
             player.Stop();
+            playerKaraoke.Stop();
         }
 
         private void buttonPlayRandom_Click(object sender, EventArgs e)
@@ -80,5 +82,9 @@ namespace Digital_Museum
             LoadMusic(randomNum);
         }
 
+        private void buttonKaraoke_Click(object sender, EventArgs e)
+        {
+            playerKaraoke.Play();
+        }
     }
 }
