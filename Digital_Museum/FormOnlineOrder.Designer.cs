@@ -49,12 +49,32 @@
             this.labelInfo3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panelFoods = new System.Windows.Forms.Panel();
-            this.checkBoxSalad = new System.Windows.Forms.CheckBox();
-            this.labelValueF = new System.Windows.Forms.Label();
-            this.labelValueS = new System.Windows.Forms.Label();
             this.labelValueSa = new System.Windows.Forms.Label();
+            this.labelValueS = new System.Windows.Forms.Label();
+            this.labelValueF = new System.Windows.Forms.Label();
+            this.checkBoxSalad = new System.Windows.Forms.CheckBox();
+            this.panelDrinks = new System.Windows.Forms.Panel();
+            this.labelValueCola = new System.Windows.Forms.Label();
+            this.labelValueFr = new System.Windows.Forms.Label();
+            this.labelValueJ = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.buttonPlusCola = new System.Windows.Forms.Button();
+            this.buttonMinusCola = new System.Windows.Forms.Button();
+            this.buttonPlusJ = new System.Windows.Forms.Button();
+            this.buttonMinusJ = new System.Windows.Forms.Button();
+            this.buttonPlusFr = new System.Windows.Forms.Button();
+            this.buttonMinusFr = new System.Windows.Forms.Button();
+            this.labelValueCap = new System.Windows.Forms.Label();
+            this.buttonPlusCap = new System.Windows.Forms.Button();
+            this.buttonMinusCap = new System.Windows.Forms.Button();
+            this.checkBoxCola = new System.Windows.Forms.CheckBox();
+            this.checkBoxJ = new System.Windows.Forms.CheckBox();
+            this.checkBoxFreddo = new System.Windows.Forms.CheckBox();
+            this.checkBoxCappuccino = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelFoods.SuspendLayout();
+            this.panelDrinks.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -71,27 +91,28 @@
             // 
             this.labelHello.AutoSize = true;
             this.labelHello.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHello.Location = new System.Drawing.Point(12, 9);
+            this.labelHello.Location = new System.Drawing.Point(5, 9);
             this.labelHello.Name = "labelHello";
-            this.labelHello.Size = new System.Drawing.Size(175, 32);
+            this.labelHello.Size = new System.Drawing.Size(0, 16);
             this.labelHello.TabIndex = 1;
-            this.labelHello.Text = "Γεια σας! Πως θα μπορούσα \r\nνα σας εξυπηρετήσω?";
             // 
             // comboBoxFoods
             // 
             this.comboBoxFoods.AutoCompleteCustomSource.AddRange(new string[] {
             "Φαγητό",
             "Ροφήματα"});
+            this.comboBoxFoods.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBoxFoods.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxFoods.FormattingEnabled = true;
             this.comboBoxFoods.Items.AddRange(new object[] {
             "Φαγητό ",
             "Ροφήματα"});
-            this.comboBoxFoods.Location = new System.Drawing.Point(12, 53);
+            this.comboBoxFoods.Location = new System.Drawing.Point(3, 69);
             this.comboBoxFoods.Name = "comboBoxFoods";
             this.comboBoxFoods.Size = new System.Drawing.Size(137, 23);
             this.comboBoxFoods.TabIndex = 2;
             this.comboBoxFoods.Text = "Επέλεξε κατηγορία";
+            this.comboBoxFoods.SelectedIndexChanged += new System.EventHandler(this.comboBoxFoods_SelectedIndexChanged);
             // 
             // buttonPayment
             // 
@@ -102,7 +123,7 @@
             this.buttonPayment.ForeColor = System.Drawing.Color.White;
             this.buttonPayment.Image = ((System.Drawing.Image)(resources.GetObject("buttonPayment.Image")));
             this.buttonPayment.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonPayment.Location = new System.Drawing.Point(172, 390);
+            this.buttonPayment.Location = new System.Drawing.Point(169, 390);
             this.buttonPayment.Name = "buttonPayment";
             this.buttonPayment.Size = new System.Drawing.Size(101, 83);
             this.buttonPayment.TabIndex = 4;
@@ -114,9 +135,9 @@
             // richTextBoxTotal
             // 
             this.richTextBoxTotal.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxTotal.Location = new System.Drawing.Point(12, 390);
+            this.richTextBoxTotal.Location = new System.Drawing.Point(3, 390);
             this.richTextBoxTotal.Name = "richTextBoxTotal";
-            this.richTextBoxTotal.Size = new System.Drawing.Size(158, 83);
+            this.richTextBoxTotal.Size = new System.Drawing.Size(160, 83);
             this.richTextBoxTotal.TabIndex = 5;
             this.richTextBoxTotal.Text = " ";
             // 
@@ -142,9 +163,9 @@
             this.checkBoxFries.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.checkBoxFries.Location = new System.Drawing.Point(12, 156);
             this.checkBoxFries.Name = "checkBoxFries";
-            this.checkBoxFries.Size = new System.Drawing.Size(120, 32);
+            this.checkBoxFries.Size = new System.Drawing.Size(113, 32);
             this.checkBoxFries.TabIndex = 2;
-            this.checkBoxFries.Text = "           Fries: 15€";
+            this.checkBoxFries.Text = "           Fries: 6€";
             this.checkBoxFries.UseVisualStyleBackColor = true;
             this.checkBoxFries.CheckedChanged += new System.EventHandler(this.checkBoxFries_CheckedChanged);
             // 
@@ -156,9 +177,9 @@
             this.checkBoxSandwitch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.checkBoxSandwitch.Location = new System.Drawing.Point(12, 203);
             this.checkBoxSandwitch.Name = "checkBoxSandwitch";
-            this.checkBoxSandwitch.Size = new System.Drawing.Size(152, 32);
+            this.checkBoxSandwitch.Size = new System.Drawing.Size(145, 32);
             this.checkBoxSandwitch.TabIndex = 3;
-            this.checkBoxSandwitch.Text = "           Sandwitch: 15€";
+            this.checkBoxSandwitch.Text = "           Sandwitch: 8€";
             this.checkBoxSandwitch.UseVisualStyleBackColor = true;
             this.checkBoxSandwitch.CheckedChanged += new System.EventHandler(this.checkBoxSandwitch_CheckedChanged);
             // 
@@ -299,10 +320,38 @@
             this.panelFoods.Controls.Add(this.checkBoxFries);
             this.panelFoods.Controls.Add(this.checkBoxSalad);
             this.panelFoods.Controls.Add(this.checkBoxBurger);
-            this.panelFoods.Location = new System.Drawing.Point(3, 82);
+            this.panelFoods.Location = new System.Drawing.Point(3, 98);
             this.panelFoods.Name = "panelFoods";
-            this.panelFoods.Size = new System.Drawing.Size(270, 302);
+            this.panelFoods.Size = new System.Drawing.Size(270, 286);
             this.panelFoods.TabIndex = 3;
+            this.panelFoods.Visible = false;
+            // 
+            // labelValueSa
+            // 
+            this.labelValueSa.AutoSize = true;
+            this.labelValueSa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValueSa.Location = new System.Drawing.Point(206, 208);
+            this.labelValueSa.Name = "labelValueSa";
+            this.labelValueSa.Size = new System.Drawing.Size(0, 16);
+            this.labelValueSa.TabIndex = 25;
+            // 
+            // labelValueS
+            // 
+            this.labelValueS.AutoSize = true;
+            this.labelValueS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValueS.Location = new System.Drawing.Point(206, 110);
+            this.labelValueS.Name = "labelValueS";
+            this.labelValueS.Size = new System.Drawing.Size(0, 16);
+            this.labelValueS.TabIndex = 24;
+            // 
+            // labelValueF
+            // 
+            this.labelValueF.AutoSize = true;
+            this.labelValueF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValueF.Location = new System.Drawing.Point(206, 161);
+            this.labelValueF.Name = "labelValueF";
+            this.labelValueF.Size = new System.Drawing.Size(0, 16);
+            this.labelValueF.TabIndex = 23;
             // 
             // checkBoxSalad
             // 
@@ -314,36 +363,235 @@
             this.checkBoxSalad.Name = "checkBoxSalad";
             this.checkBoxSalad.Size = new System.Drawing.Size(123, 32);
             this.checkBoxSalad.TabIndex = 1;
-            this.checkBoxSalad.Text = "           Salad: 15$";
+            this.checkBoxSalad.Text = "           Salad: 10€";
             this.checkBoxSalad.UseVisualStyleBackColor = true;
             this.checkBoxSalad.CheckedChanged += new System.EventHandler(this.checkBoxSalad_CheckedChanged);
             // 
-            // labelValueF
+            // panelDrinks
             // 
-            this.labelValueF.AutoSize = true;
-            this.labelValueF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelValueF.Location = new System.Drawing.Point(206, 161);
-            this.labelValueF.Name = "labelValueF";
-            this.labelValueF.Size = new System.Drawing.Size(0, 16);
-            this.labelValueF.TabIndex = 23;
+            this.panelDrinks.Controls.Add(this.labelValueCola);
+            this.panelDrinks.Controls.Add(this.labelValueFr);
+            this.panelDrinks.Controls.Add(this.labelValueJ);
+            this.panelDrinks.Controls.Add(this.label5);
+            this.panelDrinks.Controls.Add(this.label6);
+            this.panelDrinks.Controls.Add(this.buttonPlusCola);
+            this.panelDrinks.Controls.Add(this.buttonMinusCola);
+            this.panelDrinks.Controls.Add(this.buttonPlusJ);
+            this.panelDrinks.Controls.Add(this.buttonMinusJ);
+            this.panelDrinks.Controls.Add(this.buttonPlusFr);
+            this.panelDrinks.Controls.Add(this.buttonMinusFr);
+            this.panelDrinks.Controls.Add(this.labelValueCap);
+            this.panelDrinks.Controls.Add(this.buttonPlusCap);
+            this.panelDrinks.Controls.Add(this.buttonMinusCap);
+            this.panelDrinks.Controls.Add(this.checkBoxCola);
+            this.panelDrinks.Controls.Add(this.checkBoxJ);
+            this.panelDrinks.Controls.Add(this.checkBoxFreddo);
+            this.panelDrinks.Controls.Add(this.checkBoxCappuccino);
+            this.panelDrinks.Location = new System.Drawing.Point(3, 98);
+            this.panelDrinks.Name = "panelDrinks";
+            this.panelDrinks.Size = new System.Drawing.Size(270, 286);
+            this.panelDrinks.TabIndex = 6;
+            this.panelDrinks.Visible = false;
             // 
-            // labelValueS
+            // labelValueCola
             // 
-            this.labelValueS.AutoSize = true;
-            this.labelValueS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelValueS.Location = new System.Drawing.Point(206, 110);
-            this.labelValueS.Name = "labelValueS";
-            this.labelValueS.Size = new System.Drawing.Size(0, 16);
-            this.labelValueS.TabIndex = 24;
+            this.labelValueCola.AutoSize = true;
+            this.labelValueCola.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValueCola.Location = new System.Drawing.Point(221, 208);
+            this.labelValueCola.Name = "labelValueCola";
+            this.labelValueCola.Size = new System.Drawing.Size(0, 16);
+            this.labelValueCola.TabIndex = 25;
             // 
-            // labelValueSa
+            // labelValueFr
             // 
-            this.labelValueSa.AutoSize = true;
-            this.labelValueSa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelValueSa.Location = new System.Drawing.Point(206, 208);
-            this.labelValueSa.Name = "labelValueSa";
-            this.labelValueSa.Size = new System.Drawing.Size(0, 16);
-            this.labelValueSa.TabIndex = 25;
+            this.labelValueFr.AutoSize = true;
+            this.labelValueFr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValueFr.Location = new System.Drawing.Point(221, 110);
+            this.labelValueFr.Name = "labelValueFr";
+            this.labelValueFr.Size = new System.Drawing.Size(0, 16);
+            this.labelValueFr.TabIndex = 24;
+            // 
+            // labelValueJ
+            // 
+            this.labelValueJ.AutoSize = true;
+            this.labelValueJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValueJ.Location = new System.Drawing.Point(221, 161);
+            this.labelValueJ.Name = "labelValueJ";
+            this.labelValueJ.Size = new System.Drawing.Size(0, 16);
+            this.labelValueJ.TabIndex = 23;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(187, 22);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(69, 16);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Ποσότητα";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(27, 22);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(130, 16);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Επιλογή Προϊόντος";
+            // 
+            // buttonPlusCola
+            // 
+            this.buttonPlusCola.Enabled = false;
+            this.buttonPlusCola.Location = new System.Drawing.Point(239, 208);
+            this.buttonPlusCola.Name = "buttonPlusCola";
+            this.buttonPlusCola.Size = new System.Drawing.Size(28, 22);
+            this.buttonPlusCola.TabIndex = 14;
+            this.buttonPlusCola.Text = "+";
+            this.buttonPlusCola.UseVisualStyleBackColor = true;
+            this.buttonPlusCola.Click += new System.EventHandler(this.buttonPlusCola_Click);
+            // 
+            // buttonMinusCola
+            // 
+            this.buttonMinusCola.Enabled = false;
+            this.buttonMinusCola.Location = new System.Drawing.Point(184, 208);
+            this.buttonMinusCola.Name = "buttonMinusCola";
+            this.buttonMinusCola.Size = new System.Drawing.Size(28, 22);
+            this.buttonMinusCola.TabIndex = 13;
+            this.buttonMinusCola.Text = "-";
+            this.buttonMinusCola.UseVisualStyleBackColor = true;
+            this.buttonMinusCola.Click += new System.EventHandler(this.buttonMinusCola_Click);
+            // 
+            // buttonPlusJ
+            // 
+            this.buttonPlusJ.Enabled = false;
+            this.buttonPlusJ.Location = new System.Drawing.Point(239, 161);
+            this.buttonPlusJ.Name = "buttonPlusJ";
+            this.buttonPlusJ.Size = new System.Drawing.Size(28, 22);
+            this.buttonPlusJ.TabIndex = 11;
+            this.buttonPlusJ.Text = "+";
+            this.buttonPlusJ.UseVisualStyleBackColor = true;
+            this.buttonPlusJ.Click += new System.EventHandler(this.buttonPlusJ_Click);
+            // 
+            // buttonMinusJ
+            // 
+            this.buttonMinusJ.Enabled = false;
+            this.buttonMinusJ.Location = new System.Drawing.Point(184, 161);
+            this.buttonMinusJ.Name = "buttonMinusJ";
+            this.buttonMinusJ.Size = new System.Drawing.Size(28, 22);
+            this.buttonMinusJ.TabIndex = 10;
+            this.buttonMinusJ.Text = "-";
+            this.buttonMinusJ.UseVisualStyleBackColor = true;
+            this.buttonMinusJ.Click += new System.EventHandler(this.buttonMinusJ_Click);
+            // 
+            // buttonPlusFr
+            // 
+            this.buttonPlusFr.Enabled = false;
+            this.buttonPlusFr.Location = new System.Drawing.Point(239, 110);
+            this.buttonPlusFr.Name = "buttonPlusFr";
+            this.buttonPlusFr.Size = new System.Drawing.Size(28, 22);
+            this.buttonPlusFr.TabIndex = 8;
+            this.buttonPlusFr.Text = "+";
+            this.buttonPlusFr.UseVisualStyleBackColor = true;
+            this.buttonPlusFr.Click += new System.EventHandler(this.buttonPlusFr_Click);
+            // 
+            // buttonMinusFr
+            // 
+            this.buttonMinusFr.Enabled = false;
+            this.buttonMinusFr.Location = new System.Drawing.Point(184, 110);
+            this.buttonMinusFr.Name = "buttonMinusFr";
+            this.buttonMinusFr.Size = new System.Drawing.Size(28, 22);
+            this.buttonMinusFr.TabIndex = 7;
+            this.buttonMinusFr.Text = "-";
+            this.buttonMinusFr.UseVisualStyleBackColor = true;
+            this.buttonMinusFr.Click += new System.EventHandler(this.buttonMinusFr_Click);
+            // 
+            // labelValueCap
+            // 
+            this.labelValueCap.AutoSize = true;
+            this.labelValueCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValueCap.Location = new System.Drawing.Point(221, 58);
+            this.labelValueCap.Name = "labelValueCap";
+            this.labelValueCap.Size = new System.Drawing.Size(0, 16);
+            this.labelValueCap.TabIndex = 6;
+            // 
+            // buttonPlusCap
+            // 
+            this.buttonPlusCap.Enabled = false;
+            this.buttonPlusCap.Location = new System.Drawing.Point(239, 56);
+            this.buttonPlusCap.Name = "buttonPlusCap";
+            this.buttonPlusCap.Size = new System.Drawing.Size(28, 22);
+            this.buttonPlusCap.TabIndex = 5;
+            this.buttonPlusCap.Text = "+";
+            this.buttonPlusCap.UseVisualStyleBackColor = true;
+            this.buttonPlusCap.Click += new System.EventHandler(this.buttonPlusCap_Click);
+            // 
+            // buttonMinusCap
+            // 
+            this.buttonMinusCap.Enabled = false;
+            this.buttonMinusCap.Location = new System.Drawing.Point(184, 56);
+            this.buttonMinusCap.Name = "buttonMinusCap";
+            this.buttonMinusCap.Size = new System.Drawing.Size(28, 22);
+            this.buttonMinusCap.TabIndex = 4;
+            this.buttonMinusCap.Text = "-";
+            this.buttonMinusCap.UseVisualStyleBackColor = true;
+            this.buttonMinusCap.Click += new System.EventHandler(this.buttonMinusCap_Click);
+            // 
+            // checkBoxCola
+            // 
+            this.checkBoxCola.AutoSize = true;
+            this.checkBoxCola.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCola.Image = ((System.Drawing.Image)(resources.GetObject("checkBoxCola.Image")));
+            this.checkBoxCola.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCola.Location = new System.Drawing.Point(12, 203);
+            this.checkBoxCola.Name = "checkBoxCola";
+            this.checkBoxCola.Size = new System.Drawing.Size(142, 32);
+            this.checkBoxCola.TabIndex = 3;
+            this.checkBoxCola.Text = "           Coca cola: 3€";
+            this.checkBoxCola.UseVisualStyleBackColor = true;
+            this.checkBoxCola.CheckedChanged += new System.EventHandler(this.checkBoxCola_CheckedChanged);
+            // 
+            // checkBoxJ
+            // 
+            this.checkBoxJ.AutoSize = true;
+            this.checkBoxJ.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJ.Image = ((System.Drawing.Image)(resources.GetObject("checkBoxJ.Image")));
+            this.checkBoxJ.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxJ.Location = new System.Drawing.Point(12, 156);
+            this.checkBoxJ.Name = "checkBoxJ";
+            this.checkBoxJ.Size = new System.Drawing.Size(157, 32);
+            this.checkBoxJ.TabIndex = 2;
+            this.checkBoxJ.Text = "         Orange Juice: 4€";
+            this.checkBoxJ.UseVisualStyleBackColor = true;
+            this.checkBoxJ.CheckedChanged += new System.EventHandler(this.checkBoxJuice_CheckedChanged);
+            // 
+            // checkBoxFreddo
+            // 
+            this.checkBoxFreddo.AutoSize = true;
+            this.checkBoxFreddo.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxFreddo.Image = ((System.Drawing.Image)(resources.GetObject("checkBoxFreddo.Image")));
+            this.checkBoxFreddo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxFreddo.Location = new System.Drawing.Point(12, 105);
+            this.checkBoxFreddo.Name = "checkBoxFreddo";
+            this.checkBoxFreddo.Size = new System.Drawing.Size(167, 32);
+            this.checkBoxFreddo.TabIndex = 1;
+            this.checkBoxFreddo.Text = "          Cold espresso: 3€";
+            this.checkBoxFreddo.UseVisualStyleBackColor = true;
+            this.checkBoxFreddo.CheckedChanged += new System.EventHandler(this.checkBoxFreddo_CheckedChanged);
+            // 
+            // checkBoxCappuccino
+            // 
+            this.checkBoxCappuccino.AutoSize = true;
+            this.checkBoxCappuccino.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCappuccino.Image = ((System.Drawing.Image)(resources.GetObject("checkBoxCappuccino.Image")));
+            this.checkBoxCappuccino.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCappuccino.Location = new System.Drawing.Point(12, 51);
+            this.checkBoxCappuccino.Name = "checkBoxCappuccino";
+            this.checkBoxCappuccino.Size = new System.Drawing.Size(156, 32);
+            this.checkBoxCappuccino.TabIndex = 0;
+            this.checkBoxCappuccino.Text = "           Cappuccino: 3€";
+            this.checkBoxCappuccino.UseVisualStyleBackColor = true;
+            this.checkBoxCappuccino.CheckedChanged += new System.EventHandler(this.checkBoxCappuccino_CheckedChanged);
             // 
             // FormOnlineOrder
             // 
@@ -351,6 +599,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(274, 485);
             this.ControlBox = false;
+            this.Controls.Add(this.panelDrinks);
             this.Controls.Add(this.richTextBoxTotal);
             this.Controls.Add(this.buttonPayment);
             this.Controls.Add(this.panelFoods);
@@ -363,6 +612,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelFoods.ResumeLayout(false);
             this.panelFoods.PerformLayout();
+            this.panelDrinks.ResumeLayout(false);
+            this.panelDrinks.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -394,5 +645,24 @@
         private System.Windows.Forms.Label labelValueS;
         private System.Windows.Forms.Label labelValueF;
         private System.Windows.Forms.Label labelValueSa;
+        private System.Windows.Forms.Panel panelDrinks;
+        private System.Windows.Forms.Label labelValueCola;
+        private System.Windows.Forms.Label labelValueFr;
+        private System.Windows.Forms.Label labelValueJ;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button buttonPlusCola;
+        private System.Windows.Forms.Button buttonMinusCola;
+        private System.Windows.Forms.Button buttonPlusJ;
+        private System.Windows.Forms.Button buttonMinusJ;
+        private System.Windows.Forms.Button buttonPlusFr;
+        private System.Windows.Forms.Button buttonMinusFr;
+        private System.Windows.Forms.Label labelValueCap;
+        private System.Windows.Forms.Button buttonPlusCap;
+        private System.Windows.Forms.Button buttonMinusCap;
+        private System.Windows.Forms.CheckBox checkBoxCola;
+        private System.Windows.Forms.CheckBox checkBoxJ;
+        private System.Windows.Forms.CheckBox checkBoxFreddo;
+        private System.Windows.Forms.CheckBox checkBoxCappuccino;
     }
 }

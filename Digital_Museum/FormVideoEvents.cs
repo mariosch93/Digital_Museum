@@ -12,7 +12,7 @@ using static System.Net.WebRequestMethods;
 namespace Digital_Museum
 {
     public partial class FormVideoEvents : Form
-    {
+    {   LoginInfo loginInfo;
         bool buttonClicked = false;
         private int currentIndex = 0;
 
@@ -31,9 +31,10 @@ namespace Digital_Museum
           "https://www.youtube.com/watch?v=W3jPSQC-zE0&list=PLx3jx6kZ_h4Fc-kjEV_MlOb2V9iefXj02&index=78"
         };
 
-        public FormVideoEvents()
+        public FormVideoEvents(LoginInfo logininfo)
         {
             InitializeComponent();
+            this.loginInfo = logininfo;
         }
 
         private void pictureBoxExit_Click(object sender, EventArgs e)
@@ -86,7 +87,7 @@ namespace Digital_Museum
         private void buttonOrder_Click(object sender, EventArgs e)
         {
             if (buttonClicked == false) {
-                FormOnlineOrder onlineOrder = new FormOnlineOrder();
+                FormOnlineOrder onlineOrder = new FormOnlineOrder(loginInfo);
                 onlineOrder.TopLevel = false;
                 panelOnlineOrder.Visible = true;
                 panelOnlineOrder.Controls.Add(onlineOrder);

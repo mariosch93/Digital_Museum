@@ -33,15 +33,12 @@
             this.pictureBoxExit = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.buttonOrder = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.buttonPlay = new System.Windows.Forms.Button();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.panelOnlineOrder = new System.Windows.Forms.Panel();
             this.buttonNext = new System.Windows.Forms.Button();
             this.buttonPrevious = new System.Windows.Forms.Button();
+            this.MessageGianni = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnipi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
             this.SuspendLayout();
@@ -90,65 +87,22 @@
             this.label1.TabIndex = 416;
             this.label1.Text = "Καλως ήρθατε στην αίθουσα προβολής βιντεοσκοπημένων εκδηλώσεων!";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label2.Location = new System.Drawing.Point(153, 640);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(520, 20);
-            this.label2.TabIndex = 420;
-            this.label2.Text = "Επισκεφτείτε το εστιατόριο-καφέ κάνωντας κλίκ στο κουμπί παραγγελία";
-            // 
             // buttonOrder
             // 
-            this.buttonOrder.BackColor = System.Drawing.Color.Transparent;
+            this.buttonOrder.BackColor = System.Drawing.Color.Moccasin;
+            this.buttonOrder.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonOrder.BackgroundImage")));
+            this.buttonOrder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonOrder.FlatAppearance.BorderSize = 0;
+            this.buttonOrder.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonOrder.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.buttonOrder.Location = new System.Drawing.Point(677, 636);
-            this.buttonOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonOrder.Location = new System.Drawing.Point(1280, 12);
+            this.buttonOrder.Margin = new System.Windows.Forms.Padding(2);
             this.buttonOrder.Name = "buttonOrder";
-            this.buttonOrder.Size = new System.Drawing.Size(137, 28);
+            this.buttonOrder.Size = new System.Drawing.Size(60, 59);
             this.buttonOrder.TabIndex = 421;
-            this.buttonOrder.Text = "Παράγγειλε τώρα";
             this.buttonOrder.UseVisualStyleBackColor = false;
             this.buttonOrder.Click += new System.EventHandler(this.buttonOrder_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Δημήτρης Μητροπάνος \"Τα Λαδάδικα\"",
-            "Δημήτρης Μητροπάνος \"Αρχάγγελος\"",
-            "Στέλιος Καζαντζίδης \"Υπάρχω\""});
-            this.comboBox1.Location = new System.Drawing.Point(1048, 483);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(92, 21);
-            this.comboBox1.TabIndex = 422;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label3.Location = new System.Drawing.Point(1034, 453);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(154, 20);
-            this.label3.TabIndex = 423;
-            this.label3.Text = "Επιλογή τραγουδιού";
-            // 
-            // buttonPlay
-            // 
-            this.buttonPlay.BackColor = System.Drawing.Color.Transparent;
-            this.buttonPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.buttonPlay.Location = new System.Drawing.Point(1048, 522);
-            this.buttonPlay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonPlay.Name = "buttonPlay";
-            this.buttonPlay.Size = new System.Drawing.Size(103, 31);
-            this.buttonPlay.TabIndex = 424;
-            this.buttonPlay.Text = "PLAY";
-            this.buttonPlay.UseVisualStyleBackColor = false;
             // 
             // webBrowser1
             // 
@@ -187,6 +141,16 @@
             this.buttonPrevious.UseVisualStyleBackColor = true;
             this.buttonPrevious.Click += new System.EventHandler(this.buttonPrevious_Click);
             // 
+            // MessageGianni
+            // 
+            this.MessageGianni.AutoSize = true;
+            this.MessageGianni.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MessageGianni.Location = new System.Drawing.Point(276, 468);
+            this.MessageGianni.Name = "MessageGianni";
+            this.MessageGianni.Size = new System.Drawing.Size(686, 150);
+            this.MessageGianni.TabIndex = 433;
+            this.MessageGianni.Text = resources.GetString("MessageGianni.Text");
+            // 
             // FormVideoEvents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -194,15 +158,12 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1424, 681);
             this.ControlBox = false;
+            this.Controls.Add(this.MessageGianni);
             this.Controls.Add(this.buttonPrevious);
             this.Controls.Add(this.buttonNext);
             this.Controls.Add(this.panelOnlineOrder);
             this.Controls.Add(this.webBrowser1);
-            this.Controls.Add(this.buttonPlay);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.buttonOrder);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBoxExit);
@@ -224,14 +185,11 @@
         private System.Windows.Forms.PictureBox pictureBoxExit;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonOrder;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button buttonPlay;
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Panel panelOnlineOrder;
         private System.Windows.Forms.Button buttonNext;
         private System.Windows.Forms.Button buttonPrevious;
+        private System.Windows.Forms.Label MessageGianni;
     }
 }

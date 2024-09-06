@@ -31,10 +31,9 @@ namespace Digital_Museum
             if (loginInfo != null)
             {
                 usernameLabel.Visible = true;
-                usernameLabel.Text = "Καλώσήρθες " + loginInfo.UserName;
+                usernameLabel.Text = "Καλωσήρθες " + loginInfo.UserName;
             }
         }
-
 
         private void sidebarTimer_Tick(object sender, EventArgs e)
         {
@@ -166,7 +165,7 @@ namespace Digital_Museum
 
         private void buttonEvents_Click(object sender, EventArgs e)
         {
-            FormVideoEvents formVideoEvents = new FormVideoEvents();
+            FormVideoEvents formVideoEvents = new FormVideoEvents(loginInfo);
             formVideoEvents.ShowDialog();
         }
     }

@@ -12,24 +12,34 @@ namespace Digital_Museum
 {
     public partial class FormOnlineOrder : Form
     {
-        
+        LoginInfo loginInfo;
         int totalCost = 0;
-        int[] foods2 = { 15, 15, 15, 3, 4 };
-        int[] drinks = { 0, 1, 2, 3, 4 };
         int counterValue = 0;
         int counterValueS = 0;
         int counterValueSa = 0;
         int counterValueF = 0;
+        int counterValueCap = 0;
+        int counterValueFr = 0;
+        int counterValueJ = 0;
+        int counterValueCola = 0;
 
-        public FormOnlineOrder()
+        public FormOnlineOrder(LoginInfo loginInfo)
         {
             InitializeComponent();
+            this.loginInfo = loginInfo;
+            if (loginInfo != null)
+            {
+                labelHello.Text = $"Γεια σας ονομάζομαι {loginInfo.UserName}!\nΠως θα μπορούσα \nνα σας εξυπηρετήσω?";
+            }
+            else {
+                labelHello.Text = $"Γεια σας! Πως θα μπορούσα \nνα σας εξυπηρετήσω?";
+            }
         }
-
 
         void calculatecost() 
         {
-            totalCost = (counterValue * 20) + (counterValueS * 15) + (counterValueSa * 10) + (counterValueF * 6);
+            totalCost = (counterValue * 15) + (counterValueS * 10) + (counterValueSa * 8) + (counterValueF * 6) +
+                        (counterValueCap * 3) + (counterValueJ * 4) + (counterValueCola * 3) + (counterValueFr * 3);
             richTextBoxTotal.Text = $"Το τελικό ποσό πληρωμής είναι: {totalCost}€ ";
         }
 
@@ -72,6 +82,7 @@ namespace Digital_Museum
                 buttonMinusBur.Enabled = false;
                 buttonPlusBur.Enabled = false;
                 counterValue = 0;
+                calculatecost();
             }
         }
 
@@ -88,6 +99,7 @@ namespace Digital_Museum
                 buttonMinusS.Enabled = false;
                 buttonPlusS.Enabled = false;
                 counterValueS = 0;
+                calculatecost();
             }
         }
 
@@ -104,6 +116,7 @@ namespace Digital_Museum
                 buttonMinusF.Enabled = false;
                 buttonPlusF.Enabled = false;
                 counterValueF = 0;
+                calculatecost();
             }
         }
 
@@ -120,6 +133,7 @@ namespace Digital_Museum
                 buttonMinusSa.Enabled = false;
                 buttonPlusSa.Enabled = false;
                 counterValueSa = 0;
+                calculatecost();
             }
         }
 
@@ -183,6 +197,172 @@ namespace Digital_Museum
         {
             counterValueSa += 1;
             labelValueSa.Text = counterValueSa.ToString();
+            calculatecost();
+        }
+
+        private void comboBoxFoods_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(comboBoxFoods.SelectedIndex == 0)
+            {
+                panelDrinks.Visible = false;
+                panelFoods.Visible = true;
+            }
+            if(comboBoxFoods.SelectedIndex == 1)
+            {
+                panelFoods.Visible = false;
+                panelDrinks.Visible = true; 
+            }
+        }
+
+        private void checkBoxCappuccino_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxCappuccino.Checked == true)
+            {
+                buttonMinusCap.Enabled = true;
+                buttonPlusCap.Enabled = true;
+            }
+            else
+            {
+                labelValueCap.Text = "";
+                buttonMinusCap.Enabled = false;
+                buttonPlusCap.Enabled = false;
+                counterValueCap = 0;
+                calculatecost();
+            }
+        }
+
+        private void checkBoxJuice_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxJ.Checked == true)
+            {
+                buttonMinusJ.Enabled = true;
+                buttonPlusJ.Enabled = true;
+            }
+            else
+            {
+                labelValueJ.Text = "";
+                buttonMinusJ.Enabled = false;
+                buttonPlusJ.Enabled = false;
+                counterValueJ = 0;
+                calculatecost();
+            }
+        }
+
+        private void checkBoxFreddo_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBoxFreddo.Checked == true)
+            {
+                buttonMinusFr.Enabled = true;
+                buttonPlusFr.Enabled = true;
+            }
+            else
+            {
+                labelValueFr.Text = "";
+                buttonMinusFr.Enabled = false;
+                buttonPlusFr.Enabled = false;
+                counterValueFr = 0;
+                calculatecost();
+            }
+        }
+
+        private void checkBoxCola_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxCola.Checked == true)
+            {
+                buttonMinusCola.Enabled = true;
+                buttonPlusCola.Enabled = true;
+            }
+            else
+            {
+                labelValueCola.Text = "";
+                buttonMinusCola.Enabled = false;
+                buttonPlusCola.Enabled = false;
+                counterValueCola = 0;
+                calculatecost();
+            }
+        }
+
+        private void buttonMinusCola_Click(object sender, EventArgs e)
+        {
+            if (counterValueCola <= 0)
+            {
+                counterValueCola = 0;
+            }
+            else
+            {
+                counterValueCola -= 1;
+            }
+            labelValueCola.Text = counterValueCola.ToString();
+            calculatecost();
+        }
+
+        private void buttonMinusJ_Click(object sender, EventArgs e)
+        {
+            if (counterValueJ <= 0)
+            {
+                counterValueJ = 0;
+            }
+            else
+            {
+                counterValueJ -= 1;
+            }
+            labelValueJ.Text = counterValueJ.ToString();
+            calculatecost();
+        }
+
+        private void buttonMinusFr_Click(object sender, EventArgs e)
+        {
+            if (counterValueFr <= 0)
+            {
+                counterValueFr = 0;
+            }
+            else
+            {
+                counterValueFr -= 1;
+            }
+            labelValueFr.Text = counterValueFr.ToString();
+            calculatecost();
+        }
+
+        private void buttonMinusCap_Click(object sender, EventArgs e)
+        {
+            if (counterValueCap <= 0)
+            {
+                counterValueCap = 0;
+            }
+            else
+            {
+                counterValueCap -= 1;
+            }
+            labelValueCap.Text = counterValueCap.ToString();
+            calculatecost();
+        }
+
+        private void buttonPlusCola_Click(object sender, EventArgs e)
+        {
+            counterValueCola += 1;
+            labelValueCola.Text = counterValueCola.ToString();
+            calculatecost();
+        }
+
+        private void buttonPlusJ_Click(object sender, EventArgs e)
+        {
+            counterValueJ += 1;
+            labelValueJ.Text = counterValueJ.ToString();
+            calculatecost();
+        }
+
+        private void buttonPlusFr_Click(object sender, EventArgs e)
+        {
+            counterValueFr += 1;
+            labelValueFr.Text = counterValueFr.ToString();
+            calculatecost();
+        }
+
+        private void buttonPlusCap_Click(object sender, EventArgs e)
+        {
+            counterValueCap += 1;
+            labelValueCap.Text = counterValueCap.ToString();
             calculatecost();
         }
     }
