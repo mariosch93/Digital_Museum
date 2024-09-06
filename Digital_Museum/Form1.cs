@@ -168,5 +168,11 @@ namespace Digital_Museum
             FormVideoEvents formVideoEvents = new FormVideoEvents(loginInfo);
             formVideoEvents.ShowDialog();
         }
+
+        private void buttonShows_Click(object sender, EventArgs e)
+        {
+            FormPrivateSpace formPrivateSpace = new FormPrivateSpace(loginInfo);
+            formPrivateSpace.ShowDialog();
+        }
     }
 }

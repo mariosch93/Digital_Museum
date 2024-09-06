@@ -38,6 +38,7 @@
             this.panelOnlineOrder = new System.Windows.Forms.Panel();
             this.buttonNext = new System.Windows.Forms.Button();
             this.buttonPrevious = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnipi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
             this.SuspendLayout();
@@ -140,6 +141,16 @@
             this.buttonPrevious.UseVisualStyleBackColor = true;
             this.buttonPrevious.Click += new System.EventHandler(this.buttonPrevious_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1185, 32);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 433;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormVideoEvents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -147,6 +158,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1424, 681);
             this.ControlBox = false;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonPrevious);
             this.Controls.Add(this.buttonNext);
             this.Controls.Add(this.panelOnlineOrder);
@@ -178,5 +190,6 @@
         private System.Windows.Forms.Panel panelOnlineOrder;
         private System.Windows.Forms.Button buttonNext;
         private System.Windows.Forms.Button buttonPrevious;
+        private System.Windows.Forms.Button button1;
     }
 }

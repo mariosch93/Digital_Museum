@@ -282,6 +282,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel101 = new System.Windows.Forms.Panel();
             this.labelConcertInfo = new System.Windows.Forms.Label();
+            this.buttonOrder = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnipi)).BeginInit();
@@ -2607,18 +2608,35 @@
             // 
             this.labelConcertInfo.AutoSize = true;
             this.labelConcertInfo.BackColor = System.Drawing.Color.Silver;
-            this.labelConcertInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelConcertInfo.Location = new System.Drawing.Point(186, 21);
+            this.labelConcertInfo.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConcertInfo.Location = new System.Drawing.Point(176, 9);
             this.labelConcertInfo.Name = "labelConcertInfo";
-            this.labelConcertInfo.Size = new System.Drawing.Size(1103, 50);
+            this.labelConcertInfo.Size = new System.Drawing.Size(1014, 58);
             this.labelConcertInfo.TabIndex = 416;
             this.labelConcertInfo.Text = resources.GetString("labelConcertInfo.Text");
+            // 
+            // buttonOrder
+            // 
+            this.buttonOrder.BackColor = System.Drawing.Color.Moccasin;
+            this.buttonOrder.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonOrder.BackgroundImage")));
+            this.buttonOrder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonOrder.FlatAppearance.BorderSize = 0;
+            this.buttonOrder.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonOrder.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.buttonOrder.Location = new System.Drawing.Point(1270, 12);
+            this.buttonOrder.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonOrder.Name = "buttonOrder";
+            this.buttonOrder.Size = new System.Drawing.Size(60, 59);
+            this.buttonOrder.TabIndex = 776;
+            this.buttonOrder.UseVisualStyleBackColor = false;
             // 
             // FormConcert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1424, 681);
+            this.Controls.Add(this.buttonOrder);
             this.Controls.Add(this.labelConcertInfo);
             this.Controls.Add(this.panel296);
             this.Controls.Add(this.panel297);
@@ -3140,5 +3158,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel101;
         private System.Windows.Forms.Label labelConcertInfo;
+        private System.Windows.Forms.Button buttonOrder;
     }
 }

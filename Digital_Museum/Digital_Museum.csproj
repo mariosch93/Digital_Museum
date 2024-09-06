@@ -86,6 +86,12 @@
     <Compile Include="FormConcert.Designer.cs">
       <DependentUpon>FormConcert.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsole.Designer.cs">
+      <DependentUpon>FormConsole.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormKazatzidis.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,12 @@
     </Compile>
     <Compile Include="FormPayment.Designer.cs">
       <DependentUpon>FormPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrivateSpace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrivateSpace.Designer.cs">
+      <DependentUpon>FormPrivateSpace.cs</DependentUpon>
     </Compile>
     <Compile Include="FormVideoEvents.cs">
       <SubType>Form</SubType>
@@ -122,11 +134,17 @@
     <EmbeddedResource Include="FormConcert.resx">
       <DependentUpon>FormConcert.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormConsole.resx">
+      <DependentUpon>FormConsole.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormKazatzidis.resx">
       <DependentUpon>FormKazatzidis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPayment.resx">
       <DependentUpon>FormPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrivateSpace.resx">
+      <DependentUpon>FormPrivateSpace.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVideoEvents.resx">
       <DependentUpon>FormVideoEvents.cs</DependentUpon>
@@ -142,6 +160,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="digital_museum.db" />
     <None Include="packages.config" />
@@ -157,6 +176,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\FormPrivateBG.jpg" />
+    <None Include="bin\Debug\images\FormPrivateBG2.jpg" />
+    <Content Include="FormPrivateBG.jpg" />
+    <Content Include="FormPrivateBG2.jpg" />
+    <None Include="Resources\ImageBG1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

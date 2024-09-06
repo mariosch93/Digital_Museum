@@ -174,6 +174,7 @@
             this.buttonShows.TabIndex = 8;
             this.buttonShows.Text = "             Χώροι                Προβολής";
             this.buttonShows.UseVisualStyleBackColor = false;
+            this.buttonShows.Click += new System.EventHandler(this.buttonShows_Click);
             // 
             // buttonConcert
             // 
@@ -374,6 +375,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1424, 681);
+            this.ControlBox = false;
             this.Controls.Add(this.labelLegend);
             this.Controls.Add(this.buttonNewLogin);
             this.Controls.Add(this.panelLogin);

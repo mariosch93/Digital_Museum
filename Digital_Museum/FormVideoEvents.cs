@@ -99,13 +99,17 @@ namespace Digital_Museum
             {
                 panelOnlineOrder.Visible=false;
                 buttonClicked = false;
-            }
-            
+            } 
         }
 
         private void FormVideoEvents_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
