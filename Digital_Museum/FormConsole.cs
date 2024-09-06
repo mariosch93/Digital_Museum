@@ -86,5 +86,44 @@ namespace Digital_Museum
         {
             playerKaraoke.Play();
         }
+
+        private void buttonPlay_Click(object sender, EventArgs e)
+        {
+            player.Play();
+        }
+
+        private void buttonNextSong_Click(object sender, EventArgs e)
+        {
+            if (currentIndex < comboBoxPlaylist.Items.Count - 1)
+            {
+                currentIndex++;
+            }
+            else
+            {
+                currentIndex = 0;
+            }
+            comboBoxPlaylist.SelectedIndex = currentIndex;
+            LoadMusic(currentIndex);
+
+        }
+
+        private void buttonPreviousSong_Click(object sender, EventArgs e)
+        {
+            if (currentIndex > 0)
+            {
+                currentIndex--;
+            }
+            else
+            {
+                currentIndex = comboBoxPlaylist.Items.Count - 1;
+            }
+            comboBoxPlaylist.SelectedIndex = currentIndex;
+            LoadMusic(currentIndex); 
+        }
+
+        private void buttonLooping_Click(object sender, EventArgs e)
+        {
+            player.PlayLooping();
+        }
     }
 }

@@ -29,38 +29,42 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormConsole));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonPreviousSong = new System.Windows.Forms.Button();
+            this.buttonNextSong = new System.Windows.Forms.Button();
             this.comboBoxPlaylist = new System.Windows.Forms.ComboBox();
             this.buttonStop = new System.Windows.Forms.Button();
             this.buttonPlayRandom = new System.Windows.Forms.Button();
             this.buttonKaraoke = new System.Windows.Forms.Button();
             this.buttonPlaylist = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonPlay = new System.Windows.Forms.Button();
+            this.buttonLooping = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonPreviousSong
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(194, 289);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(30, 28);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "<<";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonPreviousSong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPreviousSong.Location = new System.Drawing.Point(194, 289);
+            this.buttonPreviousSong.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonPreviousSong.Name = "buttonPreviousSong";
+            this.buttonPreviousSong.Size = new System.Drawing.Size(30, 28);
+            this.buttonPreviousSong.TabIndex = 1;
+            this.buttonPreviousSong.Text = "<<";
+            this.buttonPreviousSong.UseVisualStyleBackColor = true;
+            this.buttonPreviousSong.Click += new System.EventHandler(this.buttonPreviousSong_Click);
             // 
-            // button2
+            // buttonNextSong
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(429, 289);
-            this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(30, 28);
-            this.button2.TabIndex = 2;
-            this.button2.Text = ">>";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonNextSong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNextSong.Location = new System.Drawing.Point(429, 289);
+            this.buttonNextSong.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonNextSong.Name = "buttonNextSong";
+            this.buttonNextSong.Size = new System.Drawing.Size(30, 28);
+            this.buttonNextSong.TabIndex = 2;
+            this.buttonNextSong.Text = ">>";
+            this.buttonNextSong.UseVisualStyleBackColor = true;
+            this.buttonNextSong.Click += new System.EventHandler(this.buttonNextSong_Click);
             // 
             // comboBoxPlaylist
             // 
@@ -109,7 +113,7 @@
             this.buttonKaraoke.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonKaraoke.BackgroundImage")));
             this.buttonKaraoke.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonKaraoke.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonKaraoke.Location = new System.Drawing.Point(516, 289);
+            this.buttonKaraoke.Location = new System.Drawing.Point(560, 289);
             this.buttonKaraoke.Margin = new System.Windows.Forms.Padding(0);
             this.buttonKaraoke.Name = "buttonKaraoke";
             this.buttonKaraoke.Size = new System.Drawing.Size(30, 28);
@@ -122,7 +126,7 @@
             this.buttonPlaylist.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonPlaylist.BackgroundImage")));
             this.buttonPlaylist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonPlaylist.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPlaylist.Location = new System.Drawing.Point(108, 289);
+            this.buttonPlaylist.Location = new System.Drawing.Point(64, 289);
             this.buttonPlaylist.Margin = new System.Windows.Forms.Padding(0);
             this.buttonPlaylist.Name = "buttonPlaylist";
             this.buttonPlaylist.Size = new System.Drawing.Size(30, 28);
@@ -140,19 +144,47 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // buttonPlay
+            // 
+            this.buttonPlay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonPlay.BackgroundImage")));
+            this.buttonPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPlay.Location = new System.Drawing.Point(108, 289);
+            this.buttonPlay.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonPlay.Name = "buttonPlay";
+            this.buttonPlay.Size = new System.Drawing.Size(30, 28);
+            this.buttonPlay.TabIndex = 13;
+            this.buttonPlay.UseVisualStyleBackColor = true;
+            this.buttonPlay.Click += new System.EventHandler(this.buttonPlay_Click);
+            // 
+            // buttonLooping
+            // 
+            this.buttonLooping.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonLooping.BackgroundImage")));
+            this.buttonLooping.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonLooping.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLooping.Location = new System.Drawing.Point(514, 289);
+            this.buttonLooping.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonLooping.Name = "buttonLooping";
+            this.buttonLooping.Size = new System.Drawing.Size(34, 33);
+            this.buttonLooping.TabIndex = 14;
+            this.buttonLooping.UseVisualStyleBackColor = true;
+            this.buttonLooping.Click += new System.EventHandler(this.buttonLooping_Click);
+            // 
             // FormConsole
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(654, 372);
             this.ControlBox = false;
+            this.Controls.Add(this.buttonLooping);
+            this.Controls.Add(this.buttonPlay);
             this.Controls.Add(this.comboBoxPlaylist);
             this.Controls.Add(this.buttonStop);
             this.Controls.Add(this.buttonPlayRandom);
             this.Controls.Add(this.buttonKaraoke);
             this.Controls.Add(this.buttonPlaylist);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonNextSong);
+            this.Controls.Add(this.buttonPreviousSong);
             this.Controls.Add(this.pictureBox1);
             this.Name = "FormConsole";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -165,12 +197,14 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonPreviousSong;
+        private System.Windows.Forms.Button buttonNextSong;
         private System.Windows.Forms.Button buttonPlaylist;
         private System.Windows.Forms.Button buttonKaraoke;
         private System.Windows.Forms.Button buttonPlayRandom;
         private System.Windows.Forms.Button buttonStop;
         private System.Windows.Forms.ComboBox comboBoxPlaylist;
+        private System.Windows.Forms.Button buttonPlay;
+        private System.Windows.Forms.Button buttonLooping;
     }
 }
