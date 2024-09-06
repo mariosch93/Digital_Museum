@@ -37,8 +37,8 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.buttonPlay = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.buttonPlayRandom = new System.Windows.Forms.Button();
+            this.buttonStop = new System.Windows.Forms.Button();
             this.comboBoxPlaylist = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -135,29 +135,31 @@
             this.button3.Text = "2Χ";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // buttonPlay
+            // buttonPlayRandom
             // 
-            this.buttonPlay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonPlay.BackgroundImage")));
-            this.buttonPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPlay.Location = new System.Drawing.Point(64, 324);
-            this.buttonPlay.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonPlay.Name = "buttonPlay";
-            this.buttonPlay.Size = new System.Drawing.Size(34, 33);
-            this.buttonPlay.TabIndex = 10;
-            this.buttonPlay.UseVisualStyleBackColor = true;
+            this.buttonPlayRandom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonPlayRandom.BackgroundImage")));
+            this.buttonPlayRandom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonPlayRandom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPlayRandom.Location = new System.Drawing.Point(64, 324);
+            this.buttonPlayRandom.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonPlayRandom.Name = "buttonPlayRandom";
+            this.buttonPlayRandom.Size = new System.Drawing.Size(34, 33);
+            this.buttonPlayRandom.TabIndex = 10;
+            this.buttonPlayRandom.UseVisualStyleBackColor = true;
+            this.buttonPlayRandom.Click += new System.EventHandler(this.buttonPlayRandom_Click);
             // 
-            // button9
+            // buttonStop
             // 
-            this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(107, 324);
-            this.button9.Margin = new System.Windows.Forms.Padding(0);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(34, 33);
-            this.button9.TabIndex = 11;
-            this.button9.UseVisualStyleBackColor = true;
+            this.buttonStop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonStop.BackgroundImage")));
+            this.buttonStop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonStop.Location = new System.Drawing.Point(107, 324);
+            this.buttonStop.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonStop.Name = "buttonStop";
+            this.buttonStop.Size = new System.Drawing.Size(34, 33);
+            this.buttonStop.TabIndex = 11;
+            this.buttonStop.UseVisualStyleBackColor = true;
+            this.buttonStop.Click += new System.EventHandler(this.buttonStop_Click);
             // 
             // comboBoxPlaylist
             // 
@@ -182,8 +184,8 @@
             this.ClientSize = new System.Drawing.Size(654, 372);
             this.ControlBox = false;
             this.Controls.Add(this.comboBoxPlaylist);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.buttonPlay);
+            this.Controls.Add(this.buttonStop);
+            this.Controls.Add(this.buttonPlayRandom);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -210,8 +212,8 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button buttonPlay;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button buttonPlayRandom;
+        private System.Windows.Forms.Button buttonStop;
         private System.Windows.Forms.ComboBox comboBoxPlaylist;
     }
 }

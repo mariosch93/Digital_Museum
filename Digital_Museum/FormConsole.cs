@@ -8,7 +8,9 @@ using System.Media;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Digital_Museum
 {
@@ -18,6 +20,7 @@ namespace Digital_Museum
         bool playlistClicked = false;
         private int currentIndex = 0;
         SoundPlayer player = new SoundPlayer();
+        Random random = new Random();
         String[] music = new string[]
         {
             "./music/Dimitris Mitropanos - Ta Ladadika.wav",
@@ -25,21 +28,12 @@ namespace Digital_Museum
             "./music/Κωνσταντίνος Αργυρός - Αθήνα Μου - Official Music Video  Konstantinos Argiros- Athina Mou.wav",
             "./music/Υπάρχω  Στέλιος Καζαντζίδης.wav"
         };
-        
+
         public FormConsole(LoginInfo loginfo)
         {
             InitializeComponent();
             this.loginInfo = loginfo;
-
-            //comboBoxPlaylist.SelectedIndexChanged += comboBoxPlaylist_SelectedIndexChanged;
         }
-
-        /*protected override void OnLoad(EventArgs e)
-        {
-            base.OnLoad(e);
-            LoadMusic(currentIndex);
-        }*/
-
         private void LoadMusic(int index)
         {
             string selectedMusic = music[index];
@@ -58,7 +52,7 @@ namespace Digital_Museum
         private void comboBoxPlaylist_SelectedIndexChanged(object sender, EventArgs e)
         {
             currentIndex = comboBoxPlaylist.SelectedIndex;
-            LoadMusic(currentIndex); 
+            LoadMusic(currentIndex);
         }
 
         private void buttonPlaylist_Click(object sender, EventArgs e)
@@ -73,9 +67,23 @@ namespace Digital_Museum
                     comboBoxPlaylist.Visible = false;
                     playlistClicked = false;
                 }
-            
             }
 
+        private void buttonStop_Click(object sender, EventArgs e)
+        {
+            player.Stop();
+        }
 
+        private void buttonPlayRandom_Click(object sender, EventArgs e)
+        {
+            int randomNum = random.Next(0, 3);
+            LoadMusic(randomNum);
+        }
+
+        private void trackBarVolume_Scroll(object sender, EventArgs e)
+        {
+            int volume = trackBarVolume.Value;
+         
+        }
     }
 }

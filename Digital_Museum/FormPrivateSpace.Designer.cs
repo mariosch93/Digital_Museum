@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrivateSpace));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelHello = new System.Windows.Forms.Panel();
-            this.buttonRent = new System.Windows.Forms.Button();
-            this.labelHello = new System.Windows.Forms.Label();
             this.comboBoxHello = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.labelHello = new System.Windows.Forms.Label();
+            this.buttonRent = new System.Windows.Forms.Button();
             this.panelOnlineOrder = new System.Windows.Forms.Panel();
             this.labelConsole = new System.Windows.Forms.Label();
             this.panelConsole = new System.Windows.Forms.Panel();
@@ -69,30 +69,6 @@
             this.panelHello.Size = new System.Drawing.Size(688, 233);
             this.panelHello.TabIndex = 421;
             // 
-            // buttonRent
-            // 
-            this.buttonRent.BackColor = System.Drawing.Color.Transparent;
-            this.buttonRent.Enabled = false;
-            this.buttonRent.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRent.Location = new System.Drawing.Point(391, 190);
-            this.buttonRent.Name = "buttonRent";
-            this.buttonRent.Size = new System.Drawing.Size(106, 34);
-            this.buttonRent.TabIndex = 417;
-            this.buttonRent.Text = "Ενοικίαση";
-            this.buttonRent.UseVisualStyleBackColor = false;
-            this.buttonRent.Click += new System.EventHandler(this.buttonRent_Click);
-            // 
-            // labelHello
-            // 
-            this.labelHello.AutoSize = true;
-            this.labelHello.BackColor = System.Drawing.Color.Transparent;
-            this.labelHello.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHello.Location = new System.Drawing.Point(3, 16);
-            this.labelHello.Name = "labelHello";
-            this.labelHello.Size = new System.Drawing.Size(678, 171);
-            this.labelHello.TabIndex = 418;
-            this.labelHello.Text = resources.GetString("labelHello.Text");
-            // 
             // comboBoxHello
             // 
             this.comboBoxHello.FormattingEnabled = true;
@@ -114,6 +90,30 @@
             this.label1.Size = new System.Drawing.Size(378, 19);
             this.label1.TabIndex = 420;
             this.label1.Text = "Πατήστε για να ολοκληρώσετε την ενοικίαση σας\r\n";
+            // 
+            // labelHello
+            // 
+            this.labelHello.AutoSize = true;
+            this.labelHello.BackColor = System.Drawing.Color.Transparent;
+            this.labelHello.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHello.Location = new System.Drawing.Point(3, 16);
+            this.labelHello.Name = "labelHello";
+            this.labelHello.Size = new System.Drawing.Size(678, 171);
+            this.labelHello.TabIndex = 418;
+            this.labelHello.Text = resources.GetString("labelHello.Text");
+            // 
+            // buttonRent
+            // 
+            this.buttonRent.BackColor = System.Drawing.Color.Transparent;
+            this.buttonRent.Enabled = false;
+            this.buttonRent.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRent.Location = new System.Drawing.Point(391, 190);
+            this.buttonRent.Name = "buttonRent";
+            this.buttonRent.Size = new System.Drawing.Size(106, 34);
+            this.buttonRent.TabIndex = 417;
+            this.buttonRent.Text = "Ενοικίαση";
+            this.buttonRent.UseVisualStyleBackColor = false;
+            this.buttonRent.Click += new System.EventHandler(this.buttonRent_Click);
             // 
             // panelOnlineOrder
             // 
