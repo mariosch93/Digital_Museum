@@ -22,7 +22,7 @@ namespace Digital_Museum
         SoundPlayer player = new SoundPlayer();
         SoundPlayer playerKaraoke = new SoundPlayer("./musicKaraoke/karaoke.wav");
         Random random = new Random();
-        String[] music = new string[]
+        string[] music = new string[]
         {
             "./music/Dimitris Mitropanos - Ta Ladadika.wav",
             "./music/ΕΡΩΤΑΣ ΑΡΧΑΓΓΕΛΟΣ - ΔΗΜΗΤΡΗΣ ΜΗΤΡΟΠΑΝΟΣ.wav",
@@ -35,6 +35,7 @@ namespace Digital_Museum
             InitializeComponent();
             this.loginInfo = loginfo;
         }
+
         private void LoadMusic(int index)
         {
             string selectedMusic = music[index];
@@ -78,8 +79,8 @@ namespace Digital_Museum
 
         private void buttonPlayRandom_Click(object sender, EventArgs e)
         {
-            int randomNum = random.Next(0, 3);
-            LoadMusic(randomNum);
+            int randomNum = random.Next(0, 4);
+            comboBoxPlaylist.SelectedIndex = randomNum;
         }
 
         private void buttonKaraoke_Click(object sender, EventArgs e)
@@ -103,8 +104,6 @@ namespace Digital_Museum
                 currentIndex = 0;
             }
             comboBoxPlaylist.SelectedIndex = currentIndex;
-            LoadMusic(currentIndex);
-
         }
 
         private void buttonPreviousSong_Click(object sender, EventArgs e)
@@ -118,7 +117,6 @@ namespace Digital_Museum
                 currentIndex = comboBoxPlaylist.Items.Count - 1;
             }
             comboBoxPlaylist.SelectedIndex = currentIndex;
-            LoadMusic(currentIndex); 
         }
 
         private void buttonLooping_Click(object sender, EventArgs e)

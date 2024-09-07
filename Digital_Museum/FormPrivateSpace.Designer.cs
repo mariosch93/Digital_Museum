@@ -48,10 +48,10 @@
             this.buttonMinusTherm = new System.Windows.Forms.Button();
             this.buttonPlusTherm = new System.Windows.Forms.Button();
             this.panelControls = new System.Windows.Forms.Panel();
+            this.buttonCopy = new System.Windows.Forms.Button();
             this.buttonColor = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.pictureBoxSettings = new System.Windows.Forms.PictureBox();
-            this.buttonCopy = new System.Windows.Forms.Button();
             this.richTextBoxPlaylist = new System.Windows.Forms.RichTextBox();
             this.saveFileDialogPlaylist = new System.Windows.Forms.SaveFileDialog();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -126,7 +126,7 @@
             this.panelConsole.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panelConsole.Location = new System.Drawing.Point(188, 199);
             this.panelConsole.Name = "panelConsole";
-            this.panelConsole.Size = new System.Drawing.Size(670, 411);
+            this.panelConsole.Size = new System.Drawing.Size(654, 372);
             this.panelConsole.TabIndex = 432;
             this.panelConsole.Visible = false;
             // 
@@ -290,6 +290,17 @@
             this.panelControls.TabIndex = 439;
             this.panelControls.Visible = false;
             // 
+            // buttonCopy
+            // 
+            this.buttonCopy.BackColor = System.Drawing.Color.White;
+            this.buttonCopy.Location = new System.Drawing.Point(3, 501);
+            this.buttonCopy.Name = "buttonCopy";
+            this.buttonCopy.Size = new System.Drawing.Size(106, 36);
+            this.buttonCopy.TabIndex = 441;
+            this.buttonCopy.Text = "Λήψη αντιγράφου Λίστας μουσικής";
+            this.buttonCopy.UseVisualStyleBackColor = false;
+            this.buttonCopy.Click += new System.EventHandler(this.buttonCopy_Click);
+            // 
             // buttonColor
             // 
             this.buttonColor.BackColor = System.Drawing.Color.Transparent;
@@ -316,17 +327,6 @@
             this.pictureBoxSettings.TabStop = false;
             this.pictureBoxSettings.Visible = false;
             this.pictureBoxSettings.Click += new System.EventHandler(this.pictureBoxSettings_Click);
-            // 
-            // buttonCopy
-            // 
-            this.buttonCopy.BackColor = System.Drawing.Color.White;
-            this.buttonCopy.Location = new System.Drawing.Point(3, 501);
-            this.buttonCopy.Name = "buttonCopy";
-            this.buttonCopy.Size = new System.Drawing.Size(106, 36);
-            this.buttonCopy.TabIndex = 441;
-            this.buttonCopy.Text = "Λήψη αντιγράφου Λίστας μουσικής";
-            this.buttonCopy.UseVisualStyleBackColor = false;
-            this.buttonCopy.Click += new System.EventHandler(this.buttonCopy_Click);
             // 
             // richTextBoxPlaylist
             // 

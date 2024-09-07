@@ -186,6 +186,7 @@
             this.Controls.Add(this.buttonNextSong);
             this.Controls.Add(this.buttonPreviousSong);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormConsole";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormConsole";
