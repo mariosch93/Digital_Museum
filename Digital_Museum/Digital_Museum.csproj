@@ -184,6 +184,8 @@
     <None Include="bin\Debug\images\FormPrivateBG2.jpg" />
     <None Include="bin\Debug\images\FormPrivateBG2night.jpg" />
     <None Include="bin\Debug\images\FormPrivateBGnight.jpg" />
+    <None Include="bin\Debug\FormPrivateBG2night.jpg" />
+    <None Include="bin\Debug\FormPrivateBGnight.jpg" />
     <Content Include="FormPrivateBG.jpg" />
     <Content Include="FormPrivateBG2.jpg" />
     <None Include="Resources\ImageBG1.jpg" />
