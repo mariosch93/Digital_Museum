@@ -178,15 +178,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\FormPrivateBG2.jpg.jpg" />
-    <None Include="Resources\FormPrivateBG.jpg.jpg" />
     <None Include="bin\Debug\images\FormPrivateBG.jpg" />
     <None Include="bin\Debug\images\FormPrivateBG2.jpg" />
     <None Include="bin\Debug\images\FormPrivateBG2night.jpg" />
     <None Include="bin\Debug\images\FormPrivateBGnight.jpg" />
-    <Content Include="FormPrivateBG.jpg" />
-    <Content Include="FormPrivateBG2.jpg" />
-    <None Include="Resources\ImageBG1.jpg" />
+    <None Include="bin\Debug\images\dj-mixers.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
