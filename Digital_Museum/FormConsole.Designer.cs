@@ -73,8 +73,8 @@
             this.comboBoxPlaylist.Items.AddRange(new object[] {
             "Δημήτρης Μητροπάνος - Λαδάδικα",
             "Δημήτρης Μητροπάνος - Έρωτας Αρχάγγελος",
-            "Στέλιος Καζαντζίδης - Υπάρχω",
-            "Κώνσταντίνος Αργυρός - Αθήνα μου"});
+            "Κώνσταντίνος Αργυρός - Αθήνα μου",
+            "Στέλιος Καζαντζίδης - Υπάρχω"});
             this.comboBoxPlaylist.Location = new System.Drawing.Point(255, 12);
             this.comboBoxPlaylist.Name = "comboBoxPlaylist";
             this.comboBoxPlaylist.Size = new System.Drawing.Size(335, 24);
