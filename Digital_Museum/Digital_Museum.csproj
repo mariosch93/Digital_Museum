@@ -116,6 +116,12 @@
     <Compile Include="FormPrivateSpace.Designer.cs">
       <DependentUpon>FormPrivateSpace.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTheodorakis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTheodorakis.Designer.cs">
+      <DependentUpon>FormTheodorakis.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormVideoEvents.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrivateSpace.resx">
       <DependentUpon>FormPrivateSpace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTheodorakis.resx">
+      <DependentUpon>FormTheodorakis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVideoEvents.resx">
       <DependentUpon>FormVideoEvents.cs</DependentUpon>

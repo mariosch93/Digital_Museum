@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +15,7 @@ namespace Digital_Museum
     {
         private List<string> imagePaths;
         private int currentImageIndex = 0;
+        SoundPlayer player = new SoundPlayer(".........wav");
         public FormMpithikotsis()
         {
             InitializeComponent();
@@ -60,6 +62,11 @@ namespace Digital_Museum
 
             // Αλλαγή της εικόνας στο PictureBox
             pictureBoxSlides.ImageLocation = imagePaths[currentImageIndex];
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            player.Play();
         }
     }
 }

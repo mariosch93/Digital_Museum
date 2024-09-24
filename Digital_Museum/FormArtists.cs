@@ -59,6 +59,12 @@ namespace Digital_Museum
             FormMpithikotsis formMpithikotsis=new FormMpithikotsis();
             formMpithikotsis.ShowDialog();
         }
+
+        private void buttonTheodorakis_Click(object sender, EventArgs e)
+        {
+            FormTheodorakis formTheodorakis=new FormTheodorakis();  
+            formTheodorakis.ShowDialog();
+        }
     }
     
 }

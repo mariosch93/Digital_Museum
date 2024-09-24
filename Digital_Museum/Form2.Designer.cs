@@ -36,16 +36,20 @@
             this.labelLegend = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.labelbio = new System.Windows.Forms.Label();
-            this.pictureBoxPortraito = new System.Windows.Forms.PictureBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.pictureBoxSlides = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.buttonStop = new System.Windows.Forms.Button();
             this.buttonStart = new System.Windows.Forms.Button();
             this.pictureBoxExit = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPortraito)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlides)).BeginInit();
+            this.pictureBoxSlides = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPortraito = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxUnipi = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlides)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPortraito)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnipi)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -110,17 +114,6 @@
             this.labelbio.TabIndex = 31;
             this.labelbio.Text = "Η βιογραφία του Γρηγόρη";
             // 
-            // pictureBoxPortraito
-            // 
-            this.pictureBoxPortraito.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPortraito.Image")));
-            this.pictureBoxPortraito.Location = new System.Drawing.Point(286, 108);
-            this.pictureBoxPortraito.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBoxPortraito.Name = "pictureBoxPortraito";
-            this.pictureBoxPortraito.Size = new System.Drawing.Size(407, 282);
-            this.pictureBoxPortraito.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxPortraito.TabIndex = 33;
-            this.pictureBoxPortraito.TabStop = false;
-            // 
             // richTextBox2
             // 
             this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
@@ -131,17 +124,6 @@
             this.richTextBox2.Size = new System.Drawing.Size(434, 256);
             this.richTextBox2.TabIndex = 34;
             this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
-            // 
-            // pictureBoxSlides
-            // 
-            this.pictureBoxSlides.ErrorImage = null;
-            this.pictureBoxSlides.Location = new System.Drawing.Point(858, 426);
-            this.pictureBoxSlides.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBoxSlides.Name = "pictureBoxSlides";
-            this.pictureBoxSlides.Size = new System.Drawing.Size(578, 316);
-            this.pictureBoxSlides.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxSlides.TabIndex = 35;
-            this.pictureBoxSlides.TabStop = false;
             // 
             // timer1
             // 
@@ -181,11 +163,59 @@
             this.pictureBoxExit.TabStop = false;
             this.pictureBoxExit.Click += new System.EventHandler(this.pictureBoxExit_Click);
             // 
+            // pictureBoxSlides
+            // 
+            this.pictureBoxSlides.ErrorImage = null;
+            this.pictureBoxSlides.Location = new System.Drawing.Point(858, 426);
+            this.pictureBoxSlides.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBoxSlides.Name = "pictureBoxSlides";
+            this.pictureBoxSlides.Size = new System.Drawing.Size(578, 316);
+            this.pictureBoxSlides.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxSlides.TabIndex = 35;
+            this.pictureBoxSlides.TabStop = false;
+            // 
+            // pictureBoxPortraito
+            // 
+            this.pictureBoxPortraito.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPortraito.Image")));
+            this.pictureBoxPortraito.Location = new System.Drawing.Point(286, 108);
+            this.pictureBoxPortraito.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBoxPortraito.Name = "pictureBoxPortraito";
+            this.pictureBoxPortraito.Size = new System.Drawing.Size(407, 282);
+            this.pictureBoxPortraito.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxPortraito.TabIndex = 33;
+            this.pictureBoxPortraito.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1465, 140);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(151, 154);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 40;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureBoxUnipi
+            // 
+            this.pictureBoxUnipi.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxUnipi.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxUnipi.Image")));
+            this.pictureBoxUnipi.Location = new System.Drawing.Point(1554, 37);
+            this.pictureBoxUnipi.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxUnipi.Name = "pictureBoxUnipi";
+            this.pictureBoxUnipi.Size = new System.Drawing.Size(57, 44);
+            this.pictureBoxUnipi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxUnipi.TabIndex = 39;
+            this.pictureBoxUnipi.TabStop = false;
+            // 
             // FormMpithikotsis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1615, 753);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBoxUnipi);
             this.Controls.Add(this.buttonStop);
             this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.pictureBoxExit);
@@ -200,9 +230,11 @@
             this.Controls.Add(this.panel1);
             this.Name = "FormMpithikotsis";
             this.Text = "FormMpithikotsis";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPortraito)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlides)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlides)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPortraito)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnipi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,5 +255,7 @@
         private System.Windows.Forms.Button buttonStop;
         private System.Windows.Forms.Button buttonStart;
         private System.Windows.Forms.PictureBox pictureBoxExit;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxUnipi;
     }
 }

@@ -118,6 +118,7 @@
             this.buttonTheodorakis.Size = new System.Drawing.Size(756, 384);
             this.buttonTheodorakis.TabIndex = 19;
             this.buttonTheodorakis.UseVisualStyleBackColor = true;
+            this.buttonTheodorakis.Click += new System.EventHandler(this.buttonTheodorakis_Click);
             this.buttonTheodorakis.MouseHover += new System.EventHandler(this.buttonTheodorakis_MouseHover);
             // 
             // buttonMpithikotsis

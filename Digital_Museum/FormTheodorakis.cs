@@ -11,18 +11,19 @@ using System.Windows.Forms;
 
 namespace Digital_Museum
 {
-    public partial class FormKazatzidis : Form
+    public partial class FormTheodorakis : Form
     {
         private List<string> imagePaths;
         private int currentImageIndex = 0;
         SoundPlayer player = new SoundPlayer(".........wav");
-        public FormKazatzidis()
+        public FormTheodorakis()
         {
             InitializeComponent();
             imagePaths = new List<string>
             {
-                "stelios.jpg",
-                "stelios2.jpg",                
+                "theodorakis2.jpg",
+                "theodorakis3.jpg",
+                "theodorakis4.jpg",
             };
 
             // Κατά τη φόρτωση της φόρμας, δεν ρυθμίζουμε εικόνα στο PictureBox
@@ -31,14 +32,14 @@ namespace Digital_Museum
             timer1.Stop();
         }
 
+        private void labelbio_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void pictureBoxExit_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
-        }
-
-        private void FormKazatzidis_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void buttonStart_Click(object sender, EventArgs e)
@@ -68,14 +69,9 @@ namespace Digital_Museum
             pictureBoxSlides.ImageLocation = imagePaths[currentImageIndex];
         }
 
-        private void pictureBoxSlides_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-           player.Play();
+            player.Play();
         }
     }
 }
