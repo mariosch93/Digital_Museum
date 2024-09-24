@@ -61,7 +61,7 @@
             this.pictureBoxUnipi.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxUnipi.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxUnipi.Image")));
             this.pictureBoxUnipi.Location = new System.Drawing.Point(1793, 15);
-            this.pictureBoxUnipi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxUnipi.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxUnipi.Name = "pictureBoxUnipi";
             this.pictureBoxUnipi.Size = new System.Drawing.Size(89, 73);
             this.pictureBoxUnipi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -73,7 +73,7 @@
             this.pictureBoxExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxExit.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxExit.Image")));
             this.pictureBoxExit.Location = new System.Drawing.Point(1793, 758);
-            this.pictureBoxExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxExit.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxExit.Name = "pictureBoxExit";
             this.pictureBoxExit.Size = new System.Drawing.Size(89, 65);
             this.pictureBoxExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -98,7 +98,7 @@
             this.buttonKazatzidis.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonKazatzidis.Image = ((System.Drawing.Image)(resources.GetObject("buttonKazatzidis.Image")));
             this.buttonKazatzidis.Location = new System.Drawing.Point(249, 63);
-            this.buttonKazatzidis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonKazatzidis.Margin = new System.Windows.Forms.Padding(4);
             this.buttonKazatzidis.Name = "buttonKazatzidis";
             this.buttonKazatzidis.Size = new System.Drawing.Size(756, 384);
             this.buttonKazatzidis.TabIndex = 21;
@@ -113,7 +113,7 @@
             this.buttonTheodorakis.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTheodorakis.Image = ((System.Drawing.Image)(resources.GetObject("buttonTheodorakis.Image")));
             this.buttonTheodorakis.Location = new System.Drawing.Point(249, 454);
-            this.buttonTheodorakis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonTheodorakis.Margin = new System.Windows.Forms.Padding(4);
             this.buttonTheodorakis.Name = "buttonTheodorakis";
             this.buttonTheodorakis.Size = new System.Drawing.Size(756, 384);
             this.buttonTheodorakis.TabIndex = 19;
@@ -127,18 +127,19 @@
             this.buttonMpithikotsis.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMpithikotsis.Image = ((System.Drawing.Image)(resources.GetObject("buttonMpithikotsis.Image")));
             this.buttonMpithikotsis.Location = new System.Drawing.Point(1029, 63);
-            this.buttonMpithikotsis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonMpithikotsis.Margin = new System.Windows.Forms.Padding(4);
             this.buttonMpithikotsis.Name = "buttonMpithikotsis";
             this.buttonMpithikotsis.Size = new System.Drawing.Size(756, 384);
             this.buttonMpithikotsis.TabIndex = 20;
             this.buttonMpithikotsis.UseVisualStyleBackColor = true;
+            this.buttonMpithikotsis.Click += new System.EventHandler(this.buttonMpithikotsis_Click);
             this.buttonMpithikotsis.MouseHover += new System.EventHandler(this.buttonMpithikotsis_MouseHover);
             // 
             // richTextBoxInfo
             // 
             this.richTextBoxInfo.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBoxInfo.Location = new System.Drawing.Point(1029, 455);
-            this.richTextBoxInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBoxInfo.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxInfo.Name = "richTextBoxInfo";
             this.richTextBoxInfo.ReadOnly = true;
             this.richTextBoxInfo.Size = new System.Drawing.Size(755, 382);
@@ -196,7 +197,7 @@
             this.Controls.Add(this.pictureBoxExit);
             this.Controls.Add(this.pictureBoxUnipi);
             this.Controls.Add(this.labelLegend);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormArtists";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Αίθουσες Καλλιτεχνών";

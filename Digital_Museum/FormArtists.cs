@@ -53,6 +53,12 @@ namespace Digital_Museum
             FormKazatzidis formKazatzidis = new FormKazatzidis();
             formKazatzidis.ShowDialog();
         }
+
+        private void buttonMpithikotsis_Click(object sender, EventArgs e)
+        {
+            FormMpithikotsis formMpithikotsis=new FormMpithikotsis();
+            formMpithikotsis.ShowDialog();
+        }
     }
     
 }

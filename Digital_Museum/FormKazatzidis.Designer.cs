@@ -30,54 +30,29 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormKazatzidis));
-            this.pictureBoxUnipi = new System.Windows.Forms.PictureBox();
-            this.pictureBoxExit = new System.Windows.Forms.PictureBox();
             this.labelLegend = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelbio = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.labelSong = new System.Windows.Forms.Label();
-            this.pictureBoxPortraito = new System.Windows.Forms.PictureBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.pictureBoxSlides = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonStart = new System.Windows.Forms.Button();
             this.buttonStop = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnipi)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPortraito)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlides)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxSlides = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPortraito = new System.Windows.Forms.PictureBox();
+            this.pictureBoxExit = new System.Windows.Forms.PictureBox();
+            this.pictureBoxUnipi = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlides)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPortraito)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnipi)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBoxUnipi
-            // 
-            this.pictureBoxUnipi.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxUnipi.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxUnipi.Image")));
-            this.pictureBoxUnipi.Location = new System.Drawing.Point(1793, 15);
-            this.pictureBoxUnipi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBoxUnipi.Name = "pictureBoxUnipi";
-            this.pictureBoxUnipi.Size = new System.Drawing.Size(89, 73);
-            this.pictureBoxUnipi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxUnipi.TabIndex = 16;
-            this.pictureBoxUnipi.TabStop = false;
-            // 
-            // pictureBoxExit
-            // 
-            this.pictureBoxExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxExit.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxExit.Image")));
-            this.pictureBoxExit.Location = new System.Drawing.Point(1793, 758);
-            this.pictureBoxExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBoxExit.Name = "pictureBoxExit";
-            this.pictureBoxExit.Size = new System.Drawing.Size(89, 65);
-            this.pictureBoxExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxExit.TabIndex = 17;
-            this.pictureBoxExit.TabStop = false;
-            this.pictureBoxExit.Click += new System.EventHandler(this.pictureBoxExit_Click);
             // 
             // labelLegend
             // 
@@ -113,7 +88,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.richTextBox1.Location = new System.Drawing.Point(236, 556);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox1.Name = "richTextBox1";
@@ -131,20 +106,9 @@
             this.labelSong.TabIndex = 22;
             this.labelSong.Text = "Τα τραγούδια του που χάραξαν την πορεία \r\nτου Ελληνικού λαϊκού τραγουδιού!";
             // 
-            // pictureBoxPortraito
-            // 
-            this.pictureBoxPortraito.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPortraito.Image")));
-            this.pictureBoxPortraito.Location = new System.Drawing.Point(227, 130);
-            this.pictureBoxPortraito.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBoxPortraito.Name = "pictureBoxPortraito";
-            this.pictureBoxPortraito.Size = new System.Drawing.Size(578, 348);
-            this.pictureBoxPortraito.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxPortraito.TabIndex = 24;
-            this.pictureBoxPortraito.TabStop = false;
-            // 
             // richTextBox2
             // 
-            this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.richTextBox2.Location = new System.Drawing.Point(1075, 130);
             this.richTextBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox2.Name = "richTextBox2";
@@ -153,16 +117,6 @@
             this.richTextBox2.TabIndex = 25;
             this.richTextBox2.Text = "1.  Υπάρχω\n2.  Ζιγκουάλα\n3.  Κάτω απο το πουκάμισό μου\n4.  Η ζωή μου όλη\n5.  Το Σ" +
     "αβατόβραδο";
-            // 
-            // pictureBoxSlides
-            // 
-            this.pictureBoxSlides.Location = new System.Drawing.Point(1075, 511);
-            this.pictureBoxSlides.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBoxSlides.Name = "pictureBoxSlides";
-            this.pictureBoxSlides.Size = new System.Drawing.Size(578, 316);
-            this.pictureBoxSlides.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxSlides.TabIndex = 26;
-            this.pictureBoxSlides.TabStop = false;
             // 
             // label1
             // 
@@ -199,14 +153,6 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.TabIndex = 30;
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -216,6 +162,61 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 31;
             this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.TabIndex = 30;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBoxSlides
+            // 
+            this.pictureBoxSlides.Location = new System.Drawing.Point(1075, 511);
+            this.pictureBoxSlides.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBoxSlides.Name = "pictureBoxSlides";
+            this.pictureBoxSlides.Size = new System.Drawing.Size(578, 316);
+            this.pictureBoxSlides.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxSlides.TabIndex = 26;
+            this.pictureBoxSlides.TabStop = false;
+            this.pictureBoxSlides.Click += new System.EventHandler(this.pictureBoxSlides_Click);
+            // 
+            // pictureBoxPortraito
+            // 
+            this.pictureBoxPortraito.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPortraito.Image")));
+            this.pictureBoxPortraito.Location = new System.Drawing.Point(227, 130);
+            this.pictureBoxPortraito.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBoxPortraito.Name = "pictureBoxPortraito";
+            this.pictureBoxPortraito.Size = new System.Drawing.Size(578, 348);
+            this.pictureBoxPortraito.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxPortraito.TabIndex = 24;
+            this.pictureBoxPortraito.TabStop = false;
+            // 
+            // pictureBoxExit
+            // 
+            this.pictureBoxExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxExit.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxExit.Image")));
+            this.pictureBoxExit.Location = new System.Drawing.Point(1793, 758);
+            this.pictureBoxExit.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxExit.Name = "pictureBoxExit";
+            this.pictureBoxExit.Size = new System.Drawing.Size(89, 65);
+            this.pictureBoxExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxExit.TabIndex = 17;
+            this.pictureBoxExit.TabStop = false;
+            this.pictureBoxExit.Click += new System.EventHandler(this.pictureBoxExit_Click);
+            // 
+            // pictureBoxUnipi
+            // 
+            this.pictureBoxUnipi.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxUnipi.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxUnipi.Image")));
+            this.pictureBoxUnipi.Location = new System.Drawing.Point(1793, 15);
+            this.pictureBoxUnipi.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxUnipi.Name = "pictureBoxUnipi";
+            this.pictureBoxUnipi.Size = new System.Drawing.Size(89, 73);
+            this.pictureBoxUnipi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxUnipi.TabIndex = 16;
+            this.pictureBoxUnipi.TabStop = false;
             // 
             // FormKazatzidis
             // 
@@ -238,17 +239,17 @@
             this.Controls.Add(this.labelLegend);
             this.Controls.Add(this.pictureBoxExit);
             this.Controls.Add(this.pictureBoxUnipi);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormKazatzidis";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormKazatzidis";
             this.Load += new System.EventHandler(this.FormKazatzidis_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnipi)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPortraito)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlides)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlides)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPortraito)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnipi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

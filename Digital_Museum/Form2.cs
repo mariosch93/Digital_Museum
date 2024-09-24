@@ -10,17 +10,18 @@ using System.Windows.Forms;
 
 namespace Digital_Museum
 {
-    public partial class FormKazatzidis : Form
+    public partial class FormMpithikotsis : Form
     {
         private List<string> imagePaths;
         private int currentImageIndex = 0;
-        public FormKazatzidis()
+        public FormMpithikotsis()
         {
             InitializeComponent();
             imagePaths = new List<string>
             {
-                "stelios.jpg",
-                "stelios2.jpg",                
+                "mpithikotsis1.jpg",
+                "mpithikotsis2.jpg",
+                "mpithikotsis3.jpg"
             };
 
             // Κατά τη φόρτωση της φόρμας, δεν ρυθμίζουμε εικόνα στο PictureBox
@@ -32,11 +33,6 @@ namespace Digital_Museum
         private void pictureBoxExit_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
-        }
-
-        private void FormKazatzidis_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void buttonStart_Click(object sender, EventArgs e)
@@ -64,11 +60,6 @@ namespace Digital_Museum
 
             // Αλλαγή της εικόνας στο PictureBox
             pictureBoxSlides.ImageLocation = imagePaths[currentImageIndex];
-        }
-
-        private void pictureBoxSlides_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
