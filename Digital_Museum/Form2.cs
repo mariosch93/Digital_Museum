@@ -21,7 +21,7 @@ namespace Digital_Museum
             {
                 "mpithikotsis1.jpg",
                 "mpithikotsis2.jpg",
-                "mpithikotsis3.jpg"
+                "mpithikotsis3.jpg",
             };
 
             // Κατά τη φόρτωση της φόρμας, δεν ρυθμίζουμε εικόνα στο PictureBox
