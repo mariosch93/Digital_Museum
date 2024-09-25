@@ -13,21 +13,22 @@ namespace Digital_Museum
 {
     public partial class FormTheodorakis : Form
     {
-        private List<string> imagePaths;
+        private List<Image> images;
         private int currentImageIndex = 0;
         SoundPlayer player = new SoundPlayer(".........wav");
+
         public FormTheodorakis()
         {
             InitializeComponent();
-            imagePaths = new List<string>
+            images = new List<Image>
             {
-                "theodorakis2.jpg",
-                "theodorakis3.jpg",
-                "theodorakis4.jpg",
+                Properties.Resources.Theodorakis2,
+                Properties.Resources.Theodorakis3,
+                Properties.Resources.Theodorakis4,
             };
 
             // Κατά τη φόρτωση της φόρμας, δεν ρυθμίζουμε εικόνα στο PictureBox
-            pictureBoxSlides.ImageLocation = null;
+            pictureBoxSlides.Image = null;
             // Διασφάλιση ότι ο Timer δεν είναι ενεργός
             timer1.Stop();
         }
@@ -45,7 +46,7 @@ namespace Digital_Museum
         private void buttonStart_Click(object sender, EventArgs e)
         {
             // Ορισμός της πρώτης εικόνας πριν την εκκίνηση του Timer
-            pictureBoxSlides.ImageLocation = imagePaths[currentImageIndex];
+            pictureBoxSlides.Image = images[currentImageIndex];
             // Εκκίνηση του Timer
             timer1.Start();
         }
@@ -60,13 +61,13 @@ namespace Digital_Museum
         {
             // Μετάβαση στην επόμενη εικόνα
             currentImageIndex++;
-            if (currentImageIndex >= imagePaths.Count)
+            if (currentImageIndex >= images.Count)
             {
                 currentImageIndex = 0; // Επαναφορά στο πρώτο
             }
 
             // Αλλαγή της εικόνας στο PictureBox
-            pictureBoxSlides.ImageLocation = imagePaths[currentImageIndex];
+            pictureBoxSlides.Image = images[currentImageIndex];
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

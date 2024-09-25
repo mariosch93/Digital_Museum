@@ -45,10 +45,10 @@
             // buttonPreviousSong
             // 
             this.buttonPreviousSong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPreviousSong.Location = new System.Drawing.Point(194, 289);
+            this.buttonPreviousSong.Location = new System.Drawing.Point(259, 356);
             this.buttonPreviousSong.Margin = new System.Windows.Forms.Padding(0);
             this.buttonPreviousSong.Name = "buttonPreviousSong";
-            this.buttonPreviousSong.Size = new System.Drawing.Size(30, 28);
+            this.buttonPreviousSong.Size = new System.Drawing.Size(40, 34);
             this.buttonPreviousSong.TabIndex = 1;
             this.buttonPreviousSong.Text = "<<";
             this.buttonPreviousSong.UseVisualStyleBackColor = true;
@@ -57,10 +57,10 @@
             // buttonNextSong
             // 
             this.buttonNextSong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonNextSong.Location = new System.Drawing.Point(429, 289);
+            this.buttonNextSong.Location = new System.Drawing.Point(572, 356);
             this.buttonNextSong.Margin = new System.Windows.Forms.Padding(0);
             this.buttonNextSong.Name = "buttonNextSong";
-            this.buttonNextSong.Size = new System.Drawing.Size(30, 28);
+            this.buttonNextSong.Size = new System.Drawing.Size(40, 34);
             this.buttonNextSong.TabIndex = 2;
             this.buttonNextSong.Text = ">>";
             this.buttonNextSong.UseVisualStyleBackColor = true;
@@ -75,9 +75,10 @@
             "Δημήτρης Μητροπάνος - Έρωτας Αρχάγγελος",
             "Κώνσταντίνος Αργυρός - Αθήνα μου",
             "Στέλιος Καζαντζίδης - Υπάρχω"});
-            this.comboBoxPlaylist.Location = new System.Drawing.Point(255, 12);
+            this.comboBoxPlaylist.Location = new System.Drawing.Point(340, 15);
+            this.comboBoxPlaylist.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxPlaylist.Name = "comboBoxPlaylist";
-            this.comboBoxPlaylist.Size = new System.Drawing.Size(335, 24);
+            this.comboBoxPlaylist.Size = new System.Drawing.Size(445, 28);
             this.comboBoxPlaylist.TabIndex = 12;
             this.comboBoxPlaylist.Visible = false;
             this.comboBoxPlaylist.SelectedIndexChanged += new System.EventHandler(this.comboBoxPlaylist_SelectedIndexChanged);
@@ -87,10 +88,10 @@
             this.buttonStop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonStop.BackgroundImage")));
             this.buttonStop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonStop.Location = new System.Drawing.Point(150, 287);
+            this.buttonStop.Location = new System.Drawing.Point(200, 353);
             this.buttonStop.Margin = new System.Windows.Forms.Padding(0);
             this.buttonStop.Name = "buttonStop";
-            this.buttonStop.Size = new System.Drawing.Size(34, 33);
+            this.buttonStop.Size = new System.Drawing.Size(45, 41);
             this.buttonStop.TabIndex = 11;
             this.buttonStop.UseVisualStyleBackColor = true;
             this.buttonStop.Click += new System.EventHandler(this.buttonStop_Click);
@@ -100,10 +101,10 @@
             this.buttonPlayRandom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonPlayRandom.BackgroundImage")));
             this.buttonPlayRandom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonPlayRandom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPlayRandom.Location = new System.Drawing.Point(470, 287);
+            this.buttonPlayRandom.Location = new System.Drawing.Point(627, 353);
             this.buttonPlayRandom.Margin = new System.Windows.Forms.Padding(0);
             this.buttonPlayRandom.Name = "buttonPlayRandom";
-            this.buttonPlayRandom.Size = new System.Drawing.Size(34, 33);
+            this.buttonPlayRandom.Size = new System.Drawing.Size(45, 41);
             this.buttonPlayRandom.TabIndex = 10;
             this.buttonPlayRandom.UseVisualStyleBackColor = true;
             this.buttonPlayRandom.Click += new System.EventHandler(this.buttonPlayRandom_Click);
@@ -113,10 +114,10 @@
             this.buttonKaraoke.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonKaraoke.BackgroundImage")));
             this.buttonKaraoke.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonKaraoke.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonKaraoke.Location = new System.Drawing.Point(560, 289);
+            this.buttonKaraoke.Location = new System.Drawing.Point(747, 356);
             this.buttonKaraoke.Margin = new System.Windows.Forms.Padding(0);
             this.buttonKaraoke.Name = "buttonKaraoke";
-            this.buttonKaraoke.Size = new System.Drawing.Size(30, 28);
+            this.buttonKaraoke.Size = new System.Drawing.Size(40, 34);
             this.buttonKaraoke.TabIndex = 7;
             this.buttonKaraoke.UseVisualStyleBackColor = true;
             this.buttonKaraoke.Click += new System.EventHandler(this.buttonKaraoke_Click);
@@ -126,10 +127,10 @@
             this.buttonPlaylist.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonPlaylist.BackgroundImage")));
             this.buttonPlaylist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonPlaylist.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPlaylist.Location = new System.Drawing.Point(64, 289);
+            this.buttonPlaylist.Location = new System.Drawing.Point(85, 356);
             this.buttonPlaylist.Margin = new System.Windows.Forms.Padding(0);
             this.buttonPlaylist.Name = "buttonPlaylist";
-            this.buttonPlaylist.Size = new System.Drawing.Size(30, 28);
+            this.buttonPlaylist.Size = new System.Drawing.Size(40, 34);
             this.buttonPlaylist.TabIndex = 5;
             this.buttonPlaylist.UseVisualStyleBackColor = true;
             this.buttonPlaylist.Click += new System.EventHandler(this.buttonPlaylist_Click);
@@ -137,22 +138,24 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-20, -86);
+            this.pictureBox1.Location = new System.Drawing.Point(-27, -106);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(691, 538);
+            this.pictureBox1.Size = new System.Drawing.Size(921, 662);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // buttonPlay
             // 
             this.buttonPlay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonPlay.BackgroundImage")));
             this.buttonPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPlay.Location = new System.Drawing.Point(108, 289);
+            this.buttonPlay.Location = new System.Drawing.Point(144, 356);
             this.buttonPlay.Margin = new System.Windows.Forms.Padding(0);
             this.buttonPlay.Name = "buttonPlay";
-            this.buttonPlay.Size = new System.Drawing.Size(30, 28);
+            this.buttonPlay.Size = new System.Drawing.Size(40, 34);
             this.buttonPlay.TabIndex = 13;
             this.buttonPlay.UseVisualStyleBackColor = true;
             this.buttonPlay.Click += new System.EventHandler(this.buttonPlay_Click);
@@ -162,19 +165,19 @@
             this.buttonLooping.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonLooping.BackgroundImage")));
             this.buttonLooping.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonLooping.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLooping.Location = new System.Drawing.Point(514, 289);
+            this.buttonLooping.Location = new System.Drawing.Point(685, 356);
             this.buttonLooping.Margin = new System.Windows.Forms.Padding(0);
             this.buttonLooping.Name = "buttonLooping";
-            this.buttonLooping.Size = new System.Drawing.Size(34, 33);
+            this.buttonLooping.Size = new System.Drawing.Size(45, 41);
             this.buttonLooping.TabIndex = 14;
             this.buttonLooping.UseVisualStyleBackColor = true;
             this.buttonLooping.Click += new System.EventHandler(this.buttonLooping_Click);
             // 
             // FormConsole
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(654, 372);
+            this.ClientSize = new System.Drawing.Size(872, 458);
             this.ControlBox = false;
             this.Controls.Add(this.buttonLooping);
             this.Controls.Add(this.buttonPlay);
@@ -187,6 +190,7 @@
             this.Controls.Add(this.buttonPreviousSong);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormConsole";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormConsole";

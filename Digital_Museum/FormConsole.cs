@@ -123,5 +123,10 @@ namespace Digital_Museum
         {
             player.PlayLooping();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

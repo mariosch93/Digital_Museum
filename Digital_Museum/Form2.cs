@@ -13,17 +13,17 @@ namespace Digital_Museum
 {
     public partial class FormMpithikotsis : Form
     {
-        private List<string> imagePaths;
+        private List<Image> images;
         private int currentImageIndex = 0;
         SoundPlayer player = new SoundPlayer(".........wav");
         public FormMpithikotsis()
         {
             InitializeComponent();
-            imagePaths = new List<string>
+            images = new List<Image>
             {
-                "mpithikotsis1.jpg",
-                "mpithikotsis2.jpg",
-                "mpithikotsis3.jpg",
+                Properties.Resources.mpithikotsis1,
+                Properties.Resources.mpithikotsis2,
+                Properties.Resources.mpithikotsis3,
             };
 
             // Κατά τη φόρτωση της φόρμας, δεν ρυθμίζουμε εικόνα στο PictureBox
@@ -40,7 +40,7 @@ namespace Digital_Museum
         private void buttonStart_Click(object sender, EventArgs e)
         {
             // Ορισμός της πρώτης εικόνας πριν την εκκίνηση του Timer
-            pictureBoxSlides.ImageLocation = imagePaths[currentImageIndex];
+            pictureBoxSlides.Image = images[currentImageIndex];
             // Εκκίνηση του Timer
             timer1.Start();
         }
@@ -55,13 +55,13 @@ namespace Digital_Museum
         {
             // Μετάβαση στην επόμενη εικόνα
             currentImageIndex++;
-            if (currentImageIndex >= imagePaths.Count)
+            if (currentImageIndex >= images.Count)
             {
                 currentImageIndex = 0; // Επαναφορά στο πρώτο
             }
 
             // Αλλαγή της εικόνας στο PictureBox
-            pictureBoxSlides.ImageLocation = imagePaths[currentImageIndex];
+            pictureBoxSlides.Image = images[currentImageIndex];
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

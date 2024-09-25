@@ -178,7 +178,7 @@
             this.pictureBoxSlides.Location = new System.Drawing.Point(1075, 511);
             this.pictureBoxSlides.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxSlides.Name = "pictureBoxSlides";
-            this.pictureBoxSlides.Size = new System.Drawing.Size(578, 316);
+            this.pictureBoxSlides.Size = new System.Drawing.Size(256, 256);
             this.pictureBoxSlides.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxSlides.TabIndex = 26;
             this.pictureBoxSlides.TabStop = false;
