@@ -15,7 +15,7 @@ namespace Digital_Museum
     {
         private List<Image> images;
         private int currentImageIndex = 0;
-        SoundPlayer player = new SoundPlayer(".........wav");
+        SoundPlayer player = new SoundPlayer("./music/Της Δικαιοσύνης Ήλιε Νοητέ - Μίκης Θεοδωράκης.wav");
 
         public FormTheodorakis()
         {
@@ -73,6 +73,11 @@ namespace Digital_Museum
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             player.Play();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            player.Stop();
         }
     }
 }

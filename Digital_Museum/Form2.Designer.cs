@@ -45,6 +45,7 @@
             this.pictureBoxPortraito = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxUnipi = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlides)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPortraito)).BeginInit();
@@ -208,12 +209,23 @@
             this.pictureBoxUnipi.TabIndex = 39;
             this.pictureBoxUnipi.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1508, 319);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 41;
+            this.button1.Text = "STOP";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormMpithikotsis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1615, 753);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBoxUnipi);
             this.Controls.Add(this.buttonStop);
@@ -257,5 +269,6 @@
         private System.Windows.Forms.PictureBox pictureBoxExit;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBoxUnipi;
+        private System.Windows.Forms.Button button1;
     }
 }

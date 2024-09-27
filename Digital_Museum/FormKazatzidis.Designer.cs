@@ -46,6 +46,7 @@
             this.pictureBoxPortraito = new System.Windows.Forms.PictureBox();
             this.pictureBoxExit = new System.Windows.Forms.PictureBox();
             this.pictureBoxUnipi = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlides)).BeginInit();
@@ -178,7 +179,7 @@
             this.pictureBoxSlides.Location = new System.Drawing.Point(1075, 511);
             this.pictureBoxSlides.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxSlides.Name = "pictureBoxSlides";
-            this.pictureBoxSlides.Size = new System.Drawing.Size(256, 256);
+            this.pictureBoxSlides.Size = new System.Drawing.Size(417, 256);
             this.pictureBoxSlides.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxSlides.TabIndex = 26;
             this.pictureBoxSlides.TabStop = false;
@@ -220,12 +221,23 @@
             this.pictureBoxUnipi.TabIndex = 16;
             this.pictureBoxUnipi.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1775, 356);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "STOP";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormKazatzidis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1899, 838);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.buttonStop);
@@ -275,5 +287,6 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
