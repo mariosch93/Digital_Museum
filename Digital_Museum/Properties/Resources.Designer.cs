@@ -153,9 +153,39 @@ namespace Digital_Museum.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Stelios1 {
+            get {
+                object obj = ResourceManager.GetObject("Stelios1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap stelios2 {
             get {
                 object obj = ResourceManager.GetObject("stelios2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stelios3 {
+            get {
+                object obj = ResourceManager.GetObject("stelios3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stelios4 {
+            get {
+                object obj = ResourceManager.GetObject("stelios4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

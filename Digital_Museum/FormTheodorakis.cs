@@ -15,7 +15,7 @@ namespace Digital_Museum
     {
         private List<Image> images;
         private int currentImageIndex = 0;
-        SoundPlayer player = new SoundPlayer("./music/Της Δικαιοσύνης Ήλιε Νοητέ - Μίκης Θεοδωράκης.wav");
+        SoundPlayer player = new SoundPlayer("./music/Μίκης.wav");
 
         public FormTheodorakis()
         {

@@ -67,11 +67,11 @@
             // richTextBox2
             // 
             this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.richTextBox2.Location = new System.Drawing.Point(902, 158);
+            this.richTextBox2.Location = new System.Drawing.Point(886, 132);
             this.richTextBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.ReadOnly = true;
-            this.richTextBox2.Size = new System.Drawing.Size(374, 203);
+            this.richTextBox2.Size = new System.Drawing.Size(427, 266);
             this.richTextBox2.TabIndex = 33;
             this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
             // 
@@ -153,7 +153,7 @@
             // 
             // buttonStop
             // 
-            this.buttonStop.Location = new System.Drawing.Point(1395, 500);
+            this.buttonStop.Location = new System.Drawing.Point(1395, 489);
             this.buttonStop.Name = "buttonStop";
             this.buttonStop.Size = new System.Drawing.Size(118, 37);
             this.buttonStop.TabIndex = 38;
@@ -163,7 +163,7 @@
             // 
             // buttonStart
             // 
-            this.buttonStart.Location = new System.Drawing.Point(1395, 413);
+            this.buttonStart.Location = new System.Drawing.Point(1395, 407);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(118, 43);
             this.buttonStart.TabIndex = 37;
@@ -224,7 +224,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1414, 338);
+            this.button1.Location = new System.Drawing.Point(1424, 336);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 43;

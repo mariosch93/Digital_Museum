@@ -259,6 +259,15 @@
   <ItemGroup>
     <None Include="Resources\Theodorakis4.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stelios1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stelios3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stelios4.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

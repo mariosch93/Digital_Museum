@@ -60,9 +60,10 @@
             this.labelLegend.AutoSize = true;
             this.labelLegend.BackColor = System.Drawing.Color.Transparent;
             this.labelLegend.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLegend.Location = new System.Drawing.Point(478, 15);
+            this.labelLegend.Location = new System.Drawing.Point(637, 18);
+            this.labelLegend.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelLegend.Name = "labelLegend";
-            this.labelLegend.Size = new System.Drawing.Size(488, 25);
+            this.labelLegend.Size = new System.Drawing.Size(609, 31);
             this.labelLegend.TabIndex = 18;
             this.labelLegend.Text = "Αίθουσα αφιερωμένη στον Στέλιο Καζαντζίδη";
             // 
@@ -73,28 +74,27 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(142, 681);
+            this.panel1.Size = new System.Drawing.Size(189, 838);
             this.panel1.TabIndex = 19;
             // 
             // labelbio
             // 
             this.labelbio.AutoSize = true;
             this.labelbio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.labelbio.Location = new System.Drawing.Point(240, 415);
-            this.labelbio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelbio.Location = new System.Drawing.Point(320, 511);
             this.labelbio.Name = "labelbio";
-            this.labelbio.Size = new System.Drawing.Size(211, 20);
+            this.labelbio.Size = new System.Drawing.Size(259, 25);
             this.labelbio.TabIndex = 20;
             this.labelbio.Text = "Η βιογραφία του Στέλιου";
             // 
             // richTextBox1
             // 
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.richTextBox1.Location = new System.Drawing.Point(177, 452);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox1.Location = new System.Drawing.Point(236, 556);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(428, 218);
+            this.richTextBox1.Size = new System.Drawing.Size(569, 267);
             this.richTextBox1.TabIndex = 21;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
@@ -102,21 +102,20 @@
             // 
             this.labelSong.AutoSize = true;
             this.labelSong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.labelSong.Location = new System.Drawing.Point(802, 54);
-            this.labelSong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelSong.Location = new System.Drawing.Point(1069, 66);
             this.labelSong.Name = "labelSong";
-            this.labelSong.Size = new System.Drawing.Size(355, 40);
+            this.labelSong.Size = new System.Drawing.Size(439, 50);
             this.labelSong.TabIndex = 22;
             this.labelSong.Text = "Τα τραγούδια του που χάραξαν την πορεία \r\nτου Ελληνικού λαϊκού τραγουδιού!";
             // 
             // richTextBox2
             // 
             this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.richTextBox2.Location = new System.Drawing.Point(806, 106);
-            this.richTextBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox2.Location = new System.Drawing.Point(1075, 130);
+            this.richTextBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.ReadOnly = true;
-            this.richTextBox2.Size = new System.Drawing.Size(434, 284);
+            this.richTextBox2.Size = new System.Drawing.Size(518, 287);
             this.richTextBox2.TabIndex = 25;
             this.richTextBox2.Text = "1.  Υπάρχω\n2.  Ζιγκουάλα\n3.  Κάτω απο το πουκάμισό μου\n4.  Η ζωή μου όλη\n5.  Το Σ" +
     "αβατόβραδο\n6.  Το ψωμί της ξενυτιάς\n7.  Μπαρμπαγιάννης\n8.  Απ τα ψηλά πατώματα\n9" +
@@ -126,19 +125,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label1.Location = new System.Drawing.Point(240, 74);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(320, 91);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(267, 20);
+            this.label1.Size = new System.Drawing.Size(324, 25);
             this.label1.TabIndex = 27;
             this.label1.Text = "Πορτραίτο Στέλιου Καζαντζίδη";
             // 
             // buttonStart
             // 
-            this.buttonStart.Location = new System.Drawing.Point(1323, 409);
-            this.buttonStart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonStart.Location = new System.Drawing.Point(1745, 483);
+            this.buttonStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonStart.Name = "buttonStart";
-            this.buttonStart.Size = new System.Drawing.Size(88, 35);
+            this.buttonStart.Size = new System.Drawing.Size(117, 43);
             this.buttonStart.TabIndex = 28;
             this.buttonStart.Text = "Start Slides";
             this.buttonStart.UseVisualStyleBackColor = true;
@@ -146,10 +144,10 @@
             // 
             // buttonStop
             // 
-            this.buttonStop.Location = new System.Drawing.Point(1323, 487);
-            this.buttonStop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonStop.Location = new System.Drawing.Point(1745, 585);
+            this.buttonStop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonStop.Name = "buttonStop";
-            this.buttonStop.Size = new System.Drawing.Size(88, 30);
+            this.buttonStop.Size = new System.Drawing.Size(117, 37);
             this.buttonStop.TabIndex = 29;
             this.buttonStop.Text = "Stop Slides";
             this.buttonStop.UseVisualStyleBackColor = true;
@@ -163,10 +161,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1278, 96);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(1704, 118);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(137, 149);
+            this.pictureBox1.Size = new System.Drawing.Size(183, 183);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 31;
             this.pictureBox1.TabStop = false;
@@ -175,18 +173,18 @@
             // pictureBox2
             // 
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(75, 41);
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
             this.pictureBox2.TabIndex = 30;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBoxSlides
             // 
-            this.pictureBoxSlides.Location = new System.Drawing.Point(806, 415);
-            this.pictureBoxSlides.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxSlides.Location = new System.Drawing.Point(1075, 483);
+            this.pictureBoxSlides.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxSlides.Name = "pictureBoxSlides";
-            this.pictureBoxSlides.Size = new System.Drawing.Size(313, 208);
+            this.pictureBoxSlides.Size = new System.Drawing.Size(518, 340);
             this.pictureBoxSlides.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxSlides.TabIndex = 26;
             this.pictureBoxSlides.TabStop = false;
@@ -195,10 +193,10 @@
             // pictureBoxPortraito
             // 
             this.pictureBoxPortraito.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPortraito.Image")));
-            this.pictureBoxPortraito.Location = new System.Drawing.Point(170, 106);
-            this.pictureBoxPortraito.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxPortraito.Location = new System.Drawing.Point(227, 130);
+            this.pictureBoxPortraito.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxPortraito.Name = "pictureBoxPortraito";
-            this.pictureBoxPortraito.Size = new System.Drawing.Size(434, 283);
+            this.pictureBoxPortraito.Size = new System.Drawing.Size(579, 348);
             this.pictureBoxPortraito.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxPortraito.TabIndex = 24;
             this.pictureBoxPortraito.TabStop = false;
@@ -207,9 +205,10 @@
             // 
             this.pictureBoxExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxExit.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxExit.Image")));
-            this.pictureBoxExit.Location = new System.Drawing.Point(1345, 616);
+            this.pictureBoxExit.Location = new System.Drawing.Point(1793, 758);
+            this.pictureBoxExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxExit.Name = "pictureBoxExit";
-            this.pictureBoxExit.Size = new System.Drawing.Size(67, 53);
+            this.pictureBoxExit.Size = new System.Drawing.Size(89, 65);
             this.pictureBoxExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxExit.TabIndex = 17;
             this.pictureBoxExit.TabStop = false;
@@ -219,19 +218,20 @@
             // 
             this.pictureBoxUnipi.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxUnipi.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxUnipi.Image")));
-            this.pictureBoxUnipi.Location = new System.Drawing.Point(1345, 12);
+            this.pictureBoxUnipi.Location = new System.Drawing.Point(1793, 15);
+            this.pictureBoxUnipi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxUnipi.Name = "pictureBoxUnipi";
-            this.pictureBoxUnipi.Size = new System.Drawing.Size(67, 59);
+            this.pictureBoxUnipi.Size = new System.Drawing.Size(89, 73);
             this.pictureBoxUnipi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxUnipi.TabIndex = 16;
             this.pictureBoxUnipi.TabStop = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1331, 289);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(1745, 330);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 19);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 32;
             this.button1.Text = "STOP";
             this.button1.UseVisualStyleBackColor = true;
@@ -239,10 +239,10 @@
             // 
             // FormKazatzidis
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1424, 681);
+            this.ClientSize = new System.Drawing.Size(1899, 838);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
@@ -259,6 +259,7 @@
             this.Controls.Add(this.labelLegend);
             this.Controls.Add(this.pictureBoxExit);
             this.Controls.Add(this.pictureBoxUnipi);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormKazatzidis";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormKazatzidis";

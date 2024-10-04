@@ -15,7 +15,7 @@ namespace Digital_Museum
     {
         private List<Image> images;
         private int currentImageIndex = 0;
-        SoundPlayer player = new SoundPlayer("./music/ΓΡΗΓΟΡΗΣ ΜΠΙΘΙΚΩΤΣΗΣ ΒΡΕΧΕΙ ΣΤΗ ΦΤΩΧΟΓΕΙΤΟΝΙΑ.wav");
+        SoundPlayer player = new SoundPlayer("./music/ΜΠΙΘΙΚΩΤΣΗΣ.wav");
         public FormMpithikotsis()
         {
             InitializeComponent();

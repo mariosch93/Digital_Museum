@@ -22,7 +22,9 @@ namespace Digital_Museum
             images = new List<Image>
             {
                 Properties.Resources.stelios,
-                Properties.Resources.stelios2,                
+                Properties.Resources.stelios2,
+                Properties.Resources.stelios3,
+                Properties.Resources.stelios4,
             };
 
             // Κατά τη φόρτωση της φόρμας, δεν ρυθμίζουμε εικόνα στο PictureBox
