@@ -13,6 +13,9 @@ namespace Digital_Museum
 {
     public partial class FormConcert : Form
     {
+        bool sidebarExpand;
+        LoginInfo loginInfo;
+        bool buttonClicked = false;
         int totalCost;
         int costA10 = 0;
         int costA11 = 0;
@@ -185,6 +188,60 @@ namespace Digital_Museum
         {
             FormPayment formPayment = new FormPayment(totalCost);
             formPayment.ShowDialog();
+        }
+
+        private void buttonMenu_Click(object sender, EventArgs e)
+        {
+            sidebarTimer.Start();
+        }
+
+        private void buttonHome_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.ShowDialog();
+        }
+
+        private void buttonArtists_Click(object sender, EventArgs e)
+        {
+            FormArtists formArtists = new FormArtists();
+            formArtists.ShowDialog();
+        }
+
+        private void buttonConcert_Click(object sender, EventArgs e)
+        {
+            FormConcert formConcert = new FormConcert();
+            formConcert.ShowDialog();
+        }
+
+        private void buttonEvents_Click(object sender, EventArgs e)
+        {
+            FormVideoEvents formVideoEvents = new FormVideoEvents(loginInfo);
+            formVideoEvents.ShowDialog();
+        }
+
+        private void buttonShows_Click(object sender, EventArgs e)
+        {
+            FormPrivateSpace formPrivateSpace = new FormPrivateSpace(loginInfo);
+            formPrivateSpace.ShowDialog();
+        }
+
+        private void buttonOrder_Click(object sender, EventArgs e)
+        {
+            if (buttonClicked == false)
+            {
+                FormOnlineOrder onlineOrder = new FormOnlineOrder(loginInfo);
+                onlineOrder.TopLevel = false;
+                panelOnlineOrder.Visible = true;
+                panelOnlineOrder.Controls.Add(onlineOrder);
+                onlineOrder.BringToFront();
+                onlineOrder.Show();
+                buttonClicked = true;
+            }
+            else
+            {
+                panelOnlineOrder.Visible = false;
+                buttonClicked = false;
+            }
         }
     }
 }

@@ -14,8 +14,10 @@ namespace Digital_Museum
     public partial class Form1 : Form
     {
         bool sidebarExpand;
-        bool calendarClicked = false;
         LoginInfo loginInfo;
+        bool buttonClicked = false;
+
+        bool calendarClicked = false;
         string connectionString = "Data source=digital_museum.db;Version=3;";
         SQLiteConnection connection;
 
@@ -62,6 +64,18 @@ namespace Digital_Museum
             }
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxExit_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+        // MenuBar ---------------------------------------------------------------------------
+
         private void sidebarTimer_Tick(object sender, EventArgs e)
         {
             if (sidebarExpand)
@@ -89,21 +103,85 @@ namespace Digital_Museum
             sidebarTimer.Start();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBoxExit_Click(object sender, EventArgs e)
-        {
-            System.Windows.Forms.Application.Exit();
-        }
-
         private void buttonHome_Click(object sender, EventArgs e)
         {
             Form1 form = new Form1();
             form.ShowDialog();
         }
+
+        private void buttonArtists_Click(object sender, EventArgs e)
+        {
+            FormArtists formArtists = new FormArtists();
+            formArtists.ShowDialog();
+        }
+
+        private void buttonConcert_Click(object sender, EventArgs e)
+        {
+            FormConcert formConcert = new FormConcert();
+            formConcert.ShowDialog();
+        }
+
+        private void buttonEvents_Click(object sender, EventArgs e)
+        {
+            FormVideoEvents formVideoEvents = new FormVideoEvents(loginInfo);
+            formVideoEvents.ShowDialog();
+        }
+
+        private void buttonShows_Click(object sender, EventArgs e)
+        {
+            FormPrivateSpace formPrivateSpace = new FormPrivateSpace(loginInfo);
+            formPrivateSpace.ShowDialog();
+        }
+
+        private void buttonOrder_Click(object sender, EventArgs e)
+        {
+            if (buttonClicked == false)
+            {
+                FormOnlineOrder onlineOrder = new FormOnlineOrder(loginInfo);
+                onlineOrder.TopLevel = false;
+                panelOnlineOrder.Visible = true;
+                panelOnlineOrder.Controls.Add(onlineOrder);
+                onlineOrder.BringToFront();
+                onlineOrder.Show();
+                buttonClicked = true;
+            }
+            else
+            {
+                panelOnlineOrder.Visible = false;
+                buttonClicked = false;
+            }
+        }
+
+
+        // ------------------------------------------------------------------------------------------ 
+
+        private void buttonCalendar_Click(object sender, EventArgs e)
+        {
+            if (calendarClicked == false)
+            {
+                monthCalendarWork.Visible = true;
+                richTextBoxCalendar.Visible = true;
+                calendarClicked = true;
+            }
+            else
+            {
+                monthCalendarWork.Visible = false;
+                richTextBoxCalendar.Visible = false;
+                calendarClicked = false;
+            }
+        }
+        private void monthCalendarWork_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            if (CalendarDates.TryGetValue(e.Start, out var description))
+            {
+                richTextBoxCalendar.Text = description;
+            }
+            else
+            {
+                richTextBoxCalendar.Text = "";
+            }
+        }
+
 
         private void buttonLogin_MouseEnter(object sender, EventArgs e)
         {
@@ -178,56 +256,6 @@ namespace Digital_Museum
             }   
         }
 
-        private void buttonArtists_Click(object sender, EventArgs e)
-        {
-            FormArtists formArtists = new FormArtists();
-            formArtists.ShowDialog();
-        }
 
-        private void buttonConcert_Click(object sender, EventArgs e)
-        {
-            FormConcert formConcert = new FormConcert();
-            formConcert.ShowDialog();
-        }
-
-        private void buttonEvents_Click(object sender, EventArgs e)
-        {
-            FormVideoEvents formVideoEvents = new FormVideoEvents(loginInfo);
-            formVideoEvents.ShowDialog();
-        }
-
-        private void buttonShows_Click(object sender, EventArgs e)
-        {
-            FormPrivateSpace formPrivateSpace = new FormPrivateSpace(loginInfo);
-            formPrivateSpace.ShowDialog();
-        }
-
-        private void buttonCalendar_Click(object sender, EventArgs e)
-        {
-            if (calendarClicked == false)
-            {
-                monthCalendarWork.Visible = true;
-                richTextBoxCalendar.Visible = true;
-                calendarClicked = true;
-            }
-            else
-            {
-                monthCalendarWork.Visible = false;
-                richTextBoxCalendar.Visible = false;
-                calendarClicked = false;
-            }
-        }
-
-        private void monthCalendarWork_DateChanged(object sender, DateRangeEventArgs e)
-        {
-            if (CalendarDates.TryGetValue(e.Start, out var description))
-            {
-                richTextBoxCalendar.Text = description;
-            }
-            else
-            {
-                richTextBoxCalendar.Text = "";
-            }
-        }
     }
 }

@@ -14,7 +14,9 @@ namespace Digital_Museum
      
     {
         ToolTip t1 = new ToolTip();
-       
+        bool sidebarExpand;
+        LoginInfo loginInfo;
+
         public FormArtists()
         {
             InitializeComponent();
@@ -64,6 +66,63 @@ namespace Digital_Museum
         {
             FormTheodorakis formTheodorakis=new FormTheodorakis();  
             formTheodorakis.ShowDialog();
+        }
+
+        private void sidebarTimer_Tick(object sender, EventArgs e)
+        {
+            if (sidebarExpand)
+            {
+                Sidebar.Width -= 10;
+                if (Sidebar.Width == Sidebar.MinimumSize.Width)
+                {
+                    sidebarExpand = false;
+                    sidebarTimer.Stop();
+                }
+            }
+            else
+            {
+                Sidebar.Width += 10;
+                if (Sidebar.Width == Sidebar.MaximumSize.Width)
+                {
+                    sidebarExpand = true;
+                    sidebarTimer.Stop();
+                }
+            }
+        }
+
+        private void buttonMenu_Click(object sender, EventArgs e)
+        {
+            sidebarTimer.Start();
+        }
+
+        private void buttonHome_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.ShowDialog();
+        }
+
+        private void buttonArtists_Click(object sender, EventArgs e)
+        {
+            FormArtists formArtists = new FormArtists();
+            formArtists.ShowDialog();
+        }
+
+        private void buttonConcert_Click(object sender, EventArgs e)
+        {
+            FormConcert formConcert = new FormConcert();
+            formConcert.ShowDialog();
+        }
+
+        private void buttonEvents_Click(object sender, EventArgs e)
+        {
+            FormVideoEvents formVideoEvents = new FormVideoEvents(loginInfo);
+            formVideoEvents.ShowDialog();
+        }
+
+        private void buttonShows_Click(object sender, EventArgs e)
+        {
+            FormPrivateSpace formPrivateSpace = new FormPrivateSpace(loginInfo);
+            formPrivateSpace.ShowDialog();
         }
     }
     
