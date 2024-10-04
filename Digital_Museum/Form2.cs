@@ -15,7 +15,7 @@ namespace Digital_Museum
     {
         private List<Image> images;
         private int currentImageIndex = 0;
-        SoundPlayer player = new SoundPlayer("./music/ΜΠΙΘΙΚΩΤΣΗΣ.wav");
+        SoundPlayer player = new SoundPlayer("./music/bithi.wav");
         public FormMpithikotsis()
         {
             InitializeComponent();
