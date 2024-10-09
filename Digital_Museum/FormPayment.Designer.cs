@@ -59,20 +59,20 @@
             // 
             // textBoxCost
             // 
-            this.textBoxCost.Location = new System.Drawing.Point(289, 382);
-            this.textBoxCost.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxCost.Location = new System.Drawing.Point(217, 310);
             this.textBoxCost.Name = "textBoxCost";
             this.textBoxCost.ReadOnly = true;
-            this.textBoxCost.Size = new System.Drawing.Size(191, 22);
+            this.textBoxCost.Size = new System.Drawing.Size(144, 20);
             this.textBoxCost.TabIndex = 0;
             // 
             // labelPay
             // 
             this.labelPay.AutoSize = true;
             this.labelPay.Font = new System.Drawing.Font("Arial", 12.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.labelPay.Location = new System.Drawing.Point(73, 64);
+            this.labelPay.Location = new System.Drawing.Point(55, 52);
+            this.labelPay.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPay.Name = "labelPay";
-            this.labelPay.Size = new System.Drawing.Size(912, 25);
+            this.labelPay.Size = new System.Drawing.Size(698, 19);
             this.labelPay.TabIndex = 1;
             this.labelPay.Text = "Συμπληρώστε τα στοιχεία σας παρακάτω προκειμένου να πραγματοποιηθεί η πληρωμή";
             // 
@@ -80,19 +80,20 @@
             // 
             this.labelName.AutoSize = true;
             this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.labelName.Location = new System.Drawing.Point(45, 119);
+            this.labelName.Location = new System.Drawing.Point(34, 97);
+            this.labelName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(169, 25);
+            this.labelName.Size = new System.Drawing.Size(129, 20);
             this.labelName.TabIndex = 2;
             this.labelName.Text = "Όνοματεπωνυμο:";
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(289, 122);
-            this.textBoxName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxName.Location = new System.Drawing.Point(217, 99);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxName.Multiline = true;
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(191, 22);
+            this.textBoxName.Size = new System.Drawing.Size(144, 19);
             this.textBoxName.TabIndex = 3;
             this.textBoxName.TextChanged += new System.EventHandler(this.textBoxName_TextChanged);
             // 
@@ -100,9 +101,10 @@
             // 
             this.labelTypePay.AutoSize = true;
             this.labelTypePay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.labelTypePay.Location = new System.Drawing.Point(45, 231);
+            this.labelTypePay.Location = new System.Drawing.Point(34, 188);
+            this.labelTypePay.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTypePay.Name = "labelTypePay";
-            this.labelTypePay.Size = new System.Drawing.Size(150, 25);
+            this.labelTypePay.Size = new System.Drawing.Size(117, 20);
             this.labelTypePay.TabIndex = 6;
             this.labelTypePay.Text = "Τύπος Κάρτας:";
             // 
@@ -114,10 +116,10 @@
             "Visa",
             "Mastercard",
             "AmericanExpress"});
-            this.comboBoxTypePay.Location = new System.Drawing.Point(287, 231);
-            this.comboBoxTypePay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxTypePay.Location = new System.Drawing.Point(215, 188);
+            this.comboBoxTypePay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxTypePay.Name = "comboBoxTypePay";
-            this.comboBoxTypePay.Size = new System.Drawing.Size(191, 26);
+            this.comboBoxTypePay.Size = new System.Drawing.Size(144, 23);
             this.comboBoxTypePay.TabIndex = 7;
             this.comboBoxTypePay.Text = "Choose card type";
             this.comboBoxTypePay.SelectedIndexChanged += new System.EventHandler(this.comboBoxTypePay_SelectedIndexChanged);
@@ -126,21 +128,22 @@
             // 
             this.labelNumCard.AutoSize = true;
             this.labelNumCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.labelNumCard.Location = new System.Drawing.Point(45, 282);
+            this.labelNumCard.Location = new System.Drawing.Point(34, 229);
+            this.labelNumCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNumCard.Name = "labelNumCard";
-            this.labelNumCard.Size = new System.Drawing.Size(166, 25);
+            this.labelNumCard.Size = new System.Drawing.Size(132, 20);
             this.labelNumCard.TabIndex = 8;
             this.labelNumCard.Text = "Αριθμός Κάρτας:";
             // 
             // textBoxNumCard
             // 
-            this.textBoxNumCard.Location = new System.Drawing.Point(289, 284);
-            this.textBoxNumCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxNumCard.Location = new System.Drawing.Point(217, 231);
+            this.textBoxNumCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxNumCard.MaxLength = 16;
             this.textBoxNumCard.Multiline = true;
             this.textBoxNumCard.Name = "textBoxNumCard";
             this.textBoxNumCard.PasswordChar = '*';
-            this.textBoxNumCard.Size = new System.Drawing.Size(191, 22);
+            this.textBoxNumCard.Size = new System.Drawing.Size(144, 19);
             this.textBoxNumCard.TabIndex = 9;
             this.textBoxNumCard.TextChanged += new System.EventHandler(this.textBoxNumCard_TextChanged);
             // 
@@ -148,9 +151,10 @@
             // 
             this.labelTotalCost.AutoSize = true;
             this.labelTotalCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.labelTotalCost.Location = new System.Drawing.Point(41, 382);
+            this.labelTotalCost.Location = new System.Drawing.Point(31, 310);
+            this.labelTotalCost.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTotalCost.Name = "labelTotalCost";
-            this.labelTotalCost.Size = new System.Drawing.Size(172, 25);
+            this.labelTotalCost.Size = new System.Drawing.Size(138, 20);
             this.labelTotalCost.TabIndex = 10;
             this.labelTotalCost.Text = "Συνολικό Κόστος:";
             // 
@@ -158,10 +162,9 @@
             // 
             this.pictureBoxExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxExit.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxExit.Image")));
-            this.pictureBoxExit.Location = new System.Drawing.Point(1035, 560);
-            this.pictureBoxExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxExit.Location = new System.Drawing.Point(776, 455);
             this.pictureBoxExit.Name = "pictureBoxExit";
-            this.pictureBoxExit.Size = new System.Drawing.Size(89, 65);
+            this.pictureBoxExit.Size = new System.Drawing.Size(67, 53);
             this.pictureBoxExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxExit.TabIndex = 415;
             this.pictureBoxExit.TabStop = false;
@@ -171,10 +174,9 @@
             // 
             this.pictureBoxUnipi.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxUnipi.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxUnipi.Image")));
-            this.pictureBoxUnipi.Location = new System.Drawing.Point(1035, 15);
-            this.pictureBoxUnipi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxUnipi.Location = new System.Drawing.Point(776, 12);
             this.pictureBoxUnipi.Name = "pictureBoxUnipi";
-            this.pictureBoxUnipi.Size = new System.Drawing.Size(89, 73);
+            this.pictureBoxUnipi.Size = new System.Drawing.Size(67, 59);
             this.pictureBoxUnipi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxUnipi.TabIndex = 414;
             this.pictureBoxUnipi.TabStop = false;
@@ -182,10 +184,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(536, 122);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(402, 99);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(539, 351);
+            this.pictureBox1.Size = new System.Drawing.Size(404, 285);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 416;
             this.pictureBox1.TabStop = false;
@@ -195,22 +197,21 @@
             this.labelCard.AutoSize = true;
             this.labelCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCard.ForeColor = System.Drawing.Color.Red;
-            this.labelCard.Location = new System.Drawing.Point(283, 337);
-            this.labelCard.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCard.Location = new System.Drawing.Point(212, 274);
             this.labelCard.Name = "labelCard";
-            this.labelCard.Size = new System.Drawing.Size(0, 20);
+            this.labelCard.Size = new System.Drawing.Size(0, 16);
             this.labelCard.TabIndex = 417;
             this.labelCard.Visible = false;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(289, 332);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Location = new System.Drawing.Point(217, 270);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.MaxLength = 4;
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(191, 22);
+            this.textBox1.Size = new System.Drawing.Size(144, 19);
             this.textBox1.TabIndex = 420;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -218,9 +219,10 @@
             // 
             this.labelCVV.AutoSize = true;
             this.labelCVV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.labelCVV.Location = new System.Drawing.Point(43, 331);
+            this.labelCVV.Location = new System.Drawing.Point(32, 269);
+            this.labelCVV.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCVV.Name = "labelCVV";
-            this.labelCVV.Size = new System.Drawing.Size(225, 24);
+            this.labelCVV.Size = new System.Drawing.Size(176, 18);
             this.labelCVV.TabIndex = 419;
             this.labelCVV.Text = "Κωδικός αφάλειας (CVV)";
             // 
@@ -229,10 +231,9 @@
             this.buttonPayment.FlatAppearance.BorderSize = 2;
             this.buttonPayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPayment.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPayment.Location = new System.Drawing.Point(289, 414);
-            this.buttonPayment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonPayment.Location = new System.Drawing.Point(217, 336);
             this.buttonPayment.Name = "buttonPayment";
-            this.buttonPayment.Size = new System.Drawing.Size(195, 59);
+            this.buttonPayment.Size = new System.Drawing.Size(146, 48);
             this.buttonPayment.TabIndex = 421;
             this.buttonPayment.Text = "Ολοκλήρωση \r\nπληρωμής";
             this.buttonPayment.UseVisualStyleBackColor = true;
@@ -241,11 +242,10 @@
             // textBoxErrors
             // 
             this.textBoxErrors.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxErrors.Location = new System.Drawing.Point(28, 480);
-            this.textBoxErrors.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxErrors.Location = new System.Drawing.Point(21, 390);
             this.textBoxErrors.Multiline = true;
             this.textBoxErrors.Name = "textBoxErrors";
-            this.textBoxErrors.Size = new System.Drawing.Size(627, 158);
+            this.textBoxErrors.Size = new System.Drawing.Size(471, 129);
             this.textBoxErrors.TabIndex = 422;
             this.textBoxErrors.Visible = false;
             // 
@@ -255,31 +255,30 @@
             this.button1.FlatAppearance.BorderSize = 2;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(33, 414);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(25, 336);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 59);
+            this.button1.Size = new System.Drawing.Size(146, 48);
             this.button1.TabIndex = 423;
             this.button1.Text = "Ακύρωση\r\nπληρωμής";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // progressBarPayment
             // 
-            this.progressBarPayment.Location = new System.Drawing.Point(33, 537);
-            this.progressBarPayment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.progressBarPayment.Location = new System.Drawing.Point(25, 436);
             this.progressBarPayment.Name = "progressBarPayment";
-            this.progressBarPayment.Size = new System.Drawing.Size(623, 38);
+            this.progressBarPayment.Size = new System.Drawing.Size(467, 31);
             this.progressBarPayment.Step = 1;
             this.progressBarPayment.TabIndex = 424;
             this.progressBarPayment.Visible = false;
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(289, 177);
-            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxEmail.Location = new System.Drawing.Point(217, 144);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxEmail.Multiline = true;
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(191, 22);
+            this.textBoxEmail.Size = new System.Drawing.Size(144, 19);
             this.textBoxEmail.TabIndex = 426;
             this.textBoxEmail.TextChanged += new System.EventHandler(this.textBoxEmail_TextChanged);
             // 
@@ -287,9 +286,10 @@
             // 
             this.labelEmail.AutoSize = true;
             this.labelEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.labelEmail.Location = new System.Drawing.Point(45, 177);
+            this.labelEmail.Location = new System.Drawing.Point(34, 144);
+            this.labelEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(182, 25);
+            this.labelEmail.Size = new System.Drawing.Size(146, 20);
             this.labelEmail.TabIndex = 425;
             this.labelEmail.Text = "Συμπλήρωση email:";
             // 
@@ -300,10 +300,10 @@
             // 
             // FormPayment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(1140, 640);
+            this.ClientSize = new System.Drawing.Size(855, 520);
             this.ControlBox = false;
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.labelEmail);
@@ -326,7 +326,6 @@
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.labelPay);
             this.Controls.Add(this.textBoxCost);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormPayment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormPayment";
