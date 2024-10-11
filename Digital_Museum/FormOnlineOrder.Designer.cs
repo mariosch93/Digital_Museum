@@ -29,14 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormOnlineOrder));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelHello = new System.Windows.Forms.Label();
             this.comboBoxFoods = new System.Windows.Forms.ComboBox();
-            this.buttonPayment = new System.Windows.Forms.Button();
             this.richTextBoxTotal = new System.Windows.Forms.RichTextBox();
-            this.checkBoxBurger = new System.Windows.Forms.CheckBox();
-            this.checkBoxFries = new System.Windows.Forms.CheckBox();
-            this.checkBoxSandwitch = new System.Windows.Forms.CheckBox();
             this.buttonMinusBur = new System.Windows.Forms.Button();
             this.buttonPlusBur = new System.Windows.Forms.Button();
             this.labelValueBurger = new System.Windows.Forms.Label();
@@ -52,7 +47,6 @@
             this.labelValueSa = new System.Windows.Forms.Label();
             this.labelValueS = new System.Windows.Forms.Label();
             this.labelValueF = new System.Windows.Forms.Label();
-            this.checkBoxSalad = new System.Windows.Forms.CheckBox();
             this.panelDrinks = new System.Windows.Forms.Panel();
             this.labelValueCola = new System.Windows.Forms.Label();
             this.labelValueFr = new System.Windows.Forms.Label();
@@ -68,24 +62,21 @@
             this.labelValueCap = new System.Windows.Forms.Label();
             this.buttonPlusCap = new System.Windows.Forms.Button();
             this.buttonMinusCap = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.checkBoxCola = new System.Windows.Forms.CheckBox();
             this.checkBoxJ = new System.Windows.Forms.CheckBox();
             this.checkBoxFreddo = new System.Windows.Forms.CheckBox();
             this.checkBoxCappuccino = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.buttonPayment = new System.Windows.Forms.Button();
+            this.checkBoxSandwitch = new System.Windows.Forms.CheckBox();
+            this.checkBoxFries = new System.Windows.Forms.CheckBox();
+            this.checkBoxSalad = new System.Windows.Forms.CheckBox();
+            this.checkBoxBurger = new System.Windows.Forms.CheckBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelFoods.SuspendLayout();
             this.panelDrinks.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(204, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(69, 60);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // labelHello
             // 
@@ -114,24 +105,6 @@
             this.comboBoxFoods.Text = "Επέλεξε κατηγορία";
             this.comboBoxFoods.SelectedIndexChanged += new System.EventHandler(this.comboBoxFoods_SelectedIndexChanged);
             // 
-            // buttonPayment
-            // 
-            this.buttonPayment.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonPayment.FlatAppearance.BorderSize = 0;
-            this.buttonPayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPayment.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPayment.ForeColor = System.Drawing.Color.White;
-            this.buttonPayment.Image = ((System.Drawing.Image)(resources.GetObject("buttonPayment.Image")));
-            this.buttonPayment.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonPayment.Location = new System.Drawing.Point(169, 390);
-            this.buttonPayment.Name = "buttonPayment";
-            this.buttonPayment.Size = new System.Drawing.Size(101, 83);
-            this.buttonPayment.TabIndex = 4;
-            this.buttonPayment.Text = "Ολοκληρώστε την πληρωμή σας";
-            this.buttonPayment.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonPayment.UseVisualStyleBackColor = false;
-            this.buttonPayment.Click += new System.EventHandler(this.buttonPayment_Click);
-            // 
             // richTextBoxTotal
             // 
             this.richTextBoxTotal.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -140,48 +113,6 @@
             this.richTextBoxTotal.Size = new System.Drawing.Size(160, 83);
             this.richTextBoxTotal.TabIndex = 5;
             this.richTextBoxTotal.Text = " ";
-            // 
-            // checkBoxBurger
-            // 
-            this.checkBoxBurger.AutoSize = true;
-            this.checkBoxBurger.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBurger.Image = ((System.Drawing.Image)(resources.GetObject("checkBoxBurger.Image")));
-            this.checkBoxBurger.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBoxBurger.Location = new System.Drawing.Point(12, 51);
-            this.checkBoxBurger.Name = "checkBoxBurger";
-            this.checkBoxBurger.Size = new System.Drawing.Size(158, 32);
-            this.checkBoxBurger.TabIndex = 0;
-            this.checkBoxBurger.Text = "           HamBurger: 15€";
-            this.checkBoxBurger.UseVisualStyleBackColor = true;
-            this.checkBoxBurger.CheckedChanged += new System.EventHandler(this.checkBoxBurger_CheckedChanged);
-            // 
-            // checkBoxFries
-            // 
-            this.checkBoxFries.AutoSize = true;
-            this.checkBoxFries.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxFries.Image = ((System.Drawing.Image)(resources.GetObject("checkBoxFries.Image")));
-            this.checkBoxFries.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBoxFries.Location = new System.Drawing.Point(12, 156);
-            this.checkBoxFries.Name = "checkBoxFries";
-            this.checkBoxFries.Size = new System.Drawing.Size(113, 32);
-            this.checkBoxFries.TabIndex = 2;
-            this.checkBoxFries.Text = "           Fries: 6€";
-            this.checkBoxFries.UseVisualStyleBackColor = true;
-            this.checkBoxFries.CheckedChanged += new System.EventHandler(this.checkBoxFries_CheckedChanged);
-            // 
-            // checkBoxSandwitch
-            // 
-            this.checkBoxSandwitch.AutoSize = true;
-            this.checkBoxSandwitch.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxSandwitch.Image = ((System.Drawing.Image)(resources.GetObject("checkBoxSandwitch.Image")));
-            this.checkBoxSandwitch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBoxSandwitch.Location = new System.Drawing.Point(12, 203);
-            this.checkBoxSandwitch.Name = "checkBoxSandwitch";
-            this.checkBoxSandwitch.Size = new System.Drawing.Size(145, 32);
-            this.checkBoxSandwitch.TabIndex = 3;
-            this.checkBoxSandwitch.Text = "           Sandwitch: 8€";
-            this.checkBoxSandwitch.UseVisualStyleBackColor = true;
-            this.checkBoxSandwitch.CheckedChanged += new System.EventHandler(this.checkBoxSandwitch_CheckedChanged);
             // 
             // buttonMinusBur
             // 
@@ -353,20 +284,6 @@
             this.labelValueF.Size = new System.Drawing.Size(0, 16);
             this.labelValueF.TabIndex = 23;
             // 
-            // checkBoxSalad
-            // 
-            this.checkBoxSalad.AutoSize = true;
-            this.checkBoxSalad.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxSalad.Image = ((System.Drawing.Image)(resources.GetObject("checkBoxSalad.Image")));
-            this.checkBoxSalad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBoxSalad.Location = new System.Drawing.Point(12, 105);
-            this.checkBoxSalad.Name = "checkBoxSalad";
-            this.checkBoxSalad.Size = new System.Drawing.Size(123, 32);
-            this.checkBoxSalad.TabIndex = 1;
-            this.checkBoxSalad.Text = "           Salad: 10€";
-            this.checkBoxSalad.UseVisualStyleBackColor = true;
-            this.checkBoxSalad.CheckedChanged += new System.EventHandler(this.checkBoxSalad_CheckedChanged);
-            // 
             // panelDrinks
             // 
             this.panelDrinks.Controls.Add(this.labelValueCola);
@@ -537,6 +454,17 @@
             this.buttonMinusCap.UseVisualStyleBackColor = true;
             this.buttonMinusCap.Click += new System.EventHandler(this.buttonMinusCap_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(15, 339);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 40);
+            this.button1.TabIndex = 432;
+            this.button1.Text = "HELP";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // checkBoxCola
             // 
             this.checkBoxCola.AutoSize = true;
@@ -593,12 +521,97 @@
             this.checkBoxCappuccino.UseVisualStyleBackColor = true;
             this.checkBoxCappuccino.CheckedChanged += new System.EventHandler(this.checkBoxCappuccino_CheckedChanged);
             // 
+            // buttonPayment
+            // 
+            this.buttonPayment.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonPayment.FlatAppearance.BorderSize = 0;
+            this.buttonPayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPayment.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPayment.ForeColor = System.Drawing.Color.White;
+            this.buttonPayment.Image = ((System.Drawing.Image)(resources.GetObject("buttonPayment.Image")));
+            this.buttonPayment.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonPayment.Location = new System.Drawing.Point(169, 390);
+            this.buttonPayment.Name = "buttonPayment";
+            this.buttonPayment.Size = new System.Drawing.Size(101, 83);
+            this.buttonPayment.TabIndex = 4;
+            this.buttonPayment.Text = "Ολοκληρώστε την πληρωμή σας";
+            this.buttonPayment.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonPayment.UseVisualStyleBackColor = false;
+            this.buttonPayment.Click += new System.EventHandler(this.buttonPayment_Click);
+            // 
+            // checkBoxSandwitch
+            // 
+            this.checkBoxSandwitch.AutoSize = true;
+            this.checkBoxSandwitch.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxSandwitch.Image = ((System.Drawing.Image)(resources.GetObject("checkBoxSandwitch.Image")));
+            this.checkBoxSandwitch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxSandwitch.Location = new System.Drawing.Point(12, 203);
+            this.checkBoxSandwitch.Name = "checkBoxSandwitch";
+            this.checkBoxSandwitch.Size = new System.Drawing.Size(145, 32);
+            this.checkBoxSandwitch.TabIndex = 3;
+            this.checkBoxSandwitch.Text = "           Sandwitch: 8€";
+            this.checkBoxSandwitch.UseVisualStyleBackColor = true;
+            this.checkBoxSandwitch.CheckedChanged += new System.EventHandler(this.checkBoxSandwitch_CheckedChanged);
+            // 
+            // checkBoxFries
+            // 
+            this.checkBoxFries.AutoSize = true;
+            this.checkBoxFries.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxFries.Image = ((System.Drawing.Image)(resources.GetObject("checkBoxFries.Image")));
+            this.checkBoxFries.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxFries.Location = new System.Drawing.Point(12, 156);
+            this.checkBoxFries.Name = "checkBoxFries";
+            this.checkBoxFries.Size = new System.Drawing.Size(113, 32);
+            this.checkBoxFries.TabIndex = 2;
+            this.checkBoxFries.Text = "           Fries: 6€";
+            this.checkBoxFries.UseVisualStyleBackColor = true;
+            this.checkBoxFries.CheckedChanged += new System.EventHandler(this.checkBoxFries_CheckedChanged);
+            // 
+            // checkBoxSalad
+            // 
+            this.checkBoxSalad.AutoSize = true;
+            this.checkBoxSalad.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxSalad.Image = ((System.Drawing.Image)(resources.GetObject("checkBoxSalad.Image")));
+            this.checkBoxSalad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxSalad.Location = new System.Drawing.Point(12, 105);
+            this.checkBoxSalad.Name = "checkBoxSalad";
+            this.checkBoxSalad.Size = new System.Drawing.Size(123, 32);
+            this.checkBoxSalad.TabIndex = 1;
+            this.checkBoxSalad.Text = "           Salad: 10€";
+            this.checkBoxSalad.UseVisualStyleBackColor = true;
+            this.checkBoxSalad.CheckedChanged += new System.EventHandler(this.checkBoxSalad_CheckedChanged);
+            // 
+            // checkBoxBurger
+            // 
+            this.checkBoxBurger.AutoSize = true;
+            this.checkBoxBurger.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBurger.Image = ((System.Drawing.Image)(resources.GetObject("checkBoxBurger.Image")));
+            this.checkBoxBurger.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxBurger.Location = new System.Drawing.Point(12, 51);
+            this.checkBoxBurger.Name = "checkBoxBurger";
+            this.checkBoxBurger.Size = new System.Drawing.Size(158, 32);
+            this.checkBoxBurger.TabIndex = 0;
+            this.checkBoxBurger.Text = "           HamBurger: 15€";
+            this.checkBoxBurger.UseVisualStyleBackColor = true;
+            this.checkBoxBurger.CheckedChanged += new System.EventHandler(this.checkBoxBurger_CheckedChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(204, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(69, 60);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormOnlineOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(274, 485);
             this.ControlBox = false;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panelDrinks);
             this.Controls.Add(this.richTextBoxTotal);
             this.Controls.Add(this.buttonPayment);
@@ -609,11 +622,11 @@
             this.Name = "FormOnlineOrder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OnlineOrder";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelFoods.ResumeLayout(false);
             this.panelFoods.PerformLayout();
             this.panelDrinks.ResumeLayout(false);
             this.panelDrinks.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -664,5 +677,6 @@
         private System.Windows.Forms.CheckBox checkBoxJ;
         private System.Windows.Forms.CheckBox checkBoxFreddo;
         private System.Windows.Forms.CheckBox checkBoxCappuccino;
+        private System.Windows.Forms.Button button1;
     }
 }

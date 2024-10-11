@@ -56,6 +56,7 @@
             this.buttonOrder = new System.Windows.Forms.Button();
             this.panelOnlineOrder = new System.Windows.Forms.Panel();
             this.pictureBoxUnipi = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlides)).BeginInit();
@@ -69,9 +70,10 @@
             // 
             this.labelPortrait.AutoSize = true;
             this.labelPortrait.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.labelPortrait.Location = new System.Drawing.Point(321, 71);
+            this.labelPortrait.Location = new System.Drawing.Point(241, 58);
+            this.labelPortrait.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPortrait.Name = "labelPortrait";
-            this.labelPortrait.Size = new System.Drawing.Size(332, 25);
+            this.labelPortrait.Size = new System.Drawing.Size(269, 20);
             this.labelPortrait.TabIndex = 30;
             this.labelPortrait.Text = "Πορτραίτο Γρηγόρη Μπιθικώτση";
             // 
@@ -79,9 +81,10 @@
             // 
             this.labelSong.AutoSize = true;
             this.labelSong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.labelSong.Location = new System.Drawing.Point(849, 88);
+            this.labelSong.Location = new System.Drawing.Point(637, 72);
+            this.labelSong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelSong.Name = "labelSong";
-            this.labelSong.Size = new System.Drawing.Size(439, 50);
+            this.labelSong.Size = new System.Drawing.Size(355, 40);
             this.labelSong.TabIndex = 29;
             this.labelSong.Text = "Τα τραγούδια του που χάραξαν την πορεία \r\nτου Ελληνικού λαϊκού τραγουδιού!";
             // 
@@ -90,21 +93,20 @@
             this.labelLegend.AutoSize = true;
             this.labelLegend.BackColor = System.Drawing.Color.Transparent;
             this.labelLegend.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLegend.Location = new System.Drawing.Point(580, 19);
-            this.labelLegend.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelLegend.Location = new System.Drawing.Point(435, 15);
             this.labelLegend.Name = "labelLegend";
-            this.labelLegend.Size = new System.Drawing.Size(638, 31);
+            this.labelLegend.Size = new System.Drawing.Size(512, 25);
             this.labelLegend.TabIndex = 28;
             this.labelLegend.Text = "Αίθουσα αφιερωμένη στον Γρηγόρη Μπιθικώτση";
             // 
             // richTextBox1
             // 
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.richTextBox1.Location = new System.Drawing.Point(205, 473);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.richTextBox1.Location = new System.Drawing.Point(154, 384);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(519, 267);
+            this.richTextBox1.Size = new System.Drawing.Size(390, 218);
             this.richTextBox1.TabIndex = 32;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
@@ -112,20 +114,21 @@
             // 
             this.labelbio.AutoSize = true;
             this.labelbio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.labelbio.Location = new System.Drawing.Point(321, 426);
+            this.labelbio.Location = new System.Drawing.Point(241, 346);
+            this.labelbio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelbio.Name = "labelbio";
-            this.labelbio.Size = new System.Drawing.Size(267, 25);
+            this.labelbio.Size = new System.Drawing.Size(214, 20);
             this.labelbio.TabIndex = 31;
             this.labelbio.Text = "Η βιογραφία του Γρηγόρη";
             // 
             // richTextBox2
             // 
             this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.richTextBox2.Location = new System.Drawing.Point(787, 152);
-            this.richTextBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.richTextBox2.Location = new System.Drawing.Point(590, 124);
+            this.richTextBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.ReadOnly = true;
-            this.richTextBox2.Size = new System.Drawing.Size(530, 256);
+            this.richTextBox2.Size = new System.Drawing.Size(398, 209);
             this.richTextBox2.TabIndex = 34;
             this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
             // 
@@ -136,9 +139,10 @@
             // 
             // buttonStop
             // 
-            this.buttonStop.Location = new System.Drawing.Point(1750, 473);
+            this.buttonStop.Location = new System.Drawing.Point(1312, 384);
+            this.buttonStop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonStop.Name = "buttonStop";
-            this.buttonStop.Size = new System.Drawing.Size(118, 37);
+            this.buttonStop.Size = new System.Drawing.Size(88, 30);
             this.buttonStop.TabIndex = 38;
             this.buttonStop.Text = "Stop Slides";
             this.buttonStop.UseVisualStyleBackColor = true;
@@ -146,9 +150,10 @@
             // 
             // buttonStart
             // 
-            this.buttonStart.Location = new System.Drawing.Point(1750, 391);
+            this.buttonStart.Location = new System.Drawing.Point(1312, 318);
+            this.buttonStart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonStart.Name = "buttonStart";
-            this.buttonStart.Size = new System.Drawing.Size(118, 43);
+            this.buttonStart.Size = new System.Drawing.Size(88, 35);
             this.buttonStart.TabIndex = 37;
             this.buttonStart.Text = "Start Slides";
             this.buttonStart.UseVisualStyleBackColor = true;
@@ -156,9 +161,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1752, 305);
+            this.button1.Location = new System.Drawing.Point(1314, 248);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 44);
+            this.button1.Size = new System.Drawing.Size(87, 36);
             this.button1.TabIndex = 41;
             this.button1.Text = "Stop Music";
             this.button1.UseVisualStyleBackColor = true;
@@ -167,9 +173,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1731, 122);
+            this.pictureBox1.Location = new System.Drawing.Point(1298, 99);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(151, 154);
+            this.pictureBox1.Size = new System.Drawing.Size(113, 125);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 40;
             this.pictureBox1.TabStop = false;
@@ -179,10 +186,9 @@
             // 
             this.pictureBoxExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxExit.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxExit.Image")));
-            this.pictureBoxExit.Location = new System.Drawing.Point(1793, 760);
-            this.pictureBoxExit.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxExit.Location = new System.Drawing.Point(1345, 618);
             this.pictureBoxExit.Name = "pictureBoxExit";
-            this.pictureBoxExit.Size = new System.Drawing.Size(89, 65);
+            this.pictureBoxExit.Size = new System.Drawing.Size(67, 53);
             this.pictureBoxExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxExit.TabIndex = 36;
             this.pictureBoxExit.TabStop = false;
@@ -191,10 +197,10 @@
             // pictureBoxSlides
             // 
             this.pictureBoxSlides.ErrorImage = null;
-            this.pictureBoxSlides.Location = new System.Drawing.Point(800, 448);
-            this.pictureBoxSlides.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBoxSlides.Location = new System.Drawing.Point(600, 364);
+            this.pictureBoxSlides.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxSlides.Name = "pictureBoxSlides";
-            this.pictureBoxSlides.Size = new System.Drawing.Size(517, 316);
+            this.pictureBoxSlides.Size = new System.Drawing.Size(388, 257);
             this.pictureBoxSlides.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxSlides.TabIndex = 35;
             this.pictureBoxSlides.TabStop = false;
@@ -202,10 +208,10 @@
             // pictureBoxPortraito
             // 
             this.pictureBoxPortraito.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPortraito.Image")));
-            this.pictureBoxPortraito.Location = new System.Drawing.Point(205, 108);
-            this.pictureBoxPortraito.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBoxPortraito.Location = new System.Drawing.Point(154, 88);
+            this.pictureBoxPortraito.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxPortraito.Name = "pictureBoxPortraito";
-            this.pictureBoxPortraito.Size = new System.Drawing.Size(519, 300);
+            this.pictureBoxPortraito.Size = new System.Drawing.Size(389, 244);
             this.pictureBoxPortraito.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxPortraito.TabIndex = 33;
             this.pictureBoxPortraito.TabStop = false;
@@ -221,10 +227,10 @@
             this.Sidebar.Controls.Add(this.buttonConcert);
             this.Sidebar.Location = new System.Drawing.Point(0, 0);
             this.Sidebar.Margin = new System.Windows.Forms.Padding(0);
-            this.Sidebar.MaximumSize = new System.Drawing.Size(189, 838);
-            this.Sidebar.MinimumSize = new System.Drawing.Size(79, 838);
+            this.Sidebar.MaximumSize = new System.Drawing.Size(142, 681);
+            this.Sidebar.MinimumSize = new System.Drawing.Size(59, 681);
             this.Sidebar.Name = "Sidebar";
-            this.Sidebar.Size = new System.Drawing.Size(189, 838);
+            this.Sidebar.Size = new System.Drawing.Size(142, 681);
             this.Sidebar.TabIndex = 42;
             // 
             // panel1
@@ -234,7 +240,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(189, 190);
+            this.panel1.Size = new System.Drawing.Size(142, 154);
             this.panel1.TabIndex = 2;
             // 
             // buttonMenu
@@ -246,10 +252,10 @@
             this.buttonMenu.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonMenu.Image = ((System.Drawing.Image)(resources.GetObject("buttonMenu.Image")));
             this.buttonMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonMenu.Location = new System.Drawing.Point(0, 12);
+            this.buttonMenu.Location = new System.Drawing.Point(0, 10);
             this.buttonMenu.Margin = new System.Windows.Forms.Padding(0);
             this.buttonMenu.Name = "buttonMenu";
-            this.buttonMenu.Size = new System.Drawing.Size(189, 135);
+            this.buttonMenu.Size = new System.Drawing.Size(142, 110);
             this.buttonMenu.TabIndex = 5;
             this.buttonMenu.Text = "            Μενού    ";
             this.buttonMenu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -265,10 +271,9 @@
             this.buttonHome.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonHome.Image = ((System.Drawing.Image)(resources.GetObject("buttonHome.Image")));
             this.buttonHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonHome.Location = new System.Drawing.Point(4, 194);
-            this.buttonHome.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonHome.Location = new System.Drawing.Point(3, 157);
             this.buttonHome.Name = "buttonHome";
-            this.buttonHome.Size = new System.Drawing.Size(189, 82);
+            this.buttonHome.Size = new System.Drawing.Size(142, 67);
             this.buttonHome.TabIndex = 4;
             this.buttonHome.Text = "       Αρχική";
             this.buttonHome.UseVisualStyleBackColor = false;
@@ -283,10 +288,9 @@
             this.buttonArtists.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonArtists.Image = ((System.Drawing.Image)(resources.GetObject("buttonArtists.Image")));
             this.buttonArtists.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonArtists.Location = new System.Drawing.Point(4, 284);
-            this.buttonArtists.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonArtists.Location = new System.Drawing.Point(3, 230);
             this.buttonArtists.Name = "buttonArtists";
-            this.buttonArtists.Size = new System.Drawing.Size(223, 82);
+            this.buttonArtists.Size = new System.Drawing.Size(167, 67);
             this.buttonArtists.TabIndex = 5;
             this.buttonArtists.Text = "            Αίθουσες                 Καλλιτεχνών";
             this.buttonArtists.UseVisualStyleBackColor = false;
@@ -301,10 +305,9 @@
             this.buttonEvents.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonEvents.Image = ((System.Drawing.Image)(resources.GetObject("buttonEvents.Image")));
             this.buttonEvents.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonEvents.Location = new System.Drawing.Point(4, 374);
-            this.buttonEvents.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonEvents.Location = new System.Drawing.Point(3, 303);
             this.buttonEvents.Name = "buttonEvents";
-            this.buttonEvents.Size = new System.Drawing.Size(223, 82);
+            this.buttonEvents.Size = new System.Drawing.Size(167, 67);
             this.buttonEvents.TabIndex = 7;
             this.buttonEvents.Text = "            Αίθουσες                  Εκδηλώσεων";
             this.buttonEvents.UseVisualStyleBackColor = false;
@@ -319,10 +322,9 @@
             this.buttonShows.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonShows.Image = ((System.Drawing.Image)(resources.GetObject("buttonShows.Image")));
             this.buttonShows.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonShows.Location = new System.Drawing.Point(4, 464);
-            this.buttonShows.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonShows.Location = new System.Drawing.Point(3, 376);
             this.buttonShows.Name = "buttonShows";
-            this.buttonShows.Size = new System.Drawing.Size(223, 82);
+            this.buttonShows.Size = new System.Drawing.Size(167, 67);
             this.buttonShows.TabIndex = 8;
             this.buttonShows.Text = "             Χώροι                Προβολής";
             this.buttonShows.UseVisualStyleBackColor = false;
@@ -337,10 +339,9 @@
             this.buttonConcert.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonConcert.Image = ((System.Drawing.Image)(resources.GetObject("buttonConcert.Image")));
             this.buttonConcert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonConcert.Location = new System.Drawing.Point(4, 554);
-            this.buttonConcert.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonConcert.Location = new System.Drawing.Point(3, 449);
             this.buttonConcert.Name = "buttonConcert";
-            this.buttonConcert.Size = new System.Drawing.Size(189, 82);
+            this.buttonConcert.Size = new System.Drawing.Size(142, 67);
             this.buttonConcert.TabIndex = 7;
             this.buttonConcert.Text = "            Αίθουσα                Συναυλιών";
             this.buttonConcert.UseVisualStyleBackColor = false;
@@ -361,10 +362,10 @@
             this.buttonOrder.FlatAppearance.BorderSize = 0;
             this.buttonOrder.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonOrder.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.buttonOrder.Location = new System.Drawing.Point(1793, 685);
-            this.buttonOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonOrder.Location = new System.Drawing.Point(1345, 557);
+            this.buttonOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonOrder.Name = "buttonOrder";
-            this.buttonOrder.Size = new System.Drawing.Size(89, 69);
+            this.buttonOrder.Size = new System.Drawing.Size(67, 56);
             this.buttonOrder.TabIndex = 431;
             this.buttonOrder.UseVisualStyleBackColor = false;
             this.buttonOrder.Click += new System.EventHandler(this.buttonOrder_Click);
@@ -372,10 +373,9 @@
             // panelOnlineOrder
             // 
             this.panelOnlineOrder.BackColor = System.Drawing.Color.Transparent;
-            this.panelOnlineOrder.Location = new System.Drawing.Point(1337, 169);
-            this.panelOnlineOrder.Margin = new System.Windows.Forms.Padding(4);
+            this.panelOnlineOrder.Location = new System.Drawing.Point(1003, 137);
             this.panelOnlineOrder.Name = "panelOnlineOrder";
-            this.panelOnlineOrder.Size = new System.Drawing.Size(387, 645);
+            this.panelOnlineOrder.Size = new System.Drawing.Size(290, 524);
             this.panelOnlineOrder.TabIndex = 432;
             this.panelOnlineOrder.Visible = false;
             // 
@@ -383,22 +383,33 @@
             // 
             this.pictureBoxUnipi.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxUnipi.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxUnipi.Image")));
-            this.pictureBoxUnipi.Location = new System.Drawing.Point(1797, 12);
-            this.pictureBoxUnipi.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxUnipi.Location = new System.Drawing.Point(1348, 10);
             this.pictureBoxUnipi.Name = "pictureBoxUnipi";
-            this.pictureBoxUnipi.Size = new System.Drawing.Size(89, 73);
+            this.pictureBoxUnipi.Size = new System.Drawing.Size(67, 59);
             this.pictureBoxUnipi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxUnipi.TabIndex = 433;
             this.pictureBoxUnipi.TabStop = false;
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(154, 9);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(94, 40);
+            this.button2.TabIndex = 432;
+            this.button2.Text = "HELP";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // FormMpithikotsis
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(75)))), ((int)(((byte)(80)))));
-            this.ClientSize = new System.Drawing.Size(1899, 838);
+            this.ClientSize = new System.Drawing.Size(1424, 681);
             this.ControlBox = false;
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBoxUnipi);
             this.Controls.Add(this.buttonOrder);
             this.Controls.Add(this.panelOnlineOrder);
@@ -416,6 +427,7 @@
             this.Controls.Add(this.labelPortrait);
             this.Controls.Add(this.labelSong);
             this.Controls.Add(this.labelLegend);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormMpithikotsis";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMpithikotsis";
@@ -458,5 +470,6 @@
         private System.Windows.Forms.Button buttonOrder;
         private System.Windows.Forms.Panel panelOnlineOrder;
         private System.Windows.Forms.PictureBox pictureBoxUnipi;
+        private System.Windows.Forms.Button button2;
     }
 }

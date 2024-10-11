@@ -190,6 +190,9 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="bin\Debug\helper\help_musee.chm" />
+    <None Include="bin\Debug\helper\help_musee.chw" />
+    <None Include="bin\Debug\helper\help_musee.hsc" />
     <None Include="digital_museum.db" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -218,6 +221,27 @@
     <None Include="bin\Debug\images\dj-mixers.gif" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\helper\onn_order.png" />
+    <None Include="bin\Debug\helper\Screenshot_1.png" />
+    <None Include="bin\Debug\helper\Screenshot_2.png" />
+    <None Include="bin\Debug\helper\Screenshot_3.png" />
+    <None Include="bin\Debug\helper\Screenshot_4.png" />
+    <None Include="bin\Debug\helper\Screenshot_5.png" />
+    <None Include="bin\Debug\helper\Screenshot_6.png" />
+    <None Include="bin\Debug\helper\Screenshot_gen.png" />
+    <None Include="bin\Debug\helper\seat_price.png" />
+    <None Include="bin\Debug\helper\cons_ut1.png" />
+    <None Include="bin\Debug\helper\console.png" />
+    <None Include="bin\Debug\helper\consut_2.png" />
+    <None Include="bin\Debug\helper\icon_aithouses.png" />
+    <None Include="bin\Debug\helper\icon_console.png" />
+    <None Include="bin\Debug\helper\icon_event.png" />
+    <None Include="bin\Debug\helper\icon_kallitexnwn.png" />
+    <None Include="bin\Debug\helper\icon_payment.png" />
+    <None Include="bin\Debug\helper\icon_provoli.png" />
+    <Content Include="Resources\help_musee.chm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\mpithikotsis1.jpg" />
   </ItemGroup>
   <ItemGroup>

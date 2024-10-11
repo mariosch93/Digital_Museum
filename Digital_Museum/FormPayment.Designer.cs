@@ -39,9 +39,6 @@
             this.labelNumCard = new System.Windows.Forms.Label();
             this.textBoxNumCard = new System.Windows.Forms.TextBox();
             this.labelTotalCost = new System.Windows.Forms.Label();
-            this.pictureBoxExit = new System.Windows.Forms.PictureBox();
-            this.pictureBoxUnipi = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelCard = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.labelCVV = new System.Windows.Forms.Label();
@@ -52,9 +49,13 @@
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.labelEmail = new System.Windows.Forms.Label();
             this.timerProgressbar = new System.Windows.Forms.Timer(this.components);
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxExit = new System.Windows.Forms.PictureBox();
+            this.pictureBoxUnipi = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnipi)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxCost
@@ -90,7 +91,7 @@
             // textBoxName
             // 
             this.textBoxName.Location = new System.Drawing.Point(217, 99);
-            this.textBoxName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxName.Multiline = true;
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(144, 19);
@@ -117,7 +118,7 @@
             "Mastercard",
             "AmericanExpress"});
             this.comboBoxTypePay.Location = new System.Drawing.Point(215, 188);
-            this.comboBoxTypePay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxTypePay.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxTypePay.Name = "comboBoxTypePay";
             this.comboBoxTypePay.Size = new System.Drawing.Size(144, 23);
             this.comboBoxTypePay.TabIndex = 7;
@@ -138,7 +139,7 @@
             // textBoxNumCard
             // 
             this.textBoxNumCard.Location = new System.Drawing.Point(217, 231);
-            this.textBoxNumCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNumCard.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNumCard.MaxLength = 16;
             this.textBoxNumCard.Multiline = true;
             this.textBoxNumCard.Name = "textBoxNumCard";
@@ -158,40 +159,6 @@
             this.labelTotalCost.TabIndex = 10;
             this.labelTotalCost.Text = "Συνολικό Κόστος:";
             // 
-            // pictureBoxExit
-            // 
-            this.pictureBoxExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxExit.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxExit.Image")));
-            this.pictureBoxExit.Location = new System.Drawing.Point(776, 455);
-            this.pictureBoxExit.Name = "pictureBoxExit";
-            this.pictureBoxExit.Size = new System.Drawing.Size(67, 53);
-            this.pictureBoxExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxExit.TabIndex = 415;
-            this.pictureBoxExit.TabStop = false;
-            this.pictureBoxExit.Click += new System.EventHandler(this.pictureBoxExit_Click);
-            // 
-            // pictureBoxUnipi
-            // 
-            this.pictureBoxUnipi.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxUnipi.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxUnipi.Image")));
-            this.pictureBoxUnipi.Location = new System.Drawing.Point(776, 12);
-            this.pictureBoxUnipi.Name = "pictureBoxUnipi";
-            this.pictureBoxUnipi.Size = new System.Drawing.Size(67, 59);
-            this.pictureBoxUnipi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxUnipi.TabIndex = 414;
-            this.pictureBoxUnipi.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(402, 99);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(404, 285);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 416;
-            this.pictureBox1.TabStop = false;
-            // 
             // labelCard
             // 
             this.labelCard.AutoSize = true;
@@ -206,7 +173,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(217, 270);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.MaxLength = 4;
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -275,7 +242,7 @@
             // textBoxEmail
             // 
             this.textBoxEmail.Location = new System.Drawing.Point(217, 144);
-            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxEmail.Multiline = true;
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(144, 19);
@@ -298,6 +265,51 @@
             this.timerProgressbar.Interval = 50;
             this.timerProgressbar.Tick += new System.EventHandler(this.timerProgressbar_Tick);
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(12, 9);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(94, 40);
+            this.button2.TabIndex = 432;
+            this.button2.Text = "HELP";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(402, 99);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(404, 285);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 416;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBoxExit
+            // 
+            this.pictureBoxExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxExit.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxExit.Image")));
+            this.pictureBoxExit.Location = new System.Drawing.Point(776, 455);
+            this.pictureBoxExit.Name = "pictureBoxExit";
+            this.pictureBoxExit.Size = new System.Drawing.Size(67, 53);
+            this.pictureBoxExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxExit.TabIndex = 415;
+            this.pictureBoxExit.TabStop = false;
+            this.pictureBoxExit.Click += new System.EventHandler(this.pictureBoxExit_Click);
+            // 
+            // pictureBoxUnipi
+            // 
+            this.pictureBoxUnipi.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxUnipi.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxUnipi.Image")));
+            this.pictureBoxUnipi.Location = new System.Drawing.Point(776, 12);
+            this.pictureBoxUnipi.Name = "pictureBoxUnipi";
+            this.pictureBoxUnipi.Size = new System.Drawing.Size(67, 59);
+            this.pictureBoxUnipi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxUnipi.TabIndex = 414;
+            this.pictureBoxUnipi.TabStop = false;
+            // 
             // FormPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -305,6 +317,7 @@
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(855, 520);
             this.ControlBox = false;
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.progressBarPayment);
@@ -330,9 +343,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormPayment";
             this.Load += new System.EventHandler(this.FormPayment_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnipi)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -362,5 +375,6 @@
         private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.Label labelEmail;
         private System.Windows.Forms.Timer timerProgressbar;
+        private System.Windows.Forms.Button button2;
     }
 }

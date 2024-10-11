@@ -243,5 +243,12 @@ namespace Digital_Museum
                 buttonClicked = false;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string helping = @"helper\help_musee.chm";
+            Help.ShowHelp(this, helping, HelpNavigator.TopicId, "85");
+
+        }
     }
 }

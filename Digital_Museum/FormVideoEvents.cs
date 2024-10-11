@@ -164,5 +164,11 @@ namespace Digital_Museum
             FormPrivateSpace formPrivateSpace = new FormPrivateSpace(loginInfo);
             formPrivateSpace.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string helping = @"helper\help_musee.chm";
+            Help.ShowHelp(this, helping, HelpNavigator.TopicId, "75");
+        }
     }
 }

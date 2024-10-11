@@ -117,6 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="console" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\helper\console.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="consut_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\helper\consut_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cons_ut1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\helper\cons_ut1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="FormPrivateBG" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -17605,7 +17615,36 @@
         4pOwooAKF+8aKKBMTjNLRR2zQG4nYmlpM5paAP/Z
 </value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="help_musee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_musee.chm;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="help_musee1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\helper\help_musee.chm;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="help_musee2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\helper\help_musee.chw;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="help_musee3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\helper\help_musee.hsc;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="icon_aithouses" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\helper\icon_aithouses.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_console" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\helper\icon_console.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_event" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\helper\icon_event.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_kallitexnwn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\helper\icon_kallitexnwn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_payment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\helper\icon_payment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_provoli" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\helper\icon_provoli.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mpithikotsis" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mpithikotsis.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -17617,6 +17656,33 @@
   </data>
   <data name="mpithikotsis3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mpithikotsis3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="onn_order" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\helper\onn_order.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\helper\Screenshot_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\helper\Screenshot_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\helper\Screenshot_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\helper\Screenshot_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\helper\Screenshot_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\helper\Screenshot_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot_gen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\helper\Screenshot_gen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seat_price" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\helper\seat_price.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="stelios" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stelios.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

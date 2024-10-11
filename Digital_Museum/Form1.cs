@@ -1,11 +1,15 @@
-﻿using System;
+﻿using Digital_Museum.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SQLite;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -256,6 +260,23 @@ namespace Digital_Museum
             }   
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
 
+
+
+            
+
+
+            
+
+            
+            
+
+            string helping = @"helper\help_musee.chm";
+            Help.ShowHelp(this, helping);
+
+        }
     }
 }
