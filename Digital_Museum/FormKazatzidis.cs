@@ -28,6 +28,7 @@ namespace Digital_Museum
                 Properties.Resources.stelios2,
                 Properties.Resources.stelios3,
                 Properties.Resources.stelios4,
+
             };
 
             // Κατά τη φόρτωση της φόρμας, δεν ρυθμίζουμε εικόνα στο PictureBox
