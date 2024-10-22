@@ -113,6 +113,16 @@ namespace Digital_Museum.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mainPageBG {
+            get {
+                object obj = ResourceManager.GetObject("mainPageBG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mpithikotsis {
             get {
                 object obj = ResourceManager.GetObject("mpithikotsis", resourceCulture);
@@ -146,6 +156,16 @@ namespace Digital_Museum.Properties {
         internal static System.Drawing.Bitmap mpithikotsis3 {
             get {
                 object obj = ResourceManager.GetObject("mpithikotsis3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap page3wallpaper {
+            get {
+                object obj = ResourceManager.GetObject("page3wallpaper", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

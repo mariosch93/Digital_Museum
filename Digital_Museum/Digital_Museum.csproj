@@ -221,6 +221,9 @@
     <None Include="bin\Debug\images\dj-mixers.gif" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\page3wallpaper.jpg" />
+    <None Include="Resources\mainPageBG.jpg" />
+    <None Include="Resources\mainPageWallpaper.bmp" />
     <None Include="bin\Debug\helper\onn_order.png" />
     <None Include="bin\Debug\helper\Screenshot_1.png" />
     <None Include="bin\Debug\helper\Screenshot_2.png" />

@@ -20,6 +20,7 @@ namespace Digital_Museum
         bool sidebarExpand;
         LoginInfo loginInfo;
         bool buttonClicked = false;
+        bool buttonDeveloped = false;
 
         bool calendarClicked = false;
         string connectionString = "Data source=digital_museum.db;Version=3;";
@@ -265,6 +266,20 @@ namespace Digital_Museum
             string helping = @"./helper/help_musee.chm";
             Help.ShowHelp(this, helping);
 
+        }
+
+        private void buttonDevelopedby_Click(object sender, EventArgs e)
+        {
+            if (!buttonDeveloped) {
+                buttonDeveloped = true;
+                labelDevelopedBy.Visible = true;
+                labelDevelopedBy.Text = "-Παναγου Παναγιώτης ΑΜ:mppl2321\n-Θωμαΐδης Ιωάννης ΑΜ:mppl:2308\n-Χαρίδης Μάριος-Χρήστος ΑΜ:mppl:2336\n";
+            }
+            else
+            {
+                buttonDeveloped = false;
+                labelDevelopedBy.Visible = false;
+            }
         }
     }
 }

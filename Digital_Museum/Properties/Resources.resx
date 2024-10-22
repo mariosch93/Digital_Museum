@@ -17609,6 +17609,9 @@
   <data name="help_musee" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\help_musee.chm;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="mainPageBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mainPageBG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mpithikotsis" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mpithikotsis.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -17620,6 +17623,9 @@
   </data>
   <data name="mpithikotsis3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mpithikotsis3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="page3wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page3wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="stelios" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stelios.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
